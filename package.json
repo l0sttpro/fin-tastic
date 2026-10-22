@@ -1,0 +1,20 @@
+{
+  "name": "krillion-dive",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A rarest-answer trivia game. Name the uncommon answer and sink to the trench floor.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "validate": "node --experimental-strip-types scripts/validate-data.mjs",
+    "show": "node --experimental-strip-types scripts/show-prompt.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
