@@ -1,15 +1,14 @@
 /**
- * Core type definitions for the Krillion Dive game.
+ * Core type definitions for the Fin-tastic game.
  */
 
-/** The six rarity tiers an accepted answer can land in, worst first. */
+/** The five rarity tiers an accepted answer can land in, worst first. */
 export type TierId =
   | 'plankton'
-  | 'clever'
-  | 'schooler'
-  | 'rare'
-  | 'deepcut'
-  | 'krillion';
+  | 'reef-rookie'
+  | 'jawsome'
+  | 'fin-omenal'
+  | 'fintastic';
 
 export interface TierMeta {
   id: TierId;
@@ -21,7 +20,7 @@ export interface TierMeta {
   blurb: string;
   /** Approximate share of the crowd that gives an answer in this tier. */
   crowdShare: string;
-  /** Accent colour (CSS colour) used for the tier glow. */
+  /** Accent colour (CSS colour) used for the tier. */
   color: string;
   /** Emblem glyph. */
   emblem: string;
@@ -86,6 +85,8 @@ export interface RunState {
   air: number;
   /** True once the run is over. */
   finished: boolean;
+  /** The full prompt queue, when it is known. Used to restore runs exactly. */
+  promptIds?: string[];
   /** Set when the run ends, for the summary screen. */
   ending?: RunEnding;
 }
@@ -137,5 +138,7 @@ export interface SavedRun {
   results: SavedAttempt[];
   /** Every attempt, refused answers included. */
   attempts?: SavedAttempt[];
+  /** Prompt order, stored so a restored run keeps the same next question. */
+  promptIds?: string[];
   savedAt: number;
 }

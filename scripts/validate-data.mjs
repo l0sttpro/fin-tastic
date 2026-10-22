@@ -8,19 +8,7 @@
  * rather than by a confused player.
  */
 import { PROMPTS, TIER_IDS, allAnswers } from '../src/data/promptBank.ts';
-import { gradeAnswer } from '../src/game/scoring.ts';
-
-/** Mirror of src/game/scoring.ts normalise() so this script stays standalone. */
-function normalise(input) {
-  return input
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/['\u2019]/g, '')
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim()
-    .replace(/\s+/g, ' ');
-}
+import { gradeAnswer, normalise } from '../src/game/scoring.ts';
 
 let problems = 0;
 

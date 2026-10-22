@@ -1,78 +1,67 @@
 import type { TierId, TierMeta } from './types';
 
 /**
- * The six rarity tiers. Points are what count; depth is points * 10 metres.
+ * The five rarity tiers. Points are what count; depth is points * 10 metres.
  */
 export const TIERS: Record<TierId, TierMeta> = {
   plankton: {
     id: 'plankton',
     name: 'Plankton',
-    points: 4,
-    metres: 40,
+    points: 15,
+    metres: 150,
     blurb: 'The answer on everyone’s lips. It barely moves you.',
-    crowdShare: '~60% of players',
-    color: '#7dd3fc',
-    emblem: '🫧',
+    crowdShare: '~80% of players',
+    color: '#5f5f5f',
+    emblem: '○',
   },
-  clever: {
-    id: 'clever',
-    name: 'Too Clever',
-    points: 8,
-    metres: 80,
-    blurb: 'You thought of the second answer. So did everyone else.',
-    crowdShare: '~20% of players',
-    color: '#a5b4fc',
-    emblem: '🫧',
-  },
-  schooler: {
-    id: 'schooler',
-    name: 'Schooler',
-    points: 16,
-    metres: 160,
+  'reef-rookie': {
+    id: 'reef-rookie',
+    name: 'Reef Rookie',
+    points: 30,
+    metres: 300,
     blurb: 'A real answer, and not a terrible one.',
     crowdShare: '~10% of players',
-    color: '#c4b5fd',
-    emblem: '🐟',
+    color: '#7d7d7d',
+    emblem: '◔',
   },
-  rare: {
-    id: 'rare',
-    name: 'Rare',
-    points: 32,
-    metres: 320,
+  jawsome: {
+    id: 'jawsome',
+    name: 'Jawsome',
+    points: 60,
+    metres: 600,
     blurb: 'Most people would never have said that.',
     crowdShare: '~5% of players',
-    color: '#f0abfc',
-    emblem: '🐠',
+    color: '#a3a3a3',
+    emblem: '◑',
   },
-  deepcut: {
-    id: 'deepcut',
-    name: 'Deep Cut',
-    points: 64,
-    metres: 640,
+  'fin-omenal': {
+    id: 'fin-omenal',
+    name: 'Fin-omenal',
+    points: 85,
+    metres: 850,
     blurb: 'You went somewhere the crowd never went.',
-    crowdShare: '~1% of players',
-    color: '#fbbf24',
-    emblem: '🦑',
+    crowdShare: '~2% of players',
+    color: '#b32733',
+    emblem: '◕',
   },
-  krillion: {
-    id: 'krillion',
-    name: 'One in a Krillion',
+  fintastic: {
+    id: 'fintastic',
+    name: 'Fin-tastic',
     points: 100,
     metres: 1000,
     blurb: 'Nobody else reached this. The whole room is looking at you.',
     crowdShare: '1 in a million',
-    color: '#f472b6',
-    emblem: '🐜',
+    color: '#e53945',
+    emblem: '✦',
   },
 };
 
 export const TIER_ORDER: TierId[] = [
   'plankton',
-  'clever',
-  'schooler',
-  'rare',
-  'deepcut',
-  'krillion',
+  'reef-rookie',
+  'jawsome',
+  'fin-omenal',
+  'fintastic',
 ];
 
 export const METRES_PER_POINT = 10;

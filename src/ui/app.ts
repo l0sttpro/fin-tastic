@@ -47,6 +47,9 @@ export class App {
       }
       if (event.type === 'run-start') {
         this.applyDepth(event.state.depth);
+        // Persist immediately so starting a new run replaces any older save
+        // even if the tab closes before the first answer.
+        this.persist(event.state);
       }
       if (event.type === 'run-end') {
         this.showSummary();
@@ -90,8 +93,8 @@ export class App {
     this.teardown?.();
     this.teardown = renderGame(this.root, {
       engine: this.engine,
-      onKrillion: () => {
-        this.ocean.swarm(70);
+      onFintastic: () => {
+        this.ocean.swarm(36);
       },
     });
   }
@@ -145,7 +148,7 @@ export class App {
 
   private persist(state: RunState): void {
     if (state.finished) return;
-    saveRun(state);
+    saveRun(state, this.engine.queueIds);
   }
 
   private resumeRun(): void {
@@ -154,7 +157,8 @@ export class App {
       this.showHome();
       return;
     }
-    // Rebuild the run from the seed so the prompt order is identical.
+    // Restore the exact saved queue when available; older saves are rebuilt
+    // from their seed or already-played prompts.
     this.enterGame();
     this.engine.restore(run);
   }

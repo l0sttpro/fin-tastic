@@ -5,16 +5,16 @@ const root = document.getElementById('screen');
 const canvas = document.getElementById('ocean-canvas') as HTMLCanvasElement | null;
 
 if (!root || !canvas) {
-  throw new Error('Krillion: missing mount points');
+  throw new Error('Fin-tastic: missing mount points');
 }
 
 const app = new App(root, canvas);
 
 // Exposed so a run can be poked at from the browser console:
-//   krillion.engine.current
+//   finTastic.engine.current
 declare global {
   interface Window {
-    krillion: App;
+    finTastic: App;
   }
 }
-window.krillion = app;
+window.finTastic = app;

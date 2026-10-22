@@ -7,19 +7,21 @@ import type {
   SavedAttempt,
   SavedRun,
   TierId,
-} from './types';
-import { PROMPT_BY_ID, PROMPTS_SANITISED } from '../data/promptBank';
-import { gradeAnswer, hintAnswer, normalise } from './scoring';
+} from './types.ts';
+import { PROMPT_BY_ID, PROMPTS_SANITISED } from '../data/promptBank.ts';
+import { gradeAnswer, hintAnswer, normalise } from './scoring.ts';
 import {
   METRES_PER_POINT,
   PROMPTS_PER_DIVE,
   SECONDS_PER_PROMPT,
   STARTING_AIR,
+  TIERS,
   TIER_ORDER,
   tierIndex,
-} from './tiers';
-import { dailySeed, mulberry32, randomSeed, shuffle } from './rng';
-import { zoneForDepth } from './zones';
+} from './tiers.ts';
+import { dailySeed, mulberry32, randomSeed } from './rng.ts';
+import { selectDiveQueue, selectEndlessPrompt } from './selection.ts';
+import { zoneForDepth } from './zones.ts';
 
 export const MAX_AIR = 5;
 
@@ -59,10 +61,6 @@ const DIFFICULTY = new Map<string, number>(
   PROMPTS_SANITISED.map((prompt) => [prompt.id, difficultyOf(prompt)]),
 );
 
-const BY_DIFFICULTY = PROMPTS_SANITISED.slice().sort(
-  (a, b) => (DIFFICULTY.get(a.id) ?? 0) - (DIFFICULTY.get(b.id) ?? 0),
-);
-
 export class GameEngine {
   private listeners: Listener[] = [];
   private state: RunState;
@@ -76,10 +74,16 @@ export class GameEngine {
   private timer: number | null = null;
   private deadline = 0;
   private startedAt = 0;
+  /** True while a confirmation is open; the clock is frozen. */
+  private paused = false;
+  private pauseStartedAt = 0;
   /** Tier ceiling imposed by a spent hint. */
   private tierCap: TierId | null = null;
   /** Whether the current prompt has already been graded (accepted). */
   private locked = false;
+  /** Last prompt dealt, used to avoid immediate repeats. */
+  private lastPromptId: string | null = null;
+  private lastCategory: string | null = null;
 
   constructor() {
     const seed = randomSeed();
@@ -118,14 +122,23 @@ export class GameEngine {
     return this.queue[this.state.index] ?? null;
   }
 
+  /** The full prompt queue, used by storage to restore the exact order. */
+  get queueIds(): string[] {
+    return this.queue.map((prompt) => prompt.id);
+  }
+
   // -- lifecycle ---------------------------------------------------------
 
   start(mode: GameMode): void {
     const seed = mode === 'daily' ? dailySeed() : randomSeed();
+    this.stopTimer();
+    this.paused = false;
     this.rng = mulberry32(seed);
     this.usedPromptIds.clear();
     this.usedAnswers.clear();
     this.tierCap = null;
+    this.lastPromptId = null;
+    this.lastCategory = null;
 
     this.state = {
       mode,
@@ -141,6 +154,7 @@ export class GameEngine {
     };
 
     this.queue = mode === 'endless' ? [this.nextEndlessPrompt()] : this.buildDiveQueue(seed);
+    this.state.promptIds = this.queue.map((prompt) => prompt.id);
     this.emit({ type: 'run-start', state: this.state });
     this.beginPrompt();
   }
@@ -152,17 +166,20 @@ export class GameEngine {
    * looked up in the bank again, so a restored run always grades against the
    * current data.
    *
-   * The prompt order for a dive is derived purely from the seed, so it can be
-   * reproduced exactly. The endless queue grows one prompt at a time and
-   * cannot be reproduced, so it is rebuilt from the prompts already played
-   * and a fresh one is dealt.
+   * Newer saves carry the exact prompt queue for both modes. Older saves have
+   * no queue: a dive is rebuilt from its seed, while an endless run is rebuilt
+   * from the prompts already played and dealt a fresh one on top.
    */
   restore(snapshot: SavedRun): void {
+    this.stopTimer();
+    this.paused = false;
     this.rng = mulberry32(snapshot.seed);
     this.usedPromptIds.clear();
     this.usedAnswers.clear();
     this.tierCap = null;
     this.locked = false;
+    this.lastPromptId = null;
+    this.lastCategory = null;
 
     const results = snapshot.results
       .map((attempt) => this.resolveAttempt(attempt))
@@ -194,9 +211,17 @@ export class GameEngine {
       if (result.answer) this.usedAnswers.add(normalise(result.answer));
     }
 
-    if (snapshot.mode === 'endless') {
-      // The endless queue cannot be reproduced from the seed, so the prompts
-      // already played are replayed and a fresh one is dealt on top.
+    const savedQueue = (snapshot.promptIds ?? [])
+      .map((id) => PROMPT_BY_ID.get(id))
+      .filter((prompt): prompt is Prompt => prompt !== undefined);
+
+    if (savedQueue.length > 0) {
+      // New saves carry the exact queue, so the next prompt is always the one
+      // the player was looking at when they closed the tab.
+      this.queue = savedQueue;
+    } else if (snapshot.mode === 'endless') {
+      // Older saves had no queue. Rebuild from the prompts already played and
+      // deal a fresh one on top.
       this.queue = results.map((result) => result.prompt).slice(0, resumeIndex);
       while (this.queue.length < resumeIndex) {
         this.queue.push(this.nextEndlessPrompt());
@@ -204,10 +229,58 @@ export class GameEngine {
       this.queue.push(this.nextEndlessPrompt());
     } else {
       this.queue = this.buildDiveQueue(snapshot.seed);
+    }
+
+    const lastKnown = this.queue[this.queue.length - 1];
+    this.lastPromptId = lastKnown?.id ?? null;
+    this.lastCategory = lastKnown?.category ?? null;
+
+    if (snapshot.mode === 'endless') {
+      while (this.queue.length <= this.state.index) {
+        this.queue.push(this.nextEndlessPrompt());
+      }
+      if (this.queue.length === this.state.index) {
+        this.queue.push(this.nextEndlessPrompt());
+      }
+    } else {
+      // Fill any missing tail with fresh balanced picks. Older saves may have
+      // fewer than seven ids.
+      while (this.queue.length < PROMPTS_PER_DIVE) {
+        const known = new Set(this.queue.map((prompt) => prompt.id));
+        const extra = selectDiveQueue(
+          PROMPTS_SANITISED.filter((prompt) => !known.has(prompt.id)),
+          snapshot.seed + this.queue.length,
+          PROMPTS_PER_DIVE - this.queue.length,
+        );
+        if (extra.length === 0) break;
+        this.queue.push(...extra);
+      }
       // Safety net: never point past the end of the queue.
       if (this.state.index >= this.queue.length) {
-        this.state.index = this.queue.length - 1;
+        this.state.index = Math.max(0, this.queue.length - 1);
       }
+    }
+
+    for (const prompt of this.queue) this.usedPromptIds.add(prompt.id);
+    const current = this.queue[this.state.index] ?? this.queue[this.queue.length - 1];
+    this.lastPromptId = current?.id ?? null;
+    this.lastCategory = current?.category ?? null;
+    this.state.promptIds = this.queue.map((prompt) => prompt.id);
+
+    // A dive can be saved after its final answer but before the player hits
+    // Continue. There is no next prompt to restore, so finish the run cleanly
+    // instead of re-asking an already-resolved prompt.
+    if (snapshot.mode !== 'endless' && results.length >= PROMPTS_PER_DIVE) {
+      this.state.index = PROMPTS_PER_DIVE;
+      this.state.finished = true;
+      this.state.ending = { kind: 'complete' };
+      this.emit({ type: 'run-start', state: this.state });
+      this.emit({
+        type: 'run-end',
+        state: this.state,
+        ending: { kind: 'complete' },
+      });
+      return;
     }
 
     this.emit({ type: 'run-start', state: this.state });
@@ -232,8 +305,7 @@ export class GameEngine {
   }
 
   private buildDiveQueue(seed: number): Prompt[] {
-    const rng = mulberry32(seed ^ 0x9e3779b9);
-    return shuffle(PROMPTS_SANITISED, rng).slice(0, PROMPTS_PER_DIVE);
+    return selectDiveQueue(PROMPTS_SANITISED, seed, PROMPTS_PER_DIVE);
   }
 
   /**
@@ -243,14 +315,24 @@ export class GameEngine {
   private nextEndlessPrompt(): Prompt {
     const depth = this.state.depth;
     const minDifficulty = 1.6 + Math.min(2.6, depth / 9000);
-    const hard = BY_DIFFICULTY.filter(
-      (prompt) => (DIFFICULTY.get(prompt.id) ?? 0) >= minDifficulty,
-    );
-    const pool = hard.length >= 6 ? hard : BY_DIFFICULTY.slice(-8);
-    const fresh = pool.filter((prompt) => !this.usedPromptIds.has(prompt.id));
-    const candidates = fresh.length > 0 ? fresh : pool;
-    const chosen = candidates[Math.floor(this.rng() * candidates.length)]!;
+    const categoryCounts = new Map<string, number>();
+    for (const result of this.state.results) {
+      const category = result.prompt.category;
+      categoryCounts.set(category, (categoryCounts.get(category) ?? 0) + 1);
+    }
+    const chosen = selectEndlessPrompt({
+      prompts: PROMPTS_SANITISED,
+      rng: this.rng,
+      usedPromptIds: this.usedPromptIds,
+      categoryCounts,
+      lastPromptId: this.lastPromptId,
+      lastCategory: this.lastCategory,
+      minDifficulty,
+      difficultyOf: (prompt) => DIFFICULTY.get(prompt.id) ?? 0,
+    });
     this.usedPromptIds.add(chosen.id);
+    this.lastPromptId = chosen.id;
+    this.lastCategory = chosen.category;
     return chosen;
   }
 
@@ -259,6 +341,7 @@ export class GameEngine {
     if (!prompt) return;
     this.locked = false;
     this.tierCap = null;
+    this.paused = false;
     this.startedAt = performance.now();
     this.deadline = this.startedAt + SECONDS_PER_PROMPT * 1000;
     this.emit({
@@ -274,6 +357,7 @@ export class GameEngine {
   private startTimer(): void {
     this.stopTimer();
     this.timer = window.setInterval(() => {
+      if (this.paused) return;
       const remaining = Math.max(0, (this.deadline - performance.now()) / 1000);
       this.emit({ type: 'tick', remaining, fraction: remaining / SECONDS_PER_PROMPT });
       if (remaining <= 0) {
@@ -292,11 +376,44 @@ export class GameEngine {
 
   /** Seconds already spent on the current prompt. */
   get secondsUsed(): number {
-    return (performance.now() - this.startedAt) / 1000;
+    const now = this.paused ? this.pauseStartedAt : performance.now();
+    return (now - this.startedAt) / 1000;
   }
 
   get remainingSeconds(): number {
-    return Math.max(0, (this.deadline - performance.now()) / 1000);
+    const now = this.paused ? this.pauseStartedAt : performance.now();
+    return Math.max(0, (this.deadline - now) / 1000);
+  }
+
+  /**
+   * Freezes the prompt clock, e.g. while a typo confirmation is open. Time
+   * spent deciding whether to accept a correction should not cost the player.
+   */
+  pauseTimer(): void {
+    if (this.paused || this.locked || this.state.finished) return;
+    this.paused = true;
+    this.pauseStartedAt = performance.now();
+    this.stopTimer();
+  }
+
+  /** Resumes a clock frozen by `pauseTimer`, without charging for the pause. */
+  resumeTimer(): void {
+    if (!this.paused) return;
+    this.settlePause();
+    if (this.locked || this.state.finished) return;
+    this.startTimer();
+  }
+
+  /**
+   * Folds paused wall-clock time out of the active timer. Called by resume and
+   * by submit so a caller cannot accidentally charge the player for a pause.
+   */
+  private settlePause(): void {
+    if (!this.paused) return;
+    const pausedFor = performance.now() - this.pauseStartedAt;
+    this.deadline += pausedFor;
+    this.startedAt += pausedFor;
+    this.paused = false;
   }
 
   // -- actions -----------------------------------------------------------
@@ -310,6 +427,7 @@ export class GameEngine {
     const prompt = this.currentPrompt;
     if (!prompt) return null;
 
+    this.settlePause();
     const trimmed = raw.trim();
     if (!trimmed) return null;
 
@@ -344,7 +462,7 @@ export class GameEngine {
       if (actualIndex > capIndex) tier = this.tierCap;
     }
 
-    const points = { plankton: 4, clever: 8, schooler: 16, rare: 32, deepcut: 64, krillion: 100 }[tier];
+    const points = TIERS[tier].points;
 
     const result: PromptResult = {
       prompt,
@@ -365,7 +483,7 @@ export class GameEngine {
     this.state.depth = this.state.score * METRES_PER_POINT;
 
     if (this.state.mode === 'endless') {
-      if (tier === 'krillion') {
+      if (tier === 'fintastic') {
         this.state.air = Math.min(MAX_AIR, this.state.air + 1);
       }
     }
@@ -379,7 +497,7 @@ export class GameEngine {
 
   /** Spends time (and a tier) to reveal a nudge. */
   useHint(): { text: string; cappedTier: TierId | null } | null {
-    if (this.state.finished || this.locked) return null;
+    if (this.state.finished || this.locked || this.paused) return null;
     const prompt = this.currentPrompt;
     if (!prompt) return null;
     if (this.tierCap !== null) return null; // one hint per prompt
@@ -396,6 +514,7 @@ export class GameEngine {
   }
 
   private handleTimeout(): void {
+    if (this.paused) return;
     const prompt = this.currentPrompt;
     if (!prompt || this.locked) return;
 
@@ -436,6 +555,7 @@ export class GameEngine {
     if (this.state.mode === 'endless') {
       this.state.index += 1;
       this.queue.push(this.nextEndlessPrompt());
+      this.state.promptIds = this.queue.map((prompt) => prompt.id);
       this.emit({ type: 'state', state: this.state });
       this.beginPrompt();
       return;
@@ -459,6 +579,7 @@ export class GameEngine {
 
   private finish(ending: RunEnding): void {
     this.stopTimer();
+    this.paused = false;
     this.state.finished = true;
     this.state.ending = ending;
     this.emit({ type: 'state', state: this.state });
@@ -472,14 +593,10 @@ export class GameEngine {
   }
 
   get tierCounts(): Record<TierId, number> {
-    const counts = {
-      plankton: 0,
-      clever: 0,
-      schooler: 0,
-      rare: 0,
-      deepcut: 0,
-      krillion: 0,
-    } as Record<TierId, number>;
+    const counts = Object.fromEntries(TIER_ORDER.map((tier) => [tier, 0])) as Record<
+      TierId,
+      number
+    >;
     for (const result of this.state.results) {
       if (result.tier) counts[result.tier] += 1;
     }

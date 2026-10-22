@@ -79,23 +79,23 @@ export class OceanBackground {
   }
 
   private seed(): void {
-    const count = Math.round((this.width * this.height) / 26000);
-    this.bubbles = Array.from({ length: Math.min(70, Math.max(18, count)) }, () => ({
+    const count = Math.round((this.width * this.height) / 42000);
+    this.bubbles = Array.from({ length: Math.min(34, Math.max(10, count)) }, () => ({
       x: Math.random() * this.width,
       y: Math.random() * this.height,
-      r: 1.5 + Math.random() * 5,
-      speed: 12 + Math.random() * 34,
-      wobble: 6 + Math.random() * 18,
+      r: 1 + Math.random() * 3.2,
+      speed: 8 + Math.random() * 22,
+      wobble: 5 + Math.random() * 13,
       phase: Math.random() * Math.PI * 2,
-      alpha: 0.12 + Math.random() * 0.3,
+      alpha: 0.05 + Math.random() * 0.15,
     }));
-    this.particles = Array.from({ length: 90 }, () => ({
+    this.particles = Array.from({ length: 55 }, () => ({
       x: Math.random() * this.width,
       y: Math.random() * this.height,
-      r: 0.4 + Math.random() * 1.4,
-      vy: 3 + Math.random() * 12,
-      vx: (Math.random() - 0.5) * 5,
-      alpha: 0.05 + Math.random() * 0.16,
+      r: 0.4 + Math.random() * 1.1,
+      vy: 3 + Math.random() * 9,
+      vx: (Math.random() - 0.5) * 4,
+      alpha: 0.03 + Math.random() * 0.11,
     }));
   }
 
@@ -146,7 +146,7 @@ export class OceanBackground {
         vy: (Math.random() - 0.5) * 30,
         size: 2 + Math.random() * 4,
         phase: Math.random() * Math.PI * 2,
-        hue: 330 + Math.random() * 40,
+        hue: 352 + Math.random() * 12,
       });
     }
   }
@@ -205,7 +205,7 @@ export class OceanBackground {
     for (const particle of this.particles) {
       ctx.beginPath();
       ctx.arc(particle.x, particle.y, particle.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(214, 240, 255, ${particle.alpha})`;
+      ctx.fillStyle = `rgba(196, 190, 186, ${particle.alpha})`;
       ctx.fill();
     }
 
@@ -214,7 +214,7 @@ export class OceanBackground {
       const wobble = Math.sin(bubble.phase) * 3;
       ctx.beginPath();
       ctx.arc(bubble.x + wobble, bubble.y, bubble.r, 0, Math.PI * 2);
-      ctx.strokeStyle = `rgba(190, 235, 255, ${bubble.alpha})`;
+      ctx.strokeStyle = `rgba(176, 166, 162, ${bubble.alpha})`;
       ctx.lineWidth = 1;
       ctx.stroke();
 
@@ -226,7 +226,7 @@ export class OceanBackground {
         0,
         Math.PI * 2,
       );
-      ctx.fillStyle = `rgba(255, 255, 255, ${bubble.alpha * 1.6})`;
+      ctx.fillStyle = `rgba(235, 225, 220, ${bubble.alpha * 1.4})`;
       ctx.fill();
     }
 
@@ -236,7 +236,7 @@ export class OceanBackground {
       ctx.save();
       ctx.translate(krill.x, krill.y);
       ctx.rotate(Math.atan2(krill.vy, krill.vx));
-      ctx.fillStyle = `hsla(${krill.hue}, 90%, 70%, 0.85)`;
+      ctx.fillStyle = `hsla(${krill.hue}, 68%, 56%, 0.7)`;
       ctx.beginPath();
       ctx.ellipse(0, 0, krill.size * 1.9, krill.size * 0.75, 0, 0, Math.PI * 2);
       ctx.fill();
@@ -252,7 +252,7 @@ export class OceanBackground {
     for (const ping of this.pings) {
       ctx.beginPath();
       ctx.arc(ping.x, ping.y, ping.r, 0, Math.PI * 2);
-      ctx.strokeStyle = `rgba(125, 226, 255, ${ping.life * 0.35})`;
+      ctx.strokeStyle = `rgba(229, 57, 69, ${ping.life * 0.26})`;
       ctx.lineWidth = 2;
       ctx.stroke();
     }

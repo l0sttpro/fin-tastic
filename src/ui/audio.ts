@@ -121,8 +121,8 @@ export class Sfx {
     this.tone(high ? 1200 : 900, 0.04, { type: 'square', gain: 0.05 });
   }
 
-  /** One in a krillion — a shimmering chord. */
-  krillion(): void {
+  /** A Fin-tastic answer — a shimmering chord. */
+  fintastic(): void {
     [523, 659, 784, 1047, 1319].forEach((freq, i) => {
       this.tone(freq, 1.4, { type: 'sine', gain: 0.14, delay: i * 0.09 });
     });

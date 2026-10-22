@@ -33,17 +33,17 @@ export function renderSummary(root: HTMLElement, deps: SummaryDeps): void {
     complete: {
       title: 'Dive complete',
       blurb: 'Seven prompts, one dive. Seven perfect answers would put you 7,000 m down, in the hadal trenches.',
-      icon: '🪸',
+      icon: '◆',
     },
     'out-of-air': {
       title: 'Out of air',
       blurb: 'Your last tank is gone. The dark keeps the rest.',
-      icon: '🫧',
+      icon: '○',
     },
     aborted: {
       title: 'Surfaced',
       blurb: 'You came back up early. The dive still counts.',
-      icon: '⏏',
+      icon: '↥',
     },
   };
   const head = headlines[ending] ?? headlines.complete!;
@@ -118,7 +118,7 @@ export function renderSummary(root: HTMLElement, deps: SummaryDeps): void {
     const tierText = meta
       ? `${meta.name} +${result.points}${result.repeat ? ' · repeat' : ''}`
       : timedOut
-        ? 'out of air'
+        ? 'time up'
         : 'refused';
     log.append(
       el('div', {

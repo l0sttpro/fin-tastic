@@ -11,9 +11,16 @@ export function normalise(input: string): string {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '') // strip accents
     .replace(/['\u2019]/g, '') // drop apostrophes: "birds' beaks" -> "birds beaks"
+    .replace(/#/g, ' sharp ') // keep C# and F# distinct from C and F
+    .replace(/\+/g, ' plus ') // C++ and Google+ survive normalisation
     .replace(/[^a-z0-9]+/g, ' ')
     .trim()
     .replace(/\s+/g, ' ');
+}
+
+/** A space-free key, used for "greatwhite" / "Great White" style input. */
+export function compact(input: string): string {
+  return normalise(input).replace(/ /g, '');
 }
 
 /** Irregular plurals worth special-casing. Both directions are listed. */
@@ -167,54 +174,41 @@ function matches(inputKeys: Set<string>, acceptedKeys: Set<string>): boolean {
   return false;
 }
 
-export interface GradeResult {
-  accepted: boolean;
-  tier: TierId | null;
-  /** The canonical accepted answer text. */
-  answer: string | null;
-  /** True when the answer was already used in an earlier prompt this run. */
-  repeat: boolean;
+export interface AnswerCandidate {
+  answer: string;
+  tier: TierId;
+  /** Every exact-match key: canonical spelling, plurals, and aliases. */
+  keys: Set<string>;
+  /** Space-free variants for missing-space input. */
+  compactKeys: Set<string>;
 }
 
+const CANDIDATE_CACHE = new WeakMap<Prompt, AnswerCandidate[]>();
+
 /**
- * Grades a player's answer against a prompt's accepted list.
- *
- * `usedAnswers` holds normalised answers already spent in this run so we can
- * flag repeats (and, optionally, refuse them).
+ * Pre-computes the exact-match keys for every accepted answer of a prompt,
+ * including its aliases. Cached because a prompt is immutable at runtime.
  */
-export function gradeAnswer(
-  prompt: Prompt,
-  input: string,
-  usedAnswers: Set<string> = new Set(),
-): GradeResult {
-  const inputKeys = keysFor(input);
-  if (inputKeys.size === 0) {
-    return { accepted: false, tier: null, answer: null, repeat: false };
-  }
+export function candidatesFor(prompt: Prompt): AnswerCandidate[] {
+  const cached = CANDIDATE_CACHE.get(prompt);
+  if (cached) return cached;
 
   const aliasKeys = buildAliasKeys(prompt);
+  const candidates: AnswerCandidate[] = [];
 
   for (const tier of TIER_ORDER) {
-    for (const accepted of prompt.answers[tier]) {
-      const acceptedKeys = keysFor(accepted);
-      // Aliases can point a different spelling at this canonical answer.
-      const extra = aliasKeys.get(accepted);
-      if (extra) {
-        for (const k of extra) acceptedKeys.add(k);
-      }
-      if (matches(inputKeys, acceptedKeys)) {
-        const norm = normalise(accepted);
-        return {
-          accepted: true,
-          tier,
-          answer: accepted,
-          repeat: usedAnswers.has(norm),
-        };
-      }
+    for (const answer of prompt.answers[tier]) {
+      const keys = keysFor(answer);
+      const aliases = aliasKeys.get(answer);
+      if (aliases) for (const key of aliases) keys.add(key);
+      const compactKeys = new Set<string>();
+      for (const key of keys) compactKeys.add(key.replace(/ /g, ''));
+      candidates.push({ answer, tier, keys, compactKeys });
     }
   }
 
-  return { accepted: false, tier: null, answer: null, repeat: false };
+  CANDIDATE_CACHE.set(prompt, candidates);
+  return candidates;
 }
 
 /**
@@ -229,33 +223,172 @@ function buildAliasKeys(prompt: Prompt): Map<string, Set<string>> {
       keys = new Set<string>();
       map.set(target, keys);
     }
-    for (const key of keysFor(alias)) keys.add(key);
+    // Aliases are hand-written exact spellings. Expanding them into plural
+    // forms creates accidents such as the Greek-letter alias "p" claiming
+    // "ps" before the real alias for psi can match it.
+    const key = normalise(alias);
+    if (key) keys.add(key);
   }
   return map;
+}
+
+/**
+ * How many edits we are willing to forgive, by the length of the longer
+ * string. Short answers stay strict; long answers tolerate a small typo.
+ */
+export function fuzzyDistanceLimit(length: number): number {
+  if (length < 4) return 0;
+  if (length <= 12) return 1;
+  if (length <= 20) return 2;
+  return 3;
+}
+
+/**
+ * Bounded Levenshtein distance. Returns `max + 1` as soon as it is clear the
+ * strings are further apart than we care about.
+ */
+export function boundedLevenshtein(a: string, b: string, max: number): number {
+  if (a === b) return 0;
+  if (max <= 0) return max + 1;
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+
+  let previous = Array.from({ length: b.length + 1 }, (_, index) => index);
+  for (let i = 1; i <= a.length; i++) {
+    const current = [i];
+    let rowMinimum = i;
+    for (let j = 1; j <= b.length; j++) {
+      const substitution = previous[j - 1]! + (a[i - 1] === b[j - 1] ? 0 : 1);
+      const value = Math.min(previous[j]! + 1, current[j - 1]! + 1, substitution);
+      current[j] = value;
+      if (value < rowMinimum) rowMinimum = value;
+    }
+    if (rowMinimum > max) return max + 1;
+    previous = current;
+  }
+
+  return previous[b.length]!;
+}
+
+interface FuzzyMatch {
+  candidate: AnswerCandidate;
+  distance: number;
+}
+
+function findFuzzyCandidates(inputNorm: string, prompt: Prompt): FuzzyMatch[] {
+  if (inputNorm.length < 4) return [];
+  const inputCompact = inputNorm.replace(/ /g, '');
+  const best: FuzzyMatch[] = [];
+
+  for (const candidate of candidatesFor(prompt)) {
+    let distance = Infinity;
+
+    for (const key of candidate.keys) {
+      if (key === inputNorm) continue;
+      const limit = fuzzyDistanceLimit(Math.max(inputNorm.length, key.length));
+      if (limit === 0) continue;
+      const next = boundedLevenshtein(inputNorm, key, limit);
+      if (next <= limit && next < distance) distance = next;
+    }
+
+    // A typo in a missing-space answer ("greatwhit") should still resolve.
+    if (inputCompact.length >= 4) {
+      for (const key of candidate.compactKeys) {
+        if (key === inputCompact) continue;
+        const limit = fuzzyDistanceLimit(Math.max(inputCompact.length, key.length));
+        if (limit === 0) continue;
+        const next = boundedLevenshtein(inputCompact, key, limit);
+        if (next <= limit && next < distance) distance = next;
+      }
+    }
+
+    if (Number.isFinite(distance)) best.push({ candidate, distance });
+  }
+
+  return best;
+}
+
+export interface GradeResult {
+  accepted: boolean;
+  tier: TierId | null;
+  /** The canonical accepted answer text. */
+  answer: string | null;
+  /** True when the answer was already used in an earlier prompt this run. */
+  repeat: boolean;
+  /** True when the answer was resolved through a spelling correction. */
+  corrected?: boolean;
+}
+
+function accept(candidate: AnswerCandidate, usedAnswers: Set<string>, corrected = false): GradeResult {
+  return {
+    accepted: true,
+    tier: candidate.tier,
+    answer: candidate.answer,
+    repeat: usedAnswers.has(normalise(candidate.answer)),
+    corrected,
+  };
+}
+
+/**
+ * Grades a player's answer against a prompt's accepted list.
+ *
+ * Matching is intentionally conservative:
+ *   1. Exact normalised match (including plural and article variants).
+ *   2. Exact alias match.
+ *   3. Exact space-free match ("greatwhite" / "great white").
+ *   4. A single unambiguous spelling correction.
+ *
+ * A fuzzy match is only accepted when one candidate is clearly closest. Ties
+ * are refused rather than guessed.
+ */
+export function gradeAnswer(
+  prompt: Prompt,
+  input: string,
+  usedAnswers: Set<string> = new Set(),
+): GradeResult {
+  const inputNorm = normalise(input);
+  if (!inputNorm) {
+    return { accepted: false, tier: null, answer: null, repeat: false };
+  }
+
+  const inputKeys = keysFor(input);
+  if (inputKeys.size === 0) {
+    return { accepted: false, tier: null, answer: null, repeat: false };
+  }
+
+  const candidates = candidatesFor(prompt);
+
+  for (const candidate of candidates) {
+    if (matches(inputKeys, candidate.keys)) return accept(candidate, usedAnswers);
+  }
+
+  const inputCompact = inputNorm.replace(/ /g, '');
+  if (inputCompact) {
+    for (const candidate of candidates) {
+      if (candidate.compactKeys.has(inputCompact)) return accept(candidate, usedAnswers);
+    }
+  }
+
+  const fuzzy = findFuzzyCandidates(inputNorm, prompt);
+  if (fuzzy.length === 0) {
+    return { accepted: false, tier: null, answer: null, repeat: false };
+  }
+
+  const shortest = Math.min(...fuzzy.map((match) => match.distance));
+  const closest = fuzzy.filter((match) => match.distance === shortest);
+  const uniqueAnswers = new Set(closest.map((match) => match.candidate.answer));
+  if (uniqueAnswers.size !== 1) {
+    return { accepted: false, tier: null, answer: null, repeat: false };
+  }
+
+  return accept(closest[0]!.candidate, usedAnswers, true);
 }
 
 /**
  * Picks a helpful nudge for a refused answer. We reveal the tier the player's
  * answer *sounds* like it belongs to without giving the answer away.
  */
-export function refusalHint(prompt: Prompt, input: string): string {
-  const hints: string[] = [];
-  const text = input.toLowerCase();
-
-  // Keyword nudges: if the player drifted into a neighbouring category.
-  const keys = Object.keys(prompt.aliases ?? {});
-  for (const alias of keys) {
-    if (text.includes(alias.toLowerCase())) {
-      hints.push(`"${alias}" is not an accepted answer for this prompt.`);
-      break;
-    }
-  }
-
-  hints.push(
-    `Stay inside the category: ${prompt.hint}. The obvious answer is worth almost nothing here.`,
-  );
-
-  return hints.join(' ');
+export function refusalHint(prompt: Prompt): string {
+  return `Stay inside the category: ${prompt.hint}. The obvious answer is worth almost nothing here.`;
 }
 
 /**
@@ -263,7 +396,7 @@ export function refusalHint(prompt: Prompt, input: string): string {
  * the prompt can be worth. A hint is a trade: you buy a sense of direction
  * with the top of the scoreboard.
  */
-export const HINT_TIER: TierId = 'rare';
+export const HINT_TIER: TierId = 'jawsome';
 
 /**
  * Suggests a nearby-but-lower-tier answer for the hint system.

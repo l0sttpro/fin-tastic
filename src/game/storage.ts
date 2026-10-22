@@ -7,10 +7,28 @@ import type {
   SavedRun,
   TierId,
 } from './types';
-import { TIER_ORDER } from './tiers';
+import { TIERS, TIER_ORDER } from './tiers.ts';
 
-const STATS_KEY = 'krillion.stats.v1';
-const RUN_KEY = 'krillion.run.v1';
+const STATS_KEY = 'fin-tastic.stats.v1';
+const RUN_KEY = 'fin-tastic.run.v1';
+
+/**
+ * Tier ids that existed before the scoring system moved to five tiers. Saves
+ * and lifetime stats written by the old build are mapped onto their nearest
+ * new tier instead of being thrown away.
+ */
+const LEGACY_TIER_IDS: Record<string, TierId> = {
+  clever: 'plankton',
+  schooler: 'reef-rookie',
+  rare: 'jawsome',
+  deepcut: 'fin-omenal',
+};
+
+function toTierId(value: unknown): TierId | null {
+  if (typeof value !== 'string') return null;
+  if (TIER_ORDER.includes(value as TierId)) return value as TierId;
+  return LEGACY_TIER_IDS[value] ?? null;
+}
 
 export function emptyStats(): PlayerStats {
   return {
@@ -20,14 +38,10 @@ export function emptyStats(): PlayerStats {
     bestDepth: 0,
     bestScore: 0,
     bestEndlessDepth: 0,
-    tierCounts: {
-      plankton: 0,
-      clever: 0,
-      schooler: 0,
-      rare: 0,
-      deepcut: 0,
-      krillion: 0,
-    },
+    tierCounts: Object.fromEntries(TIER_ORDER.map((tier) => [tier, 0])) as Record<
+      TierId,
+      number
+    >,
     usedAnswers: [],
     dailyStreak: 0,
     lastDailyPlayed: null,
@@ -47,10 +61,21 @@ export function loadStats(): PlayerStats {
   const base = emptyStats();
   if (typeof localStorage === 'undefined') return base;
   const stored = safeParse<Partial<PlayerStats>>(localStorage.getItem(STATS_KEY), {});
+
+  // Rebuild the tally from whatever keys are stored, folding legacy tiers
+  // into their replacements. Unknown keys are ignored.
+  const tierCounts = { ...base.tierCounts };
+  for (const [id, count] of Object.entries(stored.tierCounts ?? {})) {
+    const tier = toTierId(id);
+    if (tier && typeof count === 'number' && Number.isFinite(count)) {
+      tierCounts[tier] += count;
+    }
+  }
+
   return {
     ...base,
     ...stored,
-    tierCounts: { ...base.tierCounts, ...(stored.tierCounts ?? {}) },
+    tierCounts,
     usedAnswers: stored.usedAnswers ?? [],
   };
 }
@@ -128,7 +153,7 @@ export function toSavedAttempt(result: PromptResult): SavedAttempt {
   };
 }
 
-export function saveRun(state: RunState): void {
+export function saveRun(state: RunState, promptIds: string[] = []): void {
   if (typeof localStorage === 'undefined') return;
   const run: SavedRun = {
     mode: state.mode,
@@ -138,6 +163,7 @@ export function saveRun(state: RunState): void {
     air: state.air,
     results: state.results.map(toSavedAttempt),
     attempts: state.attempts.map(toSavedAttempt),
+    promptIds,
     savedAt: Date.now(),
   };
   try {
@@ -168,10 +194,7 @@ function normaliseAttempt(raw: unknown): SavedAttempt | null {
 
   const rawText = typeof entry.raw === 'string' ? entry.raw : '';
   const answer = typeof entry.answer === 'string' ? entry.answer : null;
-  const tierId =
-    typeof entry.tier === 'string' && TIER_ORDER.includes(entry.tier as TierId)
-      ? (entry.tier as TierId)
-      : null;
+  const tierId = toTierId(entry.tier);
 
   let outcome: AttemptOutcome;
   if (OUTCOMES.includes(entry.outcome as AttemptOutcome)) {
@@ -191,7 +214,9 @@ function normaliseAttempt(raw: unknown): SavedAttempt | null {
     raw: rawText,
     answer,
     tier: tierId,
-    points: typeof entry.points === 'number' ? entry.points : 0,
+    // Recompute from the tier so saves from the old scoring scale resume on
+    // the current one.
+    points: tierId ? TIERS[tierId].points : 0,
     outcome,
     secondsUsed: typeof entry.secondsUsed === 'number' ? entry.secondsUsed : 0,
     hinted: entry.hinted === true,
@@ -217,14 +242,30 @@ export function loadRun(): SavedRun | null {
     ? raw.attempts.map(normaliseAttempt).filter((a): a is SavedAttempt => a !== null)
     : results;
 
+  // The score is the sum of the resolved prompts. Recomputing it keeps runs
+  // created under the old point scale consistent with the five-tier system.
+  const resolvedScore = results.reduce(
+    (total, result) => total + (result.outcome === 'accepted' ? result.points : 0),
+    0,
+  );
+  const score =
+    results.length > 0
+      ? resolvedScore
+      : typeof raw.score === 'number'
+        ? raw.score
+        : 0;
+
   return {
     mode: raw.mode === 'endless' || raw.mode === 'daily' ? raw.mode : 'dive',
     seed: typeof raw.seed === 'number' ? raw.seed : 1,
     index: typeof raw.index === 'number' ? raw.index : 0,
-    score: typeof raw.score === 'number' ? raw.score : 0,
+    score,
     air: typeof raw.air === 'number' ? raw.air : 3,
     results,
     attempts,
+    promptIds: Array.isArray(raw.promptIds)
+      ? raw.promptIds.filter((id): id is string => typeof id === 'string')
+      : undefined,
     savedAt: raw.savedAt,
   };
 }

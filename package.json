@@ -1,5 +1,5 @@
 {
-  "name": "krillion-dive",
+  "name": "fin-tastic",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
     "validate": "node --experimental-strip-types scripts/validate-data.mjs",
     "show": "node --experimental-strip-types scripts/show-prompt.mjs"
   },

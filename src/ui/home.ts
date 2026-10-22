@@ -18,7 +18,6 @@ function modeCard(
   title: string,
   subtitle: string,
   detail: string,
-  icon: string,
   onClick: () => void,
   featured = false,
 ): HTMLElement {
@@ -26,7 +25,6 @@ function modeCard(
     class: `mode-card${featured ? ' mode-card-featured' : ''}`,
     'data-mode': mode,
   }, [
-    el('span', { class: 'mode-icon', text: icon }),
     el('span', { class: 'mode-body' }, [
       el('span', { class: 'mode-title', text: title }),
       el('span', { class: 'mode-subtitle', text: subtitle }),
@@ -47,14 +45,17 @@ export function renderHome(root: HTMLElement, deps: HomeDeps): void {
   const { stats } = deps;
 
   const title = el('h1', { class: 'brand' }, [
-    el('span', { class: 'brand-krill', text: '🐜' }),
-    el('span', { class: 'brand-word', text: 'KRILLION' }),
+    el('span', { class: 'brand-word' }, [
+      'Fin',
+      el('span', { class: 'brand-hyphen', text: '-' }),
+      'tastic',
+    ]),
   ]);
 
   const tagline = el('p', { class: 'tagline' }, [
     'Seven prompts. Twenty-five seconds each. ',
-    el('strong', { text: 'One answer.' }),
-    ' The obvious one is worth nothing.',
+    el('strong', { text: 'One dive.' }),
+    ' The obvious answer barely moves you.',
   ]);
 
   const modes = el('div', { class: 'mode-grid' }, [
@@ -63,7 +64,6 @@ export function renderHome(root: HTMLElement, deps: HomeDeps): void {
       "Today's Dive",
       'The same seven prompts for everyone, today.',
       'Same prompts all day · replay freely',
-      '📅',
       () => deps.onStart('daily'),
       true,
     ),
@@ -72,15 +72,13 @@ export function renderHome(root: HTMLElement, deps: HomeDeps): void {
       'Free Dive',
       'Seven fresh prompts, dealt the moment you ask.',
       'Play it again and again · new prompts every time',
-      '🔁',
       () => deps.onStart('dive'),
     ),
     modeCard(
       'endless',
       'Endless',
       'One prompt at a time, three tanks of air.',
-      'A miss costs a tank · a krillion gives one back',
-      '🫧',
+      'A timeout costs a tank · a Fin-tastic answer gives one back',
       () => deps.onStart('endless'),
     ),
   ]);
@@ -110,15 +108,15 @@ export function renderHome(root: HTMLElement, deps: HomeDeps): void {
     ]),
     el('div', { class: 'stat-card' }, [
       el('span', { class: 'stat-card-value', text: String(stats.dives) }),
-      el('span', { class: 'stat-card-label', text: 'Dives run' }),
+      el('span', { class: 'stat-card-label', text: 'Dives' }),
     ]),
     el('div', { class: 'stat-card' }, [
       el('span', { class: 'stat-card-value', text: formatDepth(stats.bestEndlessDepth) }),
       el('span', { class: 'stat-card-label', text: 'Deepest endless' }),
     ]),
     el('div', { class: 'stat-card' }, [
-      el('span', { class: 'stat-card-value accent', text: String(stats.tierCounts.krillion) }),
-      el('span', { class: 'stat-card-label', text: 'One in a Krillion' }),
+      el('span', { class: 'stat-card-value accent', text: String(stats.tierCounts.fintastic) }),
+      el('span', { class: 'stat-card-label', text: 'Fin-tastic' }),
     ]),
     el('div', { class: 'stat-card' }, [
       el('span', { class: 'stat-card-value', text: String(stats.dailyStreak) }),
