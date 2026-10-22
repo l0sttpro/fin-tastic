@@ -1,5 +1,6 @@
 import type { Prompt, TierId } from '../game/types';
 import { EXPANDED_PROMPTS } from './expandedPrompts.ts';
+import { EXTRA_ANSWERS } from './extraAnswers.ts';
 
 /** Every tier id, in order. */
 export const TIER_IDS: TierId[] = [
@@ -26,7 +27,11 @@ export const TIER_IDS: TierId[] = [
  *   band 4    - specialist territory                 -> Fin-omenal
  *   band 5    - somebody had to know this to say it  -> Fin-tastic
  *
- * Within a prompt the bands are disjoint — an answer appears exactly once.
+ * Within a prompt the bands are disjoint - an answer appears exactly once.
+ *
+ * Additional long-tail answers live in `data/extraAnswers.ts` and are appended
+ * to these buckets before sanitising. Keeping them separate keeps this file
+ * stable while the accepted-answer bank grows.
  */
 function p(
   id: string,
@@ -2109,8 +2114,30 @@ const CORE_PROMPTS: Prompt[] = [
   ),
 ];
 
+/**
+ * Appends the long-tail answer expansion to a prompt.
+ *
+ * Extras go after the original answers. That matters because sanitise keeps
+ * the first occurrence of a duplicate, so an answer that was already in the
+ * bank keeps its original, more common tier.
+ */
+function addExtraAnswers(prompt: Prompt): Prompt {
+  const extra = EXTRA_ANSWERS[prompt.id];
+  if (!extra) return prompt;
+
+  const answers = { ...prompt.answers };
+  for (const tier of TIER_IDS) {
+    const additions = extra[tier];
+    if (additions && additions.length > 0) {
+      answers[tier] = [...answers[tier], ...additions];
+    }
+  }
+
+  return { ...prompt, answers };
+}
+
 /** The complete bank: the original curated set plus the expansion. */
-export const PROMPTS: Prompt[] = [...CORE_PROMPTS, ...EXPANDED_PROMPTS];
+export const PROMPTS: Prompt[] = [...CORE_PROMPTS, ...EXPANDED_PROMPTS].map(addExtraAnswers);
 
 
 

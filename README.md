@@ -79,6 +79,8 @@ Drowned Cities, the Long Dark, the Shrine, and finally Fin-tastic at
 src/
   data/promptBank.ts     the answer bank - every prompt and its accepted answers
   data/expandedPrompts.ts  the expansion bank added on top of the core prompts
+  data/extraAnswers.ts     merges the long-tail answer expansion into the bank
+  data/extras/             add-only accepted answers, bucketed by prompt and tier
   game/
     types.ts             shared types, including the slim SavedAttempt record
     tiers.ts             tier metadata, points, depth maths, round length
@@ -126,10 +128,31 @@ p(
 ),
 ```
 
+There is also a long-tail layer in `src/data/extras/`. It is keyed by prompt id
+and holds extra answers per scoring tier. It is merged in by
+`src/data/extraAnswers.ts` after the original answers, so an answer that already
+exists keeps its original (usually more common) tier. This keeps the curated
+bank stable while making it easy to add rarer valid answers:
+
+```ts
+// src/data/extras/batch1.ts
+import type { ExtraAnswers } from './types.ts';
+
+export const BATCH_1_EXTRAS: Record<string, ExtraAnswers> = {
+  bird: {
+    jawsome: ['kookaburra', 'hoopoe'],
+    'fin-omenal': ['quetzal', 'takahe'],
+    fintastic: ['kiwi', 'secretary bird'],
+  },
+};
+```
+
 Rules the data has to follow:
 
 - Answers are **lowercase ASCII**, with no stray punctuation.
 - The six bands are **disjoint** — an answer belongs to exactly one band.
+- Extra answers are disjoint too: an answer may not be added to a tier that a
+  lower tier already claims.
 - Every band of every prompt needs at least a handful of entries, otherwise a
   tier is unreachable.
 - Aliases map a spelling to a canonical answer that must exist.
@@ -137,6 +160,11 @@ Rules the data has to follow:
 A sanitising pass runs at module load: it lowercases everything, drops
 duplicate answers (the commonest band wins) and removes aliases whose target
 has gone.
+
+The long-tail expansion currently contributes **3,335 accepted answers**,
+bringing the bank to **11,957 answers across 155 prompts**. The one exception
+is `us-state`: all 50 states were already present, so it is intentionally left
+without padded extras.
 
 ### Validating
 
@@ -151,7 +179,7 @@ already claims it in `plankton` — the answer can never actually be scored, and
 the validator catches it before a player does.
 
 ```
-✓ all good — 100 prompts, 6642 accepted answers
+✓ all good — 155 prompts, 11,957 accepted answers
 ```
 
 The lightweight test suite uses Node's built-in runner:
@@ -198,8 +226,8 @@ build works under that subpath without further configuration.
 - The answer matcher is deliberately strict. Single-word answers also match
   their singular/plural forms; multi-word answers only match as whole phrases,
   so "tiger shark" does not satisfy a prompt that already accepts "shark".
-- Autocomplete only searches the current prompt's accepted answers. It caps at
-  five results and never shows tier or point metadata.
+- Answers are checked only when you press Enter; there is no live suggestion
+  list and no answer hints while typing.
 - Scores are the only currency. There is no penalty for a refusal — the cost is
   the clock.
 - The daily seed is derived from the date, so everyone gets the same prompts

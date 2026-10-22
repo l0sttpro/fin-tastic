@@ -6,6 +6,7 @@ import {
   PROMPT_BY_ID,
   TOTAL_ANSWERS,
 } from '../src/data/promptBank.ts';
+import { EXTRA_ANSWERS } from '../src/data/extraAnswers.ts';
 import { TIER_ORDER } from '../src/game/tiers.ts';
 import { candidatesFor, gradeAnswer, normalise } from '../src/game/scoring.ts';
 
@@ -21,6 +22,35 @@ test('the prompt bank is large, varied and uniquely identified', () => {
 
   const categories = new Set(PROMPTS_SANITISED.map((prompt) => prompt.category));
   assert.ok(categories.size >= 15);
+});
+
+test('every prompt has a substantial long-tail expansion', () => {
+  // The 50-state prompt is already exhaustive; there is nothing valid to add.
+  const exhaustive = new Set(['us-state']);
+  const extraIds = new Set(Object.keys(EXTRA_ANSWERS));
+
+  let extraTotal = 0;
+
+  for (const prompt of PROMPTS_SANITISED) {
+    if (exhaustive.has(prompt.id)) {
+      assert.equal(allAnswers(prompt).length, 50);
+      continue;
+    }
+
+    const extra = EXTRA_ANSWERS[prompt.id];
+    assert.ok(extra, `${prompt.id} has no extra answers`);
+
+    const count = TIER_ORDER.reduce((sum, tier) => sum + (extra[tier]?.length ?? 0), 0);
+    assert.ok(count >= 10, `${prompt.id} only added ${count} extra answers`);
+    extraTotal += count;
+
+    const total = allAnswers(prompt).length;
+    assert.ok(total >= 44, `${prompt.id} has only ${total} accepted answers`);
+  }
+
+  assert.ok(extraIds.size >= PROMPTS_SANITISED.length - exhaustive.size);
+  assert.ok(extraTotal >= 3000, `only ${extraTotal} extra answers were added`);
+  assert.ok(TOTAL_ANSWERS >= 11900, `answer bank only reached ${TOTAL_ANSWERS} answers`);
 });
 
 test('every prompt is populated and every answer is clean data', () => {
