@@ -1,0 +1,380 @@
+{
+  "search": "Pandora",
+  "fetchedAt": "2026-10-23T07:55:17.829Z",
+  "candidates": [
+    {
+      "qid": "Q1196431",
+      "label": "Pandora",
+      "description": "American music streaming and recommendation website",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q5053564",
+      "label": "Pandora",
+      "description": "genus of molluscs",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q225009",
+      "label": "Pandora",
+      "description": "handheld console and mobile computer series",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q1228971",
+      "label": "Pandora",
+      "description": "female given name",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q10615874",
+      "label": "Pandora",
+      "description": "genus of fungi",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q2241604",
+      "label": "Pandora",
+      "description": "Danish multinational jewelry manufacturer and retail chain",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q4827807",
+      "label": "Pandora",
+      "description": "themed area at Disney's Animal Kingdom in Florida",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q48759333",
+      "label": "Pandora",
+      "description": "electronic music duo from Japan",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q42974940",
+      "label": "Pandora",
+      "description": "1988 video game",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Pandora"
+      }
+    },
+    {
+      "qid": "Q16386584",
+      "label": "La Pandora",
+      "description": "novella by Gérard de Nerval",
+      "aliases": [
+        "Pandora"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Pandora"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "Pandora"
+    },
+    "search": [
+      {
+        "id": "Q1196431",
+        "title": "Q1196431",
+        "pageid": 1139949,
+        "concepturi": "http://www.wikidata.org/entity/Q1196431",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q1196431",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "American music streaming and recommendation website",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "American music streaming and recommendation website",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q5053564",
+        "title": "Q5053564",
+        "pageid": 4829405,
+        "concepturi": "http://www.wikidata.org/entity/Q5053564",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q5053564",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "genus of molluscs",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "genus of molluscs",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q225009",
+        "title": "Q225009",
+        "pageid": 219622,
+        "concepturi": "http://www.wikidata.org/entity/Q225009",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q225009",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "handheld console and mobile computer series",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "handheld console and mobile computer series",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q1228971",
+        "title": "Q1228971",
+        "pageid": 1170268,
+        "concepturi": "http://www.wikidata.org/entity/Q1228971",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q1228971",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "female given name",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "female given name",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q10615874",
+        "title": "Q10615874",
+        "pageid": 11900638,
+        "concepturi": "http://www.wikidata.org/entity/Q10615874",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q10615874",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "genus of fungi",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "genus of fungi",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q2241604",
+        "title": "Q2241604",
+        "pageid": 2165089,
+        "concepturi": "http://www.wikidata.org/entity/Q2241604",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q2241604",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "Danish multinational jewelry manufacturer and retail chain",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "Danish multinational jewelry manufacturer and retail chain",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q4827807",
+        "title": "Q4827807",
+        "pageid": 4613974,
+        "concepturi": "http://www.wikidata.org/entity/Q4827807",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q4827807",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "themed area at Disney's Animal Kingdom in Florida",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "themed area at Disney's Animal Kingdom in Florida",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q48759333",
+        "title": "Q48759333",
+        "pageid": 49780748,
+        "concepturi": "http://www.wikidata.org/entity/Q48759333",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q48759333",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "electronic music duo from Japan",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "electronic music duo from Japan",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q42974940",
+        "title": "Q42974940",
+        "pageid": 44221313,
+        "concepturi": "http://www.wikidata.org/entity/Q42974940",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q42974940",
+        "display": {
+          "label": {
+            "value": "Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "1988 video game",
+            "language": "en"
+          }
+        },
+        "label": "Pandora",
+        "description": "1988 video game",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Pandora"
+        }
+      },
+      {
+        "id": "Q16386584",
+        "title": "Q16386584",
+        "pageid": 18016636,
+        "concepturi": "http://www.wikidata.org/entity/Q16386584",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q16386584",
+        "display": {
+          "label": {
+            "value": "La Pandora",
+            "language": "en"
+          },
+          "description": {
+            "value": "novella by Gérard de Nerval",
+            "language": "en"
+          }
+        },
+        "label": "La Pandora",
+        "description": "novella by Gérard de Nerval",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "Pandora"
+        },
+        "aliases": [
+          "Pandora"
+        ]
+      }
+    ],
+    "search-continue": 10,
+    "success": 1
+  }
+}

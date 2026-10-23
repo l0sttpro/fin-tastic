@@ -1,0 +1,85 @@
+[
+  {
+    "qid": "Q782764",
+    "label": "Erato",
+    "description": "Greek mythological figure, wife of Arcas",
+    "aliases": [],
+    "sitelinks": 5
+  },
+  {
+    "qid": "Q126670238",
+    "label": "Kleio",
+    "description": "one of the Oceanidae or ocean nymphs",
+    "aliases": [
+      "Clio"
+    ],
+    "sitelinks": 0
+  },
+  {
+    "qid": "Q3362052",
+    "label": "Pandora",
+    "description": "",
+    "aliases": [],
+    "sitelinks": 1
+  },
+  {
+    "qid": "Q18415479",
+    "label": "Titan",
+    "description": "",
+    "aliases": [],
+    "sitelinks": 1
+  },
+  {
+    "qid": "Q2245728",
+    "label": "Apeliotes",
+    "description": "wind from the east in classical antiquity",
+    "aliases": [
+      "Subsolanus",
+      "Apheliotes"
+    ],
+    "sitelinks": 7
+  },
+  {
+    "qid": "Q9337884",
+    "label": "Sciron",
+    "description": "personified NW wind in Greece",
+    "aliases": [
+      "Skiron"
+    ],
+    "sitelinks": 5
+  },
+  {
+    "qid": "Q506770",
+    "label": "Hymen",
+    "description": "Greek god of marriage ceremonies",
+    "aliases": [],
+    "sitelinks": 41
+  },
+  {
+    "qid": "Q94066",
+    "label": "Eileithyia",
+    "description": "Greek goddess of childbirth and midwifery",
+    "aliases": [
+      "Ilithyia",
+      "Eilithyia",
+      "Ilithia"
+    ],
+    "sitelinks": 48
+  },
+  {
+    "qid": "Q214987",
+    "label": "Eirene",
+    "description": "ancient Greek goddess of peace",
+    "aliases": [
+      "Irene"
+    ],
+    "sitelinks": 40
+  },
+  {
+    "qid": "Q130818",
+    "label": "Atlas",
+    "description": "deity in Greek mythology",
+    "aliases": [],
+    "sitelinks": 86
+  }
+]

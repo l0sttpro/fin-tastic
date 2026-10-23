@@ -1,0 +1,714 @@
+{
+  "promptId": "jupiter-moon",
+  "fetchedAt": "2026-10-23T07:46:24.113Z",
+  "query": "SELECT ?item ?itemLabel ?sitelinks\n       (GROUP_CONCAT(DISTINCT ?alias; separator=\"|\") AS ?aliases)\nWHERE {\n  ?item wdt:P397 wd:Q319 .\n  ?item wdt:P31/wdt:P279* wd:Q2537 .\n  ?item rdfs:label ?itemLabel .\n  FILTER(LANG(?itemLabel) = \"en\")\n  ?item wikibase:sitelinks ?sitelinks .\n  OPTIONAL {\n    ?item skos:altLabel ?alias .\n    FILTER(LANG(?alias) = \"en\")\n  }\n}\nGROUP BY ?item ?itemLabel ?sitelinks\nORDER BY DESC(?sitelinks) ?item",
+  "items": [
+    {
+      "qid": "Q3143",
+      "label": "Europa",
+      "aliases": [
+        "Europa (moon)",
+        "Jupiter II"
+      ],
+      "sitelinks": 115
+    },
+    {
+      "qid": "Q3123",
+      "label": "Io",
+      "aliases": [
+        "Io (moon)",
+        "Jupiter I"
+      ],
+      "sitelinks": 113
+    },
+    {
+      "qid": "Q3169",
+      "label": "Ganymede",
+      "aliases": [
+        "Jupiter III"
+      ],
+      "sitelinks": 112
+    },
+    {
+      "qid": "Q3134",
+      "label": "Callisto",
+      "aliases": [
+        "Jupiter IV"
+      ],
+      "sitelinks": 103
+    },
+    {
+      "qid": "Q16755",
+      "label": "Metis",
+      "aliases": [
+        "Jupiter XVI",
+        "S / 1979 J3"
+      ],
+      "sitelinks": 77
+    },
+    {
+      "qid": "Q16757",
+      "label": "Adrastea",
+      "aliases": [
+        "Jupiter XV",
+        "S/1979 J 1"
+      ],
+      "sitelinks": 75
+    },
+    {
+      "qid": "Q3257",
+      "label": "Amalthea",
+      "aliases": [
+        "Amalthea (moon)",
+        "Jupiter V"
+      ],
+      "sitelinks": 75
+    },
+    {
+      "qid": "Q16765",
+      "label": "Thebe",
+      "aliases": [
+        "Jupiter XIV",
+        "S/1979 J2"
+      ],
+      "sitelinks": 74
+    },
+    {
+      "qid": "Q16841",
+      "label": "Himalia",
+      "aliases": [
+        "Hestia",
+        "Jupiter VI"
+      ],
+      "sitelinks": 69
+    },
+    {
+      "qid": "Q16837",
+      "label": "Leda",
+      "aliases": [
+        "Jupiter XIII"
+      ],
+      "sitelinks": 67
+    },
+    {
+      "qid": "Q16865",
+      "label": "Elara",
+      "aliases": [
+        "Jupiter VII"
+      ],
+      "sitelinks": 65
+    },
+    {
+      "qid": "Q16829",
+      "label": "Themisto",
+      "aliases": [
+        "Jupiter XVIII",
+        "S/1975 J1",
+        "S/2000 J1"
+      ],
+      "sitelinks": 65
+    },
+    {
+      "qid": "Q17425",
+      "label": "Pasiphae",
+      "aliases": [
+        "1908 CJ",
+        "Jupiter VIII",
+        "Pasiphaë"
+      ],
+      "sitelinks": 63
+    },
+    {
+      "qid": "Q16960",
+      "label": "Ananke",
+      "aliases": [
+        "Jupiter XII"
+      ],
+      "sitelinks": 62
+    },
+    {
+      "qid": "Q16863",
+      "label": "Lysithea",
+      "aliases": [
+        "Jupiter X"
+      ],
+      "sitelinks": 62
+    },
+    {
+      "qid": "Q17433",
+      "label": "Sinope",
+      "aliases": [
+        "Jupiter IX"
+      ],
+      "sitelinks": 62
+    },
+    {
+      "qid": "Q17111",
+      "label": "Carme",
+      "aliases": [
+        "Jupiter XI"
+      ],
+      "sitelinks": 61
+    },
+    {
+      "qid": "Q16870",
+      "label": "Carpo",
+      "aliases": [
+        "Jupiter XLVI",
+        "S/2003 J 20"
+      ],
+      "sitelinks": 61
+    },
+    {
+      "qid": "Q16884",
+      "label": "Euporie",
+      "aliases": [
+        "Jupiter XXXIV",
+        "S/2001 J 10"
+      ],
+      "sitelinks": 61
+    },
+    {
+      "qid": "Q17448",
+      "label": "Megaclite",
+      "aliases": [
+        "Jupiter XIX",
+        "S/2000 J 8"
+      ],
+      "sitelinks": 58
+    },
+    {
+      "qid": "Q190536",
+      "label": "Dia",
+      "aliases": [
+        "Jupiter LIII",
+        "S/2000 J 11"
+      ],
+      "sitelinks": 57
+    },
+    {
+      "qid": "Q16942",
+      "label": "Harpalyke",
+      "aliases": [
+        "Jupiter XXII",
+        "S/2000 J 5"
+      ],
+      "sitelinks": 57
+    },
+    {
+      "qid": "Q16936",
+      "label": "Praxidike",
+      "aliases": [
+        "Jupiter XXVII",
+        "S/2000 J 7"
+      ],
+      "sitelinks": 57
+    },
+    {
+      "qid": "Q16886",
+      "label": "Euanthe",
+      "aliases": [
+        "Jupiter XXXIII",
+        "S/2001 J 7"
+      ],
+      "sitelinks": 56
+    },
+    {
+      "qid": "Q16898",
+      "label": "Helike",
+      "aliases": [
+        "Jupiter XLV",
+        "S/2003 J 6"
+      ],
+      "sitelinks": 56
+    },
+    {
+      "qid": "Q16885",
+      "label": "Thelxinoe",
+      "aliases": [
+        "Jupiter XLII",
+        "S/2003 J 22"
+      ],
+      "sitelinks": 56
+    },
+    {
+      "qid": "Q16956",
+      "label": "Thyone",
+      "aliases": [
+        "Jupiter XXIX",
+        "S/2001 J 2"
+      ],
+      "sitelinks": 56
+    },
+    {
+      "qid": "Q17035",
+      "label": "Chaldene",
+      "aliases": [
+        "Jupiter XXI",
+        "S/2000 J 10"
+      ],
+      "sitelinks": 55
+    },
+    {
+      "qid": "Q204283",
+      "label": "Eupheme",
+      "aliases": [
+        "Jupiter LX",
+        "S/2003 J 3"
+      ],
+      "sitelinks": 55
+    },
+    {
+      "qid": "Q17002",
+      "label": "Kale",
+      "aliases": [
+        "Jupiter XXXVII",
+        "S/2001 J 8"
+      ],
+      "sitelinks": 55
+    },
+    {
+      "qid": "Q16974",
+      "label": "Aitne",
+      "aliases": [
+        "Jupiter XXXI",
+        "S/2001 J 11"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17439",
+      "label": "Autonoe",
+      "aliases": [
+        "Jupiter XXVIII",
+        "S/2001 J 1"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17421",
+      "label": "Eukelade",
+      "aliases": [
+        "Jupiter XLVII",
+        "S/2003 J 1"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17406",
+      "label": "Eurydome",
+      "aliases": [
+        "Jupiter XXXII"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q16949",
+      "label": "Hermippe",
+      "aliases": [
+        "Jupiter XXX",
+        "S/2001 J 3"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q16913",
+      "label": "Iocaste",
+      "aliases": [
+        "Jupiter XXIV",
+        "S/2000 J 3"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17432",
+      "label": "Isonoe",
+      "aliases": [
+        "Jupiter XXVI",
+        "S/2000 J 6"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17091",
+      "label": "Kallichore",
+      "aliases": [
+        "Jupiter XLIV",
+        "S/2003 J 11"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17446",
+      "label": "Kore",
+      "aliases": [
+        "Jupiter XLIX",
+        "S/2003 J 14"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q16946",
+      "label": "Mneme",
+      "aliases": [
+        "Jupiter XL",
+        "S/2003 J 21"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q16904",
+      "label": "Orthosie",
+      "aliases": [
+        "Jupiter XXXV",
+        "S/2001 J 9"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17414",
+      "label": "Pasithee",
+      "aliases": [
+        "Jupiter XXXVIII",
+        "S/2001 J 6"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17436",
+      "label": "Sponde",
+      "aliases": [
+        "Jupiter XXXVI",
+        "S/2001 J 5"
+      ],
+      "sitelinks": 54
+    },
+    {
+      "qid": "Q17396",
+      "label": "Callirrhoe",
+      "aliases": [
+        "1999 UX18",
+        "Jupiter XVII",
+        "S/1999 J1"
+      ],
+      "sitelinks": 53
+    },
+    {
+      "qid": "Q17420",
+      "label": "Cyllene",
+      "aliases": [
+        "Jupiter XLVIII",
+        "S/2003 J 13"
+      ],
+      "sitelinks": 53
+    },
+    {
+      "qid": "Q17068",
+      "label": "Erinome",
+      "aliases": [
+        "Jupiter XXV",
+        "S/2000 J 4"
+      ],
+      "sitelinks": 53
+    },
+    {
+      "qid": "Q17011",
+      "label": "Taygete",
+      "aliases": [
+        "Jupiter XX",
+        "S/2000 J 9"
+      ],
+      "sitelinks": 53
+    },
+    {
+      "qid": "Q17077",
+      "label": "Aoede",
+      "aliases": [
+        "Jupiter XLI",
+        "S/2003 J 7"
+      ],
+      "sitelinks": 52
+    },
+    {
+      "qid": "Q17429",
+      "label": "Arche",
+      "aliases": [
+        "Jupiter XLIII",
+        "S/2002 J 1"
+      ],
+      "sitelinks": 52
+    },
+    {
+      "qid": "Q214005",
+      "label": "Jupiter LXXIII",
+      "aliases": [],
+      "sitelinks": 52
+    },
+    {
+      "qid": "Q17109",
+      "label": "Kalyke",
+      "aliases": [
+        "Jupiter XXIII",
+        "S/2000 J 2"
+      ],
+      "sitelinks": 52
+    },
+    {
+      "qid": "Q193853",
+      "label": "S/2003 J 12",
+      "aliases": [],
+      "sitelinks": 52
+    },
+    {
+      "qid": "Q17426",
+      "label": "Hegemone",
+      "aliases": [
+        "Jupiter XXXIX",
+        "S/2003 J 8"
+      ],
+      "sitelinks": 51
+    },
+    {
+      "qid": "Q16968",
+      "label": "Herse",
+      "aliases": [
+        "Jupiter L",
+        "S/2003 J 17"
+      ],
+      "sitelinks": 50
+    },
+    {
+      "qid": "Q213982",
+      "label": "S/2003 J 10",
+      "aliases": [],
+      "sitelinks": 50
+    },
+    {
+      "qid": "Q216086",
+      "label": "S/2003 J 16",
+      "aliases": [],
+      "sitelinks": 50
+    },
+    {
+      "qid": "Q207884",
+      "label": "S/2003 J 18",
+      "aliases": [
+        "Jupiter LV"
+      ],
+      "sitelinks": 50
+    },
+    {
+      "qid": "Q213994",
+      "label": "S/2003 J 9",
+      "aliases": [],
+      "sitelinks": 49
+    },
+    {
+      "qid": "Q214002",
+      "label": "Eirene",
+      "aliases": [
+        "Jupiter LVII",
+        "S/2003 J5"
+      ],
+      "sitelinks": 48
+    },
+    {
+      "qid": "Q216992",
+      "label": "S/2003 J 23",
+      "aliases": [],
+      "sitelinks": 48
+    },
+    {
+      "qid": "Q216770",
+      "label": "Philophrosyne",
+      "aliases": [
+        "Jupiter LVIII",
+        "S/2003 J15"
+      ],
+      "sitelinks": 47
+    },
+    {
+      "qid": "Q214296",
+      "label": "S/2003 J 4",
+      "aliases": [],
+      "sitelinks": 47
+    },
+    {
+      "qid": "Q216069",
+      "label": "S/2003 J 19",
+      "aliases": [
+        "Jupiter LXI"
+      ],
+      "sitelinks": 46
+    },
+    {
+      "qid": "Q934499",
+      "label": "Jupiter LII",
+      "aliases": [
+        "S/2010 J 2"
+      ],
+      "sitelinks": 38
+    },
+    {
+      "qid": "Q765688",
+      "label": "Jupiter LI",
+      "aliases": [
+        "S/2010 J 1"
+      ],
+      "sitelinks": 37
+    },
+    {
+      "qid": "Q1458738",
+      "label": "S/2011 J 1",
+      "aliases": [
+        "Jupiter LXXII"
+      ],
+      "sitelinks": 35
+    },
+    {
+      "qid": "Q55594492",
+      "label": "Ersa",
+      "aliases": [
+        "Jupiter LXXI",
+        "S/2018 J 1"
+      ],
+      "sitelinks": 33
+    },
+    {
+      "qid": "Q1458744",
+      "label": "S/2011 J 2",
+      "aliases": [
+        "Jupiter LVI"
+      ],
+      "sitelinks": 32
+    },
+    {
+      "qid": "Q55594494",
+      "label": "Pandia",
+      "aliases": [
+        "Jupiter LXV",
+        "S/2017 J 4"
+      ],
+      "sitelinks": 31
+    },
+    {
+      "qid": "Q55594346",
+      "label": "Valetudo",
+      "aliases": [
+        "Jupiter LXII",
+        "S/2016 J 2"
+      ],
+      "sitelinks": 29
+    },
+    {
+      "qid": "Q30110317",
+      "label": "S/2016 J 1",
+      "aliases": [
+        "Jupiter LIV"
+      ],
+      "sitelinks": 26
+    },
+    {
+      "qid": "Q30137638",
+      "label": "S/2017 J 1",
+      "aliases": [
+        "Jupiter LIX"
+      ],
+      "sitelinks": 25
+    },
+    {
+      "qid": "Q55598494",
+      "label": "S/2017 J 3",
+      "aliases": [
+        "Jupiter LXIV"
+      ],
+      "sitelinks": 23
+    },
+    {
+      "qid": "Q55598490",
+      "label": "S/2017 J 5",
+      "aliases": [
+        "Jupiter LXVI"
+      ],
+      "sitelinks": 23
+    },
+    {
+      "qid": "Q55598496",
+      "label": "S/2017 J 7",
+      "aliases": [
+        "Jupiter LXVIII"
+      ],
+      "sitelinks": 22
+    },
+    {
+      "qid": "Q55594498",
+      "label": "S/2017 J 9",
+      "aliases": [
+        "Jupiter LXX"
+      ],
+      "sitelinks": 22
+    },
+    {
+      "qid": "Q55598485",
+      "label": "S/2017 J 2",
+      "aliases": [
+        "Jupiter LXIII"
+      ],
+      "sitelinks": 21
+    },
+    {
+      "qid": "Q55598488",
+      "label": "S/2017 J 8",
+      "aliases": [
+        "Jupiter LXIX"
+      ],
+      "sitelinks": 21
+    },
+    {
+      "qid": "Q55598492",
+      "label": "S/2017 J 6",
+      "aliases": [
+        "Jupiter LXVII"
+      ],
+      "sitelinks": 20
+    },
+    {
+      "qid": "Q107643667",
+      "label": "S/2003 J 24",
+      "aliases": [
+        "EJc0061"
+      ],
+      "sitelinks": 17
+    },
+    {
+      "qid": "Q116006705",
+      "label": "S/2011 J 3",
+      "aliases": [],
+      "sitelinks": 13
+    },
+    {
+      "qid": "Q116649064",
+      "label": "S/2018 J 4",
+      "aliases": [],
+      "sitelinks": 13
+    },
+    {
+      "qid": "Q116006729",
+      "label": "S/2018 J 2",
+      "aliases": [],
+      "sitelinks": 12
+    },
+    {
+      "qid": "Q116959689",
+      "label": "S/2022 J 3",
+      "aliases": [],
+      "sitelinks": 11
+    },
+    {
+      "qid": "Q136044061",
+      "label": "S/2017 J 11",
+      "aliases": [],
+      "sitelinks": 2
+    }
+  ]
+}

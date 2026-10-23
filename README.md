@@ -3,8 +3,10 @@
 A rarest-answer trivia game. You get a prompt — *"Name a bird"* — and the obvious
 answer is worth almost nothing. The rarer your answer, the deeper you sink.
 
-Everything runs locally: no accounts, no API keys, no network calls. The whole
-answer bank ships with the game.
+Everything the game does runs locally: no accounts, no API keys, no network
+calls. The whole answer bank ships with the game. The optional Wikidata audit
+scripts are the only part of the repo that touches the network; they write
+committed caches, and the game and build never call them.
 
 ```
 npm install
@@ -102,6 +104,11 @@ src/
 scripts/
   validate-data.mjs      the data validator
   show-prompt.mjs        prints one prompt, sanitised
+  wikidata/              manual Wikidata audit tooling (see below)
+data/generated/
+  wikidata/              committed Wikidata caches, one JSON file per prompt
+  reports/               audit reports
+  proposals/             tier proposals
 tests/                   Node test suite for scoring, selection, confirmation and persistence
 ```
 
@@ -201,6 +208,46 @@ npm run show -- bird
 Prints a prompt and its tier buckets without leaking the answers into your
 terminal history any more than necessary.
 
+### Auditing against Wikidata
+
+The answer bank can be checked against Wikidata with the scripts in
+`scripts/wikidata/`. This is a manual, offline-first workflow:
+
+- `sources.mjs` maps a prompt id to the SPARQL query that enumerates the
+  relevant entities. Check a class QID with `wikidata:search` before adding a
+  source; do not guess one.
+- `fetch.mjs` is the only network step. It caches the raw query results under
+  `data/generated/wikidata/<prompt-id>.json`.
+- `audit.mjs` writes `data/generated/reports/<prompt-id>.md`, with VERIFIED,
+  UNVERIFIED and MISSING_POPULAR sections.
+- `calibrate.mjs` writes `data/generated/proposals/<prompt-id>.json`. It weights
+  each verified answer by `log(1 + sitelinks)` and assigns tiers by cumulative
+  share. The cutoffs live in `TIER_THRESHOLDS` at the top of the script.
+
+```bash
+npm run wikidata:search -- "chemical element"
+npm run wikidata:fetch -- chemical-element
+npm run wikidata:audit -- chemical-element
+npm run wikidata:calibrate -- chemical-element
+```
+
+Caches are committed, so an audit can be re-run without fetching again. The
+scripts use only Node built-ins, identify themselves with
+`fin-tastic-audit/1.0 (personal project)`, make at most one request per second,
+and retry 429/5xx responses. They never modify `src/data/`; proposals are for
+review. Optional hand-pinned tiers can be added to `data/overrides.json`:
+
+```json
+{
+  "greek-god": {
+    "clio": "fintastic"
+  }
+}
+```
+
+Keys are normalised with the same `normalise()` helper the game uses. Unverified
+answers keep their current tier and are not written to the proposal.
+
 ## Scripts
 
 | Script | What it does |
@@ -212,6 +259,10 @@ terminal history any more than necessary.
 | `npm test` | Run the lightweight Node test suite |
 | `npm run validate` | Validate the answer bank |
 | `npm run show -- <id>` | Print one prompt |
+| `npm run wikidata:search -- "<term>"` | Search Wikidata for class/entity QIDs |
+| `npm run wikidata:fetch -- <id>` | Fetch and cache a prompt's Wikidata source |
+| `npm run wikidata:audit -- <id>` | Write verified/unverified/missing report |
+| `npm run wikidata:calibrate -- <id>` | Write a tier proposal |
 
 ## Deploying
 

@@ -1,0 +1,375 @@
+{
+  "search": "Clio",
+  "fetchedAt": "2026-10-23T07:55:13.791Z",
+  "candidates": [
+    {
+      "qid": "Q5059304",
+      "label": "Clio",
+      "description": "genus of molluscs",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio"
+      }
+    },
+    {
+      "qid": "Q1113937",
+      "label": "Clio",
+      "description": "female given name",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio"
+      }
+    },
+    {
+      "qid": "Q3308129",
+      "label": "Clio",
+      "description": "city in Michigan, United States",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio"
+      }
+    },
+    {
+      "qid": "Q2979361",
+      "label": "Clio. Femmes, genre, histoire",
+      "description": "academic journal",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio. Femmes, genre, histoire"
+      }
+    },
+    {
+      "qid": "Q50358598",
+      "label": "Clio",
+      "description": "family name",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio"
+      }
+    },
+    {
+      "qid": "Q27725303",
+      "label": "Clio",
+      "description": "Italian journal",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio"
+      }
+    },
+    {
+      "qid": "Q65027979",
+      "label": "Clio",
+      "description": "French singer-songwriter",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio"
+      }
+    },
+    {
+      "qid": "Q83592596",
+      "label": "Clio",
+      "description": "ship built in 2002",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio"
+      }
+    },
+    {
+      "qid": "Q103772754",
+      "label": "Clio",
+      "description": "shipwreck off the Scottish coast",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio"
+      }
+    },
+    {
+      "qid": "Q27710482",
+      "label": "Clio medica (Amsterdam, Netherlands)",
+      "description": "academic journal",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Clio medica (Amsterdam, Netherlands)"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "Clio"
+    },
+    "search": [
+      {
+        "id": "Q5059304",
+        "title": "Q5059304",
+        "pageid": 4834815,
+        "concepturi": "http://www.wikidata.org/entity/Q5059304",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q5059304",
+        "display": {
+          "label": {
+            "value": "Clio",
+            "language": "en"
+          },
+          "description": {
+            "value": "genus of molluscs",
+            "language": "en"
+          }
+        },
+        "label": "Clio",
+        "description": "genus of molluscs",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio"
+        }
+      },
+      {
+        "id": "Q1113937",
+        "title": "Q1113937",
+        "pageid": 1061149,
+        "concepturi": "http://www.wikidata.org/entity/Q1113937",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q1113937",
+        "display": {
+          "label": {
+            "value": "Clio",
+            "language": "en"
+          },
+          "description": {
+            "value": "female given name",
+            "language": "en"
+          }
+        },
+        "label": "Clio",
+        "description": "female given name",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio"
+        }
+      },
+      {
+        "id": "Q3308129",
+        "title": "Q3308129",
+        "pageid": 3154601,
+        "concepturi": "http://www.wikidata.org/entity/Q3308129",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q3308129",
+        "display": {
+          "label": {
+            "value": "Clio",
+            "language": "en"
+          },
+          "description": {
+            "value": "city in Michigan, United States",
+            "language": "en"
+          }
+        },
+        "label": "Clio",
+        "description": "city in Michigan, United States",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio"
+        }
+      },
+      {
+        "id": "Q2979361",
+        "title": "Q2979361",
+        "pageid": 2849004,
+        "concepturi": "http://www.wikidata.org/entity/Q2979361",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q2979361",
+        "display": {
+          "label": {
+            "value": "Clio. Femmes, genre, histoire",
+            "language": "en"
+          },
+          "description": {
+            "value": "academic journal",
+            "language": "en"
+          }
+        },
+        "label": "Clio. Femmes, genre, histoire",
+        "description": "academic journal",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio. Femmes, genre, histoire"
+        }
+      },
+      {
+        "id": "Q50358598",
+        "title": "Q50358598",
+        "pageid": 51335203,
+        "concepturi": "http://www.wikidata.org/entity/Q50358598",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q50358598",
+        "display": {
+          "label": {
+            "value": "Clio",
+            "language": "en"
+          },
+          "description": {
+            "value": "family name",
+            "language": "en"
+          }
+        },
+        "label": "Clio",
+        "description": "family name",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio"
+        }
+      },
+      {
+        "id": "Q27725303",
+        "title": "Q27725303",
+        "pageid": 29441566,
+        "concepturi": "http://www.wikidata.org/entity/Q27725303",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q27725303",
+        "display": {
+          "label": {
+            "value": "Clio",
+            "language": "en"
+          },
+          "description": {
+            "value": "Italian journal",
+            "language": "en"
+          }
+        },
+        "label": "Clio",
+        "description": "Italian journal",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio"
+        }
+      },
+      {
+        "id": "Q65027979",
+        "title": "Q65027979",
+        "pageid": 64670384,
+        "concepturi": "http://www.wikidata.org/entity/Q65027979",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q65027979",
+        "display": {
+          "label": {
+            "value": "Clio",
+            "language": "en"
+          },
+          "description": {
+            "value": "French singer-songwriter",
+            "language": "en"
+          }
+        },
+        "label": "Clio",
+        "description": "French singer-songwriter",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio"
+        }
+      },
+      {
+        "id": "Q83592596",
+        "title": "Q83592596",
+        "pageid": 82905896,
+        "concepturi": "http://www.wikidata.org/entity/Q83592596",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q83592596",
+        "display": {
+          "label": {
+            "value": "Clio",
+            "language": "en"
+          },
+          "description": {
+            "value": "ship built in 2002",
+            "language": "en"
+          }
+        },
+        "label": "Clio",
+        "description": "ship built in 2002",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio"
+        }
+      },
+      {
+        "id": "Q103772754",
+        "title": "Q103772754",
+        "pageid": 99318404,
+        "concepturi": "http://www.wikidata.org/entity/Q103772754",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q103772754",
+        "display": {
+          "label": {
+            "value": "Clio",
+            "language": "en"
+          },
+          "description": {
+            "value": "shipwreck off the Scottish coast",
+            "language": "en"
+          }
+        },
+        "label": "Clio",
+        "description": "shipwreck off the Scottish coast",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio"
+        }
+      },
+      {
+        "id": "Q27710482",
+        "title": "Q27710482",
+        "pageid": 29426755,
+        "concepturi": "http://www.wikidata.org/entity/Q27710482",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q27710482",
+        "display": {
+          "label": {
+            "value": "Clio medica (Amsterdam, Netherlands)",
+            "language": "en"
+          },
+          "description": {
+            "value": "academic journal",
+            "language": "en"
+          }
+        },
+        "label": "Clio medica (Amsterdam, Netherlands)",
+        "description": "academic journal",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Clio medica (Amsterdam, Netherlands)"
+        }
+      }
+    ],
+    "search-continue": 10,
+    "success": 1
+  }
+}

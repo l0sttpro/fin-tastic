@@ -1,0 +1,618 @@
+[
+  {
+    "answer": "zeus",
+    "qid": "Q34201",
+    "sitelinks": 145,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "athena",
+    "qid": "Q37122",
+    "sitelinks": 126,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "aphrodite",
+    "qid": "Q35500",
+    "sitelinks": 125,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "apollo",
+    "qid": "Q37340",
+    "sitelinks": 125,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "artemis",
+    "qid": "Q39503",
+    "sitelinks": 113,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "poseidon",
+    "qid": "Q41127",
+    "sitelinks": 110,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hermes",
+    "qid": "Q41484",
+    "sitelinks": 109,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hera",
+    "qid": "Q38012",
+    "sitelinks": 106,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "ares",
+    "qid": "Q40901",
+    "sitelinks": 105,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hades",
+    "qid": "Q41410",
+    "sitelinks": 105,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "dionysus",
+    "qid": "Q41680",
+    "sitelinks": 104,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "demeter",
+    "qid": "Q40730",
+    "sitelinks": 103,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "prometheus",
+    "qid": "Q83160",
+    "sitelinks": 100,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "heracles",
+    "qid": "Q122248",
+    "sitelinks": 99,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hephaestus",
+    "qid": "Q44384",
+    "sitelinks": 97,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hestia",
+    "qid": "Q41419",
+    "sitelinks": 96,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "kronos",
+    "qid": "Q44204",
+    "sitelinks": 95,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "cupid",
+    "qid": "Q121973",
+    "sitelinks": 94,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "eros",
+    "qid": "Q121973",
+    "sitelinks": 94,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "persephone",
+    "qid": "Q45967",
+    "sitelinks": 87,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "atlas",
+    "qid": "Q130818",
+    "sitelinks": 86,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "asclepius",
+    "qid": "Q83223",
+    "sitelinks": 84,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "gaia",
+    "qid": "Q93172",
+    "sitelinks": 84,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "rhea",
+    "qid": "Q108419",
+    "sitelinks": 81,
+    "currentTier": "fintastic",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "oceanus",
+    "qid": "Q161419",
+    "sitelinks": 79,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "selene",
+    "qid": "Q131585",
+    "sitelinks": 79,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "helios",
+    "qid": "Q134270",
+    "sitelinks": 78,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "themis",
+    "qid": "Q159168",
+    "sitelinks": 76,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "nyx",
+    "qid": "Q131203",
+    "sitelinks": 74,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "eos",
+    "qid": "Q178417",
+    "sitelinks": 73,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "nike",
+    "qid": "Q165023",
+    "sitelinks": 71,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hecate",
+    "qid": "Q131575",
+    "sitelinks": 70,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "mnemosyne",
+    "qid": "Q102884",
+    "sitelinks": 69,
+    "currentTier": "fintastic",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "pan",
+    "qid": "Q132582",
+    "sitelinks": 69,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "leto",
+    "qid": "Q103107",
+    "sitelinks": 67,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "chaos",
+    "qid": "Q131090",
+    "sitelinks": 66,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hebe",
+    "qid": "Q131125",
+    "sitelinks": 66,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "styx",
+    "qid": "Q542758",
+    "sitelinks": 66,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "tethys",
+    "qid": "Q184216",
+    "sitelinks": 66,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "amphitrite",
+    "qid": "Q180222",
+    "sitelinks": 65,
+    "currentTier": "fintastic",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "theia",
+    "qid": "Q184232",
+    "sitelinks": 64,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "triton",
+    "qid": "Q148030",
+    "sitelinks": 64,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "eris",
+    "qid": "Q140001",
+    "sitelinks": 63,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hyperion",
+    "qid": "Q179209",
+    "sitelinks": 63,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "phoebe",
+    "qid": "Q183281",
+    "sitelinks": 63,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "iapetus",
+    "qid": "Q179543",
+    "sitelinks": 62,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "nemesis",
+    "qid": "Q185747",
+    "sitelinks": 62,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "epimetheus",
+    "qid": "Q41054",
+    "sitelinks": 61,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "iris",
+    "qid": "Q184570",
+    "sitelinks": 60,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "thanatos",
+    "qid": "Q199647",
+    "sitelinks": 60,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "aether",
+    "qid": "Q189175",
+    "sitelinks": 59,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "coeus",
+    "qid": "Q182837",
+    "sitelinks": 59,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "erebus",
+    "qid": "Q131122",
+    "sitelinks": 59,
+    "currentTier": "fintastic",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "crius",
+    "qid": "Q192136",
+    "sitelinks": 58,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "metis",
+    "qid": "Q190565",
+    "sitelinks": 57,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "kharybdis",
+    "qid": "Q192082",
+    "sitelinks": 56,
+    "currentTier": "fintastic",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "hypnos",
+    "qid": "Q189347",
+    "sitelinks": 53,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "morpheus",
+    "qid": "Q194012",
+    "sitelinks": 52,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "phobos",
+    "qid": "Q105019",
+    "sitelinks": 52,
+    "currentTier": "fintastic",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "hygieia",
+    "qid": "Q202257",
+    "sitelinks": 51,
+    "currentTier": "plankton",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "psyche",
+    "qid": "Q843382",
+    "sitelinks": 50,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "tyche",
+    "qid": "Q213440",
+    "sitelinks": 49,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "boreas",
+    "qid": "Q109220",
+    "sitelinks": 48,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "eileithyia",
+    "qid": "Q94066",
+    "sitelinks": 48,
+    "currentTier": "plankton",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "deimos",
+    "qid": "Q106240",
+    "sitelinks": 47,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "echo",
+    "qid": "Q207368",
+    "sitelinks": 47,
+    "currentTier": "reef-rookie",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "zephyrus",
+    "qid": "Q467515",
+    "sitelinks": 45,
+    "currentTier": "fin-omenal",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "pallas",
+    "qid": "Q457294",
+    "sitelinks": 44,
+    "currentTier": "jawsome",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "dike",
+    "qid": "Q465875",
+    "sitelinks": 43,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "plutus",
+    "qid": "Q205251",
+    "sitelinks": 43,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "hymen",
+    "qid": "Q506770",
+    "sitelinks": 41,
+    "currentTier": "plankton",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "eirene",
+    "qid": "Q214987",
+    "sitelinks": 40,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "eurybia",
+    "qid": "Q506285",
+    "sitelinks": 37,
+    "currentTier": "jawsome",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "eurynome",
+    "qid": "Q548099",
+    "sitelinks": 37,
+    "currentTier": "reef-rookie",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "thalia",
+    "qid": "Q1260484",
+    "sitelinks": 31,
+    "currentTier": "plankton",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "glaucus",
+    "qid": "Q385397",
+    "sitelinks": 28,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "lachesis",
+    "qid": "Q898947",
+    "sitelinks": 28,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "eurus",
+    "qid": "Q836518",
+    "sitelinks": 27,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "aion",
+    "qid": "Q164846",
+    "sitelinks": 26,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "notus",
+    "qid": "Q903273",
+    "sitelinks": 26,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "alastor",
+    "qid": "Q576123",
+    "sitelinks": 12,
+    "currentTier": "fintastic",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "apheliotes",
+    "qid": "Q2245728",
+    "sitelinks": 7,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "erato",
+    "qid": "Q782764",
+    "sitelinks": 5,
+    "currentTier": "plankton",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "skiron",
+    "qid": "Q9337884",
+    "sitelinks": 5,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "horme",
+    "qid": "Q5903754",
+    "sitelinks": 4,
+    "currentTier": "fintastic",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "pandora",
+    "qid": "Q3362052",
+    "sitelinks": 1,
+    "currentTier": "reef-rookie",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "titan",
+    "qid": "Q18415479",
+    "sitelinks": 1,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "clio",
+    "qid": "Q126670238",
+    "sitelinks": 0,
+    "currentTier": "plankton",
+    "proposedTier": "fintastic"
+  }
+]

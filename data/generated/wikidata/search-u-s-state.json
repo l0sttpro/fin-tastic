@@ -1,0 +1,415 @@
+{
+  "search": "U.S. state",
+  "fetchedAt": "2026-10-23T07:54:27.287Z",
+  "candidates": [
+    {
+      "qid": "Q35657",
+      "label": "U.S. state",
+      "description": "constituent political entity of the United States of America",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "U.S. state"
+      }
+    },
+    {
+      "qid": "Q789915",
+      "label": "United States Department of State",
+      "description": "executive department of the U.S. federal government",
+      "aliases": [
+        "U.S. State Department"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "U.S. State Department"
+      }
+    },
+    {
+      "qid": "Q20857085",
+      "label": "state agency of the United States",
+      "description": "agency or department of the government of a state of the United States of America",
+      "aliases": [
+        "U.S. state agency"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "U.S. state agency"
+      }
+    },
+    {
+      "qid": "Q889821",
+      "label": "governor",
+      "description": "position of the head of the government of a state of the United States",
+      "aliases": [
+        "U.S. state governor"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "U.S. state governor"
+      }
+    },
+    {
+      "qid": "Q3270264",
+      "label": "legislature of a U.S. state",
+      "description": "legislature of a U.S. state",
+      "aliases": [
+        "U.S. state legislature"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "U.S. state legislature"
+      }
+    },
+    {
+      "qid": "Q7603882",
+      "label": "U.S. state supreme court",
+      "description": "highest court of a U.S. state's judicial system",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "U.S. state supreme court"
+      }
+    },
+    {
+      "qid": "Q7603678",
+      "label": "state education agency",
+      "description": "state-level government organization within each U.S. state or territory responsible for education",
+      "aliases": [
+        "U.S. state education agency"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "U.S. state education agency"
+      }
+    },
+    {
+      "qid": "Q533501",
+      "label": "state secretary of state",
+      "description": "official in the state governments of the United States",
+      "aliases": [
+        "U.S. state secretary of state"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "U.S. state secretary of state"
+      }
+    },
+    {
+      "qid": "Q7603694",
+      "label": "state government of the United States",
+      "description": "state-level governments of the 50 states which comprise the United States of America",
+      "aliases": [
+        "U.S. state government"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "U.S. state government"
+      }
+    },
+    {
+      "qid": "Q2529166",
+      "label": "state lieutenant governor",
+      "description": "sub-national title in the United States",
+      "aliases": [
+        "U.S. state lieutenant governor"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "U.S. state lieutenant governor"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "U.S. state"
+    },
+    "search": [
+      {
+        "id": "Q35657",
+        "title": "Q35657",
+        "pageid": 38328,
+        "concepturi": "http://www.wikidata.org/entity/Q35657",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q35657",
+        "display": {
+          "label": {
+            "value": "U.S. state",
+            "language": "en"
+          },
+          "description": {
+            "value": "constituent political entity of the United States of America",
+            "language": "en"
+          }
+        },
+        "label": "U.S. state",
+        "description": "constituent political entity of the United States of America",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "U.S. state"
+        }
+      },
+      {
+        "id": "Q789915",
+        "title": "Q789915",
+        "pageid": 742928,
+        "concepturi": "http://www.wikidata.org/entity/Q789915",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q789915",
+        "display": {
+          "label": {
+            "value": "United States Department of State",
+            "language": "en"
+          },
+          "description": {
+            "value": "executive department of the U.S. federal government",
+            "language": "en"
+          }
+        },
+        "label": "United States Department of State",
+        "description": "executive department of the U.S. federal government",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "U.S. State Department"
+        },
+        "aliases": [
+          "U.S. State Department"
+        ]
+      },
+      {
+        "id": "Q20857085",
+        "title": "Q20857085",
+        "pageid": 22600772,
+        "concepturi": "http://www.wikidata.org/entity/Q20857085",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q20857085",
+        "display": {
+          "label": {
+            "value": "state agency of the United States",
+            "language": "en"
+          },
+          "description": {
+            "value": "agency or department of the government of a state of the United States of America",
+            "language": "en"
+          }
+        },
+        "label": "state agency of the United States",
+        "description": "agency or department of the government of a state of the United States of America",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "U.S. state agency"
+        },
+        "aliases": [
+          "U.S. state agency"
+        ]
+      },
+      {
+        "id": "Q889821",
+        "title": "Q889821",
+        "pageid": 840803,
+        "concepturi": "http://www.wikidata.org/entity/Q889821",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q889821",
+        "display": {
+          "label": {
+            "value": "governor",
+            "language": "en"
+          },
+          "description": {
+            "value": "position of the head of the government of a state of the United States",
+            "language": "en"
+          }
+        },
+        "label": "governor",
+        "description": "position of the head of the government of a state of the United States",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "U.S. state governor"
+        },
+        "aliases": [
+          "U.S. state governor"
+        ]
+      },
+      {
+        "id": "Q3270264",
+        "title": "Q3270264",
+        "pageid": 3119878,
+        "concepturi": "http://www.wikidata.org/entity/Q3270264",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q3270264",
+        "display": {
+          "label": {
+            "value": "legislature of a U.S. state",
+            "language": "en"
+          },
+          "description": {
+            "value": "legislature of a U.S. state",
+            "language": "en"
+          }
+        },
+        "label": "legislature of a U.S. state",
+        "description": "legislature of a U.S. state",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "U.S. state legislature"
+        },
+        "aliases": [
+          "U.S. state legislature"
+        ]
+      },
+      {
+        "id": "Q7603882",
+        "title": "Q7603882",
+        "pageid": 7523025,
+        "concepturi": "http://www.wikidata.org/entity/Q7603882",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q7603882",
+        "display": {
+          "label": {
+            "value": "U.S. state supreme court",
+            "language": "en"
+          },
+          "description": {
+            "value": "highest court of a U.S. state's judicial system",
+            "language": "en"
+          }
+        },
+        "label": "U.S. state supreme court",
+        "description": "highest court of a U.S. state's judicial system",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "U.S. state supreme court"
+        }
+      },
+      {
+        "id": "Q7603678",
+        "title": "Q7603678",
+        "pageid": 7522812,
+        "concepturi": "http://www.wikidata.org/entity/Q7603678",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q7603678",
+        "display": {
+          "label": {
+            "value": "state education agency",
+            "language": "en"
+          },
+          "description": {
+            "value": "state-level government organization within each U.S. state or territory responsible for education",
+            "language": "en"
+          }
+        },
+        "label": "state education agency",
+        "description": "state-level government organization within each U.S. state or territory responsible for education",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "U.S. state education agency"
+        },
+        "aliases": [
+          "U.S. state education agency"
+        ]
+      },
+      {
+        "id": "Q533501",
+        "title": "Q533501",
+        "pageid": 502293,
+        "concepturi": "http://www.wikidata.org/entity/Q533501",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q533501",
+        "display": {
+          "label": {
+            "value": "state secretary of state",
+            "language": "en"
+          },
+          "description": {
+            "value": "official in the state governments of the United States",
+            "language": "en"
+          }
+        },
+        "label": "state secretary of state",
+        "description": "official in the state governments of the United States",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "U.S. state secretary of state"
+        },
+        "aliases": [
+          "U.S. state secretary of state"
+        ]
+      },
+      {
+        "id": "Q7603694",
+        "title": "Q7603694",
+        "pageid": 7522828,
+        "concepturi": "http://www.wikidata.org/entity/Q7603694",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q7603694",
+        "display": {
+          "label": {
+            "value": "state government of the United States",
+            "language": "en"
+          },
+          "description": {
+            "value": "state-level governments of the 50 states which comprise the United States of America",
+            "language": "en"
+          }
+        },
+        "label": "state government of the United States",
+        "description": "state-level governments of the 50 states which comprise the United States of America",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "U.S. state government"
+        },
+        "aliases": [
+          "U.S. state government"
+        ]
+      },
+      {
+        "id": "Q2529166",
+        "title": "Q2529166",
+        "pageid": 2440980,
+        "concepturi": "http://www.wikidata.org/entity/Q2529166",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q2529166",
+        "display": {
+          "label": {
+            "value": "state lieutenant governor",
+            "language": "en"
+          },
+          "description": {
+            "value": "sub-national title in the United States",
+            "language": "en"
+          }
+        },
+        "label": "state lieutenant governor",
+        "description": "sub-national title in the United States",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "U.S. state lieutenant governor"
+        },
+        "aliases": [
+          "U.S. state lieutenant governor"
+        ]
+      }
+    ],
+    "search-continue": 10,
+    "success": 1
+  }
+}

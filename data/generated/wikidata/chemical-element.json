@@ -1,0 +1,1203 @@
+{
+  "promptId": "chemical-element",
+  "fetchedAt": "2026-10-23T07:57:28.873Z",
+  "query": "SELECT ?item ?itemLabel ?sitelinks\n       (GROUP_CONCAT(DISTINCT ?alias; separator=\"|\") AS ?aliases)\nWHERE {\n  ?item wdt:P31 wd:Q11344 .\n  ?item wdt:P1086 ?atomicNumber .\n  FILTER(?atomicNumber >= 1 && ?atomicNumber <= 118)\n  ?item rdfs:label ?itemLabel .\n  FILTER(LANG(?itemLabel) = \"en\")\n  ?item wikibase:sitelinks ?sitelinks .\n  OPTIONAL {\n    ?item skos:altLabel ?alias .\n    FILTER(LANG(?alias) = \"en\")\n  }\n}\nGROUP BY ?item ?itemLabel ?sitelinks\nORDER BY DESC(?sitelinks) ?item",
+  "items": [
+    {
+      "qid": "Q897",
+      "label": "gold",
+      "aliases": [
+        "element 79"
+      ],
+      "sitelinks": 277
+    },
+    {
+      "qid": "Q677",
+      "label": "iron",
+      "aliases": [
+        "element 26"
+      ],
+      "sitelinks": 254
+    },
+    {
+      "qid": "Q556",
+      "label": "hydrogen",
+      "aliases": [
+        "element 1"
+      ],
+      "sitelinks": 238
+    },
+    {
+      "qid": "Q1090",
+      "label": "silver",
+      "aliases": [
+        "element 47"
+      ],
+      "sitelinks": 238
+    },
+    {
+      "qid": "Q629",
+      "label": "oxygen",
+      "aliases": [
+        "E948",
+        "element 8"
+      ],
+      "sitelinks": 234
+    },
+    {
+      "qid": "Q753",
+      "label": "copper",
+      "aliases": [
+        "29Cu",
+        "Cu",
+        "CU-7",
+        "element 29",
+        "Paragard T 380A",
+        "Tatum-T"
+      ],
+      "sitelinks": 229
+    },
+    {
+      "qid": "Q623",
+      "label": "carbon",
+      "aliases": [
+        "₆C",
+        "element 6"
+      ],
+      "sitelinks": 219
+    },
+    {
+      "qid": "Q663",
+      "label": "aluminium",
+      "aliases": [
+        "13Al",
+        "aluminum",
+        "element 13"
+      ],
+      "sitelinks": 210
+    },
+    {
+      "qid": "Q560",
+      "label": "helium",
+      "aliases": [
+        "element 2"
+      ],
+      "sitelinks": 208
+    },
+    {
+      "qid": "Q627",
+      "label": "nitrogen",
+      "aliases": [
+        "₇N",
+        "element 7"
+      ],
+      "sitelinks": 205
+    },
+    {
+      "qid": "Q682",
+      "label": "sulfur",
+      "aliases": [
+        "brimstone",
+        "element 16",
+        "sulphur"
+      ],
+      "sitelinks": 196
+    },
+    {
+      "qid": "Q568",
+      "label": "lithium",
+      "aliases": [
+        "element 3"
+      ],
+      "sitelinks": 194
+    },
+    {
+      "qid": "Q708",
+      "label": "lead",
+      "aliases": [
+        "element 82",
+        "Pb"
+      ],
+      "sitelinks": 192
+    },
+    {
+      "qid": "Q1096",
+      "label": "tin",
+      "aliases": [
+        "element 50"
+      ],
+      "sitelinks": 191
+    },
+    {
+      "qid": "Q658",
+      "label": "sodium",
+      "aliases": [
+        "11Na",
+        "element 11"
+      ],
+      "sitelinks": 188
+    },
+    {
+      "qid": "Q925",
+      "label": "mercury",
+      "aliases": [
+        "80Hg",
+        "element 80",
+        "hydrargyrum",
+        "mercury (element)",
+        "quicksilver"
+      ],
+      "sitelinks": 185
+    },
+    {
+      "qid": "Q706",
+      "label": "calcium",
+      "aliases": [
+        "20Ca",
+        "Ca",
+        "element 20"
+      ],
+      "sitelinks": 183
+    },
+    {
+      "qid": "Q569",
+      "label": "beryllium",
+      "aliases": [
+        "₄Be",
+        "element 4",
+        "glucineum"
+      ],
+      "sitelinks": 182
+    },
+    {
+      "qid": "Q654",
+      "label": "neon",
+      "aliases": [
+        "element 10"
+      ],
+      "sitelinks": 180
+    },
+    {
+      "qid": "Q758",
+      "label": "zinc",
+      "aliases": [
+        "30Zn",
+        "element 30",
+        "Zn",
+        "Zn(ii)",
+        "Zn2+"
+      ],
+      "sitelinks": 180
+    },
+    {
+      "qid": "Q660",
+      "label": "magnesium",
+      "aliases": [
+        "12Mg",
+        "element 12"
+      ],
+      "sitelinks": 178
+    },
+    {
+      "qid": "Q703",
+      "label": "potassium",
+      "aliases": [
+        "19K",
+        "element 19",
+        "K"
+      ],
+      "sitelinks": 177
+    },
+    {
+      "qid": "Q670",
+      "label": "silicon",
+      "aliases": [
+        "14Si",
+        "element 14"
+      ],
+      "sitelinks": 177
+    },
+    {
+      "qid": "Q1098",
+      "label": "uranium",
+      "aliases": [
+        "element 92",
+        "U"
+      ],
+      "sitelinks": 176
+    },
+    {
+      "qid": "Q688",
+      "label": "chlorine",
+      "aliases": [
+        "₁₇Cl",
+        "bertholite",
+        "element 17"
+      ],
+      "sitelinks": 175
+    },
+    {
+      "qid": "Q650",
+      "label": "fluorine",
+      "aliases": [
+        "₉F",
+        "element 9"
+      ],
+      "sitelinks": 175
+    },
+    {
+      "qid": "Q674",
+      "label": "phosphorus",
+      "aliases": [
+        "15P",
+        "element 15"
+      ],
+      "sitelinks": 175
+    },
+    {
+      "qid": "Q618",
+      "label": "boron",
+      "aliases": [
+        "₅B",
+        "boracium",
+        "element 5"
+      ],
+      "sitelinks": 173
+    },
+    {
+      "qid": "Q696",
+      "label": "argon",
+      "aliases": [
+        "18Ar",
+        "element 18"
+      ],
+      "sitelinks": 168
+    },
+    {
+      "qid": "Q716",
+      "label": "titanium",
+      "aliases": [
+        "22Ti",
+        "element 22"
+      ],
+      "sitelinks": 167
+    },
+    {
+      "qid": "Q725",
+      "label": "chromium",
+      "aliases": [
+        "24Cr",
+        "Cr",
+        "element 24"
+      ],
+      "sitelinks": 164
+    },
+    {
+      "qid": "Q871",
+      "label": "arsenic",
+      "aliases": [
+        "33As",
+        "As",
+        "element 33"
+      ],
+      "sitelinks": 163
+    },
+    {
+      "qid": "Q740",
+      "label": "cobalt",
+      "aliases": [
+        "₂₇Co",
+        "Co",
+        "element 27"
+      ],
+      "sitelinks": 163
+    },
+    {
+      "qid": "Q1103",
+      "label": "iodine",
+      "aliases": [
+        "₅₃I",
+        "element 53",
+        "I"
+      ],
+      "sitelinks": 163
+    },
+    {
+      "qid": "Q731",
+      "label": "manganese",
+      "aliases": [
+        "25Mn",
+        "element 25",
+        "Mn"
+      ],
+      "sitelinks": 161
+    },
+    {
+      "qid": "Q744",
+      "label": "nickel",
+      "aliases": [
+        "₂₈Ni",
+        "element 28",
+        "Ni"
+      ],
+      "sitelinks": 161
+    },
+    {
+      "qid": "Q880",
+      "label": "platinum",
+      "aliases": [
+        "78Pt",
+        "element 78",
+        "Pt"
+      ],
+      "sitelinks": 161
+    },
+    {
+      "qid": "Q888",
+      "label": "krypton",
+      "aliases": [
+        "36Kr",
+        "element 36",
+        "Kr"
+      ],
+      "sitelinks": 159
+    },
+    {
+      "qid": "Q1112",
+      "label": "barium",
+      "aliases": [
+        "56Ba",
+        "Ba",
+        "element 56"
+      ],
+      "sitelinks": 158
+    },
+    {
+      "qid": "Q861",
+      "label": "gallium",
+      "aliases": [
+        "31Ga",
+        "element 31",
+        "Ga"
+      ],
+      "sitelinks": 158
+    },
+    {
+      "qid": "Q722",
+      "label": "vanadium",
+      "aliases": [
+        "23V",
+        "element 23",
+        "V"
+      ],
+      "sitelinks": 158
+    },
+    {
+      "qid": "Q1128",
+      "label": "radium",
+      "aliases": [
+        "88Ra",
+        "element 88",
+        "Ra"
+      ],
+      "sitelinks": 157
+    },
+    {
+      "qid": "Q879",
+      "label": "bromine",
+      "aliases": [
+        "₃₅Br",
+        "Br",
+        "element 35"
+      ],
+      "sitelinks": 156
+    },
+    {
+      "qid": "Q671",
+      "label": "francium",
+      "aliases": [
+        "87Fr",
+        "catium",
+        "eka-caesium",
+        "eka-cesium",
+        "element 87",
+        "Fr"
+      ],
+      "sitelinks": 156
+    },
+    {
+      "qid": "Q1133",
+      "label": "radon",
+      "aliases": [
+        "86Rn",
+        "element 86"
+      ],
+      "sitelinks": 155
+    },
+    {
+      "qid": "Q876",
+      "label": "selenium",
+      "aliases": [
+        "34Se",
+        "element 34",
+        "Se"
+      ],
+      "sitelinks": 155
+    },
+    {
+      "qid": "Q1091",
+      "label": "cadmium",
+      "aliases": [
+        "48Cd",
+        "Cd",
+        "element 48"
+      ],
+      "sitelinks": 153
+    },
+    {
+      "qid": "Q713",
+      "label": "scandium",
+      "aliases": [
+        "21Sc",
+        "element 21",
+        "Sc"
+      ],
+      "sitelinks": 153
+    },
+    {
+      "qid": "Q938",
+      "label": "strontium",
+      "aliases": [
+        "38Sr",
+        "element 38",
+        "Sr"
+      ],
+      "sitelinks": 153
+    },
+    {
+      "qid": "Q1099",
+      "label": "antimony",
+      "aliases": [
+        "51Sb",
+        "element 51",
+        "Sb"
+      ],
+      "sitelinks": 152
+    },
+    {
+      "qid": "Q1108",
+      "label": "caesium",
+      "aliases": [
+        "55Cs",
+        "cæsium",
+        "cesium",
+        "Cs",
+        "element 55"
+      ],
+      "sitelinks": 152
+    },
+    {
+      "qid": "Q867",
+      "label": "germanium",
+      "aliases": [
+        "32Ge",
+        "element 32",
+        "Ge"
+      ],
+      "sitelinks": 152
+    },
+    {
+      "qid": "Q895",
+      "label": "rubidium",
+      "aliases": [
+        "37Rb",
+        "element 37",
+        "Rb"
+      ],
+      "sitelinks": 152
+    },
+    {
+      "qid": "Q1106",
+      "label": "xenon",
+      "aliases": [
+        "54Xe",
+        "element 54",
+        "Xe"
+      ],
+      "sitelinks": 152
+    },
+    {
+      "qid": "Q942",
+      "label": "bismuth",
+      "aliases": [
+        "83Bi",
+        "Bi",
+        "element 83"
+      ],
+      "sitelinks": 151
+    },
+    {
+      "qid": "Q743",
+      "label": "tungsten",
+      "aliases": [
+        "74W",
+        "element 74",
+        "wolfram"
+      ],
+      "sitelinks": 150
+    },
+    {
+      "qid": "Q877",
+      "label": "iridium",
+      "aliases": [
+        "element 77",
+        "Ir"
+      ],
+      "sitelinks": 149
+    },
+    {
+      "qid": "Q1046",
+      "label": "niobium",
+      "aliases": [
+        "41Nb",
+        "Cb",
+        "Columbite",
+        "columbium",
+        "element 41",
+        "Nb"
+      ],
+      "sitelinks": 149
+    },
+    {
+      "qid": "Q1102",
+      "label": "plutonium",
+      "aliases": [
+        "94Pu",
+        "element 94"
+      ],
+      "sitelinks": 149
+    },
+    {
+      "qid": "Q1089",
+      "label": "palladium",
+      "aliases": [
+        "46Pd",
+        "element 46",
+        "Pd"
+      ],
+      "sitelinks": 148
+    },
+    {
+      "qid": "Q979",
+      "label": "polonium",
+      "aliases": [
+        "84Po",
+        "element 84",
+        "Po"
+      ],
+      "sitelinks": 148
+    },
+    {
+      "qid": "Q1053",
+      "label": "molybdenum",
+      "aliases": [
+        "42Mo",
+        "element 42",
+        "elemental molybdenum",
+        "metallic molybdenum",
+        "molybdenum atom"
+      ],
+      "sitelinks": 147
+    },
+    {
+      "qid": "Q751",
+      "label": "osmium",
+      "aliases": [
+        "76Os",
+        "element 76",
+        "Os"
+      ],
+      "sitelinks": 147
+    },
+    {
+      "qid": "Q999",
+      "label": "astatine",
+      "aliases": [
+        "At",
+        "element 85"
+      ],
+      "sitelinks": 146
+    },
+    {
+      "qid": "Q1119",
+      "label": "hafnium",
+      "aliases": [
+        "72Hf",
+        "celtium",
+        "element 72",
+        "Hf"
+      ],
+      "sitelinks": 146
+    },
+    {
+      "qid": "Q1123",
+      "label": "tantalum",
+      "aliases": [
+        "73Ta",
+        "element 73",
+        "Ta"
+      ],
+      "sitelinks": 146
+    },
+    {
+      "qid": "Q1100",
+      "label": "tellurium",
+      "aliases": [
+        "52Te",
+        "element 52",
+        "Te"
+      ],
+      "sitelinks": 146
+    },
+    {
+      "qid": "Q941",
+      "label": "yttrium",
+      "aliases": [
+        "39Y",
+        "element 39",
+        "Y"
+      ],
+      "sitelinks": 146
+    },
+    {
+      "qid": "Q1054",
+      "label": "technetium",
+      "aliases": [
+        "43Tc",
+        "eka-manganese",
+        "element 43",
+        "masurium",
+        "panormium",
+        "Tc"
+      ],
+      "sitelinks": 145
+    },
+    {
+      "qid": "Q1094",
+      "label": "indium",
+      "aliases": [
+        "49In",
+        "element 49",
+        "In",
+        "Indium element",
+        "Indium metal"
+      ],
+      "sitelinks": 144
+    },
+    {
+      "qid": "Q1087",
+      "label": "rhodium",
+      "aliases": [
+        "45Rh",
+        "element 45",
+        "Rh"
+      ],
+      "sitelinks": 144
+    },
+    {
+      "qid": "Q1086",
+      "label": "ruthenium",
+      "aliases": [
+        "44Ru",
+        "element 44",
+        "Ru",
+        "vestium"
+      ],
+      "sitelinks": 144
+    },
+    {
+      "qid": "Q1115",
+      "label": "thorium",
+      "aliases": [
+        "90Th",
+        "element 90",
+        "Th"
+      ],
+      "sitelinks": 144
+    },
+    {
+      "qid": "Q1038",
+      "label": "zirconium",
+      "aliases": [
+        "element 40"
+      ],
+      "sitelinks": 144
+    },
+    {
+      "qid": "Q1121",
+      "label": "actinium",
+      "aliases": [
+        "89Ac",
+        "element 89",
+        "emanium"
+      ],
+      "sitelinks": 143
+    },
+    {
+      "qid": "Q1105",
+      "label": "neptunium",
+      "aliases": [
+        "93Np",
+        "element 93",
+        "Np"
+      ],
+      "sitelinks": 143
+    },
+    {
+      "qid": "Q1801",
+      "label": "lanthanum",
+      "aliases": [
+        "57La",
+        "element 57",
+        "La",
+        "metallic lanthanum"
+      ],
+      "sitelinks": 142
+    },
+    {
+      "qid": "Q737",
+      "label": "rhenium",
+      "aliases": [
+        "75Re",
+        "element 75",
+        "nipponium",
+        "Re"
+      ],
+      "sitelinks": 142
+    },
+    {
+      "qid": "Q932",
+      "label": "thallium",
+      "aliases": [
+        "81Tl",
+        "element 81"
+      ],
+      "sitelinks": 142
+    },
+    {
+      "qid": "Q1396",
+      "label": "europium",
+      "aliases": [
+        "63Eu",
+        "element 63",
+        "Eu"
+      ],
+      "sitelinks": 140
+    },
+    {
+      "qid": "Q1385",
+      "label": "cerium",
+      "aliases": [
+        "58Ce",
+        "Ce",
+        "element 58"
+      ],
+      "sitelinks": 139
+    },
+    {
+      "qid": "Q1252",
+      "label": "hassium",
+      "aliases": [
+        "element 108",
+        "Hs",
+        "unniloctium",
+        "Uno"
+      ],
+      "sitelinks": 139
+    },
+    {
+      "qid": "Q1226",
+      "label": "rutherfordium",
+      "aliases": [
+        "element 104",
+        "Ku",
+        "kurchatovium",
+        "Rf",
+        "unnilquadium",
+        "Unq"
+      ],
+      "sitelinks": 139
+    },
+    {
+      "qid": "Q1857",
+      "label": "lutetium",
+      "aliases": [
+        "71Lu",
+        "cassiopeium",
+        "cassiopium",
+        "element 71",
+        "Lu",
+        "lutecium"
+      ],
+      "sitelinks": 137
+    },
+    {
+      "qid": "Q1819",
+      "label": "samarium",
+      "aliases": [
+        "62Sm",
+        "element 62",
+        "Sm"
+      ],
+      "sitelinks": 137
+    },
+    {
+      "qid": "Q1234",
+      "label": "seaborgium",
+      "aliases": [
+        "element 106",
+        "Unh",
+        "unnilhexium"
+      ],
+      "sitelinks": 137
+    },
+    {
+      "qid": "Q1888",
+      "label": "californium",
+      "aliases": [
+        "98Cf",
+        "Cf",
+        "element 98"
+      ],
+      "sitelinks": 136
+    },
+    {
+      "qid": "Q1232",
+      "label": "dubnium",
+      "aliases": [
+        "element 105",
+        "hahnium",
+        "unnilpentium"
+      ],
+      "sitelinks": 136
+    },
+    {
+      "qid": "Q1892",
+      "label": "einsteinium",
+      "aliases": [
+        "99Es",
+        "element 99",
+        "Es"
+      ],
+      "sitelinks": 136
+    },
+    {
+      "qid": "Q1109",
+      "label": "protactinium",
+      "aliases": [
+        "91Pa",
+        "brevium",
+        "element 91",
+        "Pa",
+        "protoactinium"
+      ],
+      "sitelinks": 136
+    },
+    {
+      "qid": "Q1872",
+      "label": "americium",
+      "aliases": [
+        "Am",
+        "element 95"
+      ],
+      "sitelinks": 135
+    },
+    {
+      "qid": "Q1249",
+      "label": "bohrium",
+      "aliases": [
+        "element 107"
+      ],
+      "sitelinks": 135
+    },
+    {
+      "qid": "Q1832",
+      "label": "gadolinium",
+      "aliases": [
+        "64Gd",
+        "element 64",
+        "Gad",
+        "gadolininum",
+        "gadolinum",
+        "Gd"
+      ],
+      "sitelinks": 135
+    },
+    {
+      "qid": "Q1258",
+      "label": "meitnerium",
+      "aliases": [
+        "element 109",
+        "Une",
+        "unnilennium"
+      ],
+      "sitelinks": 135
+    },
+    {
+      "qid": "Q1307",
+      "label": "oganesson",
+      "aliases": [
+        "eka-radon",
+        "element 118",
+        "Og",
+        "ununoctium",
+        "Uuo"
+      ],
+      "sitelinks": 135
+    },
+    {
+      "qid": "Q1809",
+      "label": "promethium",
+      "aliases": [
+        "₆₁Pm",
+        "element 61",
+        "Pm"
+      ],
+      "sitelinks": 135
+    },
+    {
+      "qid": "Q1843",
+      "label": "dysprosium",
+      "aliases": [
+        "Dy",
+        "element 66"
+      ],
+      "sitelinks": 134
+    },
+    {
+      "qid": "Q1896",
+      "label": "fermium",
+      "aliases": [
+        "100Fm",
+        "element 100",
+        "Fm"
+      ],
+      "sitelinks": 134
+    },
+    {
+      "qid": "Q1388",
+      "label": "neodymium",
+      "aliases": [
+        "60Nd",
+        "element 60",
+        "Nd",
+        "Neodymium"
+      ],
+      "sitelinks": 134
+    },
+    {
+      "qid": "Q1901",
+      "label": "nobelium",
+      "aliases": [
+        "102No",
+        "element 102",
+        "No",
+        "Unb",
+        "unnilbium"
+      ],
+      "sitelinks": 134
+    },
+    {
+      "qid": "Q1386",
+      "label": "praseodymium",
+      "aliases": [
+        "59Pr",
+        "element 59",
+        "Pr"
+      ],
+      "sitelinks": 134
+    },
+    {
+      "qid": "Q1882",
+      "label": "berkelium",
+      "aliases": [
+        "97Bk",
+        "Bk",
+        "element 97"
+      ],
+      "sitelinks": 133
+    },
+    {
+      "qid": "Q1876",
+      "label": "curium",
+      "aliases": [
+        "Cm",
+        "element 96"
+      ],
+      "sitelinks": 133
+    },
+    {
+      "qid": "Q1266",
+      "label": "darmstadtium",
+      "aliases": [
+        "element 110",
+        "ununnilium"
+      ],
+      "sitelinks": 133
+    },
+    {
+      "qid": "Q1838",
+      "label": "terbium",
+      "aliases": [
+        "65Tb",
+        "element 65",
+        "Tb"
+      ],
+      "sitelinks": 133
+    },
+    {
+      "qid": "Q1849",
+      "label": "erbium",
+      "aliases": [
+        "68Er",
+        "element 68",
+        "Er"
+      ],
+      "sitelinks": 132
+    },
+    {
+      "qid": "Q1905",
+      "label": "lawrencium",
+      "aliases": [
+        "103Lr",
+        "element 103",
+        "Lr"
+      ],
+      "sitelinks": 132
+    },
+    {
+      "qid": "Q1898",
+      "label": "mendelevium",
+      "aliases": [
+        "101Md",
+        "element 101",
+        "Mv",
+        "unnilunium"
+      ],
+      "sitelinks": 132
+    },
+    {
+      "qid": "Q1272",
+      "label": "roentgenium",
+      "aliases": [
+        "element 111",
+        "Rg",
+        "ununnilium",
+        "unununium",
+        "Uuu"
+      ],
+      "sitelinks": 132
+    },
+    {
+      "qid": "Q1855",
+      "label": "ytterbium",
+      "aliases": [
+        "70Yb",
+        "element 70",
+        "Yb"
+      ],
+      "sitelinks": 132
+    },
+    {
+      "qid": "Q1846",
+      "label": "holmium",
+      "aliases": [
+        "element 67",
+        "Ho"
+      ],
+      "sitelinks": 131
+    },
+    {
+      "qid": "Q1278",
+      "label": "copernicium",
+      "aliases": [
+        "Cn",
+        "element 112",
+        "ununbium",
+        "ununnunium",
+        "Uub"
+      ],
+      "sitelinks": 130
+    },
+    {
+      "qid": "Q1301",
+      "label": "nihonium",
+      "aliases": [
+        "dvi-indium",
+        "eka-thallium",
+        "element 113",
+        "Nh",
+        "ununnubium",
+        "ununtrium"
+      ],
+      "sitelinks": 130
+    },
+    {
+      "qid": "Q1303",
+      "label": "moscovium",
+      "aliases": [
+        "eka-bismuth",
+        "element 115",
+        "Mc",
+        "ununpentium",
+        "Uup"
+      ],
+      "sitelinks": 129
+    },
+    {
+      "qid": "Q1304",
+      "label": "livermorium",
+      "aliases": [
+        "eka-polonium",
+        "element 116",
+        "Lv",
+        "ununhexium",
+        "Uuh"
+      ],
+      "sitelinks": 128
+    },
+    {
+      "qid": "Q1853",
+      "label": "thulium",
+      "aliases": [
+        "69Tm",
+        "element 69",
+        "Tm"
+      ],
+      "sitelinks": 128
+    },
+    {
+      "qid": "Q1302",
+      "label": "flerovium",
+      "aliases": [
+        "element 114",
+        "Fl",
+        "ununquadium",
+        "Uuq"
+      ],
+      "sitelinks": 126
+    },
+    {
+      "qid": "Q1306",
+      "label": "tennessine",
+      "aliases": [
+        "eka-astatine",
+        "element 117",
+        "Ts",
+        "ununseptium",
+        "Uus"
+      ],
+      "sitelinks": 124
+    }
+  ]
+}

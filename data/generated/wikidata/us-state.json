@@ -1,0 +1,724 @@
+{
+  "promptId": "us-state",
+  "fetchedAt": "2026-10-23T07:56:03.765Z",
+  "query": "SELECT ?item ?itemLabel ?sitelinks\n       (GROUP_CONCAT(DISTINCT ?alias; separator=\"|\") AS ?aliases)\nWHERE {\n  ?item wdt:P31/wdt:P279* wd:Q35657 .\n  ?item rdfs:label ?itemLabel .\n  FILTER(LANG(?itemLabel) = \"en\")\n  ?item wikibase:sitelinks ?sitelinks .\n  OPTIONAL {\n    ?item skos:altLabel ?alias .\n    FILTER(LANG(?alias) = \"en\")\n  }\n}\nGROUP BY ?item ?itemLabel ?sitelinks\nORDER BY DESC(?sitelinks) ?item",
+  "items": [
+    {
+      "qid": "Q99",
+      "label": "California",
+      "aliases": [
+        "Cal.",
+        "California, United States",
+        "Golden State",
+        "State of California",
+        "The Golden State"
+      ],
+      "sitelinks": 287
+    },
+    {
+      "qid": "Q782",
+      "label": "Hawaii",
+      "aliases": [
+        "Hawaii State",
+        "Hawaii, United States",
+        "Kaimana Hila",
+        "Owhyhee",
+        "Owyhee",
+        "State of Hawaii",
+        "The Aloha State"
+      ],
+      "sitelinks": 269
+    },
+    {
+      "qid": "Q797",
+      "label": "Alaska",
+      "aliases": [
+        "AK",
+        "Alaska, United States",
+        "Russian America",
+        "State of Alaska",
+        "The Last Frontier",
+        "US-AK"
+      ],
+      "sitelinks": 263
+    },
+    {
+      "qid": "Q812",
+      "label": "Florida",
+      "aliases": [
+        "Fla.",
+        "Florida, United States",
+        "Peninsular State",
+        "State of Florida",
+        "Sunshine State",
+        "The Gator State",
+        "The Sunshine State"
+      ],
+      "sitelinks": 260
+    },
+    {
+      "qid": "Q1439",
+      "label": "Texas",
+      "aliases": [
+        "Lone Star State",
+        "State of Texas",
+        "Tex.",
+        "Texas, United States",
+        "US-TX"
+      ],
+      "sitelinks": 259
+    },
+    {
+      "qid": "Q1384",
+      "label": "New York",
+      "aliases": [
+        "Empire State",
+        "New York (state)",
+        "New York state",
+        "New York, United States",
+        "NY",
+        "NY state",
+        "NYS",
+        "State of New York",
+        "The Empire State",
+        "US-NY"
+      ],
+      "sitelinks": 247
+    },
+    {
+      "qid": "Q816",
+      "label": "Arizona",
+      "aliases": [
+        "Ariz.",
+        "Arizona, United States",
+        "AZ",
+        "Grand Canyon State",
+        "State of Arizona",
+        "The Grand Canyon State",
+        "US-AZ"
+      ],
+      "sitelinks": 245
+    },
+    {
+      "qid": "Q173",
+      "label": "Alabama",
+      "aliases": [
+        "Ala",
+        "Ala.",
+        "Bama",
+        "Heart of Dixie",
+        "State of Alabama",
+        "The Yellowhammer State",
+        "US-AL",
+        "Yellowhammer State"
+      ],
+      "sitelinks": 241
+    },
+    {
+      "qid": "Q1204",
+      "label": "Illinois",
+      "aliases": [
+        "IL",
+        "Ill.",
+        "Illinois, United States",
+        "Ills.",
+        "Land of Lincoln",
+        "Lincoln State",
+        "Prairie State",
+        "State of Illinois",
+        "The Land of Lincoln",
+        "The Prairie State",
+        "US-IL"
+      ],
+      "sitelinks": 238
+    },
+    {
+      "qid": "Q1397",
+      "label": "Ohio",
+      "aliases": [
+        "Buckeye State",
+        "OH",
+        "Ohio, United States",
+        "State of Ohio",
+        "US-OH"
+      ],
+      "sitelinks": 235
+    },
+    {
+      "qid": "Q1400",
+      "label": "Pennsylvania",
+      "aliases": [
+        "Commonwealth of Pennsylvania",
+        "Keystone State",
+        "PA",
+        "Pa.",
+        "Penna.",
+        "Pennsylvania, United States",
+        "State of Pennsylvania",
+        "US-PA"
+      ],
+      "sitelinks": 235
+    },
+    {
+      "qid": "Q1370",
+      "label": "Virginia",
+      "aliases": [
+        "Commonwealth of Virginia",
+        "Old Dominion",
+        "State of Virginia",
+        "US-VA",
+        "VA",
+        "Va.",
+        "Virginia, United States"
+      ],
+      "sitelinks": 234
+    },
+    {
+      "qid": "Q1428",
+      "label": "Georgia",
+      "aliases": [
+        "Georgia, United States",
+        "State of Georgia",
+        "The Empire State of the South",
+        "The Goober State",
+        "The Peach State"
+      ],
+      "sitelinks": 231
+    },
+    {
+      "qid": "Q1227",
+      "label": "Nevada",
+      "aliases": [
+        "Nevada, United States",
+        "Silver State",
+        "State of Nevada",
+        "The Silver State",
+        "US-NV"
+      ],
+      "sitelinks": 231
+    },
+    {
+      "qid": "Q1408",
+      "label": "New Jersey",
+      "aliases": [
+        "Garden State",
+        "Iersey",
+        "Jersey",
+        "N.J.",
+        "New Iersey",
+        "New Jersey, United States",
+        "NJ",
+        "State of New Jersey",
+        "the Garden State",
+        "the State of New Jersey",
+        "US-NJ"
+      ],
+      "sitelinks": 231
+    },
+    {
+      "qid": "Q1261",
+      "label": "Colorado",
+      "aliases": [
+        "Centennial State",
+        "CO",
+        "Colo.",
+        "Colorado, United States",
+        "State of Colorado",
+        "US-CO"
+      ],
+      "sitelinks": 230
+    },
+    {
+      "qid": "Q1391",
+      "label": "Maryland",
+      "aliases": [
+        "Maryland, United States",
+        "Md.",
+        "Old Line State",
+        "State of Maryland",
+        "US-MD"
+      ],
+      "sitelinks": 229
+    },
+    {
+      "qid": "Q771",
+      "label": "Massachusetts",
+      "aliases": [
+        "6th State",
+        "Bay State",
+        "Commonwealth of MA",
+        "Commonwealth of Massachusetts",
+        "Mass.",
+        "Massachusetts (U.S. state)",
+        "Massachusetts state",
+        "Massachusetts, United States",
+        "Masshole Commonwealth",
+        "State of Massachusetts",
+        "Taxachusetts",
+        "The Bay State",
+        "The Commonwealth of Massachusetts"
+      ],
+      "sitelinks": 229
+    },
+    {
+      "qid": "Q829",
+      "label": "Utah",
+      "aliases": [
+        "Beehive State",
+        "Mormon State",
+        "State of Utah",
+        "US-UT",
+        "UT"
+      ],
+      "sitelinks": 227
+    },
+    {
+      "qid": "Q824",
+      "label": "Oregon",
+      "aliases": [
+        "OR",
+        "Ore.",
+        "Oreg.",
+        "Oregon, United States",
+        "State of Oregon",
+        "The Beaver State",
+        "US-OR"
+      ],
+      "sitelinks": 226
+    },
+    {
+      "qid": "Q1509",
+      "label": "Tennessee",
+      "aliases": [
+        "State of Tennessee",
+        "Tenn.",
+        "Tennessee, United States",
+        "The Volunteer State",
+        "TN",
+        "US-TN",
+        "Volunteer State"
+      ],
+      "sitelinks": 226
+    },
+    {
+      "qid": "Q1415",
+      "label": "Indiana",
+      "aliases": [
+        "Hoosier State",
+        "Ind.",
+        "Indiana, United States",
+        "State of Indiana"
+      ],
+      "sitelinks": 225
+    },
+    {
+      "qid": "Q1558",
+      "label": "Kansas",
+      "aliases": [
+        "Kan.",
+        "Kans.",
+        "Kansas, United States of America",
+        "State of Kansas",
+        "Sunflower State",
+        "US-KS"
+      ],
+      "sitelinks": 225
+    },
+    {
+      "qid": "Q1166",
+      "label": "Michigan",
+      "aliases": [
+        "Great Lakes State",
+        "Mich.",
+        "Michigan, United States",
+        "State of Michigan",
+        "US-MI",
+        "Wolverine State"
+      ],
+      "sitelinks": 225
+    },
+    {
+      "qid": "Q1537",
+      "label": "Wisconsin",
+      "aliases": [
+        "Badger State",
+        "State of Wisconsin",
+        "US-WI",
+        "WI",
+        "Wis.",
+        "Wisconsin, United States"
+      ],
+      "sitelinks": 225
+    },
+    {
+      "qid": "Q1546",
+      "label": "Iowa",
+      "aliases": [
+        "Hawk-eye State",
+        "IA",
+        "Iowa, United States",
+        "State of Iowa",
+        "The Land Between Two Rivers",
+        "US-IA"
+      ],
+      "sitelinks": 224
+    },
+    {
+      "qid": "Q1588",
+      "label": "Louisiana",
+      "aliases": [
+        "18th State",
+        "Louisiana, United States",
+        "Pelican State",
+        "State of Louisiana"
+      ],
+      "sitelinks": 224
+    },
+    {
+      "qid": "Q1612",
+      "label": "Arkansas",
+      "aliases": [
+        "AR",
+        "AR-kən-saw",
+        "Ark.",
+        "Arkansas, United States",
+        "Arkansaw",
+        "Arkensaw",
+        "ARkənsaw",
+        "State of Arkansas",
+        "The Natural State",
+        "US-AR"
+      ],
+      "sitelinks": 223
+    },
+    {
+      "qid": "Q1527",
+      "label": "Minnesota",
+      "aliases": [
+        "Land of 10,000 Lakes",
+        "Minn.",
+        "Minnesota, United States",
+        "MN",
+        "North Star State",
+        "State of Minnesota",
+        "US-MN"
+      ],
+      "sitelinks": 223
+    },
+    {
+      "qid": "Q1581",
+      "label": "Missouri",
+      "aliases": [
+        "Missouri, United States",
+        "MO",
+        "Mo.",
+        "State of Missouri",
+        "The Show Me State",
+        "US-MO"
+      ],
+      "sitelinks": 223
+    },
+    {
+      "qid": "Q1522",
+      "label": "New Mexico",
+      "aliases": [
+        "Land of Enchantment",
+        "N. Mex.",
+        "N.M.",
+        "New Mexico, United States",
+        "State of New Mexico"
+      ],
+      "sitelinks": 223
+    },
+    {
+      "qid": "Q1223",
+      "label": "Washington",
+      "aliases": [
+        "Evergreen State",
+        "State of Washington",
+        "US-WA",
+        "WA",
+        "Washington (state)",
+        "Washington State"
+      ],
+      "sitelinks": 223
+    },
+    {
+      "qid": "Q779",
+      "label": "Connecticut",
+      "aliases": [
+        "5th State",
+        "Conn.",
+        "Connecticut (state)",
+        "Connecticut (U.S. state)",
+        "Connecticut, U.S.",
+        "Connecticut, United States",
+        "Conneticut",
+        "Constitution State",
+        "CT",
+        "CT, USA",
+        "Nutmeg State",
+        "State of Connecticut",
+        "The Constitution State",
+        "The Nutmeg State",
+        "US-CT"
+      ],
+      "sitelinks": 222
+    },
+    {
+      "qid": "Q1221",
+      "label": "Idaho",
+      "aliases": [
+        "Gem State",
+        "ID",
+        "Idaho, United States",
+        "Potato State",
+        "State of Idaho",
+        "US-ID"
+      ],
+      "sitelinks": 222
+    },
+    {
+      "qid": "Q1649",
+      "label": "Oklahoma",
+      "aliases": [
+        "Ekelahema",
+        "O.T. (Oklahoma Territory)",
+        "Ogalahoma",
+        "Okla.",
+        "Oklahoma Territory",
+        "Oklahoma, United States",
+        "Oklahumma",
+        "OT (Oklahoma Territory)",
+        "Sooner State",
+        "State of Oklahoma",
+        "Territory of Oklahoma",
+        "The Sooner State",
+        "Uukaalaasuumaa"
+      ],
+      "sitelinks": 222
+    },
+    {
+      "qid": "Q1603",
+      "label": "Kentucky",
+      "aliases": [
+        "Bluegrass State",
+        "Commonwealth of Kentucky",
+        "Kentucky, United States",
+        "KY",
+        "Ky.",
+        "US-KY"
+      ],
+      "sitelinks": 221
+    },
+    {
+      "qid": "Q1553",
+      "label": "Nebraska",
+      "aliases": [
+        "Cornhusker State",
+        "NE",
+        "Neb.",
+        "Nebr.",
+        "Nebraska, United States",
+        "State of Nebraska",
+        "US-NE"
+      ],
+      "sitelinks": 221
+    },
+    {
+      "qid": "Q1393",
+      "label": "Delaware",
+      "aliases": [
+        "Blue Hen State",
+        "DE",
+        "Delaware, United States",
+        "State of Delaware",
+        "The Diamond State",
+        "The First State",
+        "The Small Wonder",
+        "US-DE"
+      ],
+      "sitelinks": 220
+    },
+    {
+      "qid": "Q1494",
+      "label": "Mississippi",
+      "aliases": [
+        "Magnolia State",
+        "Miss.",
+        "Mississippi (state)",
+        "Mississippi, United States",
+        "MS",
+        "State of Mississippi",
+        "US-MS"
+      ],
+      "sitelinks": 220
+    },
+    {
+      "qid": "Q16551",
+      "label": "Vermont",
+      "aliases": [
+        "State of Vermont",
+        "The Green Mountain State",
+        "US-VT",
+        "Vermont, United States",
+        "Vt."
+      ],
+      "sitelinks": 219
+    },
+    {
+      "qid": "Q1456",
+      "label": "South Carolina",
+      "aliases": [
+        "Palmetto State",
+        "S. C.",
+        "S.C.",
+        "South Carolina, United States",
+        "State of South Carolina",
+        "US-SC"
+      ],
+      "sitelinks": 217
+    },
+    {
+      "qid": "Q1214",
+      "label": "Wyoming",
+      "aliases": [
+        "Big Wyoming",
+        "State of Wyoming",
+        "The Cowboy State",
+        "The Equality State",
+        "US-WY",
+        "WY",
+        "Wyo",
+        "Wyo.",
+        "Wyoming, United States"
+      ],
+      "sitelinks": 217
+    },
+    {
+      "qid": "Q724",
+      "label": "Maine",
+      "aliases": [
+        "Maine, United States",
+        "ME",
+        "State of Maine",
+        "The Pine Tree State",
+        "US-ME"
+      ],
+      "sitelinks": 216
+    },
+    {
+      "qid": "Q1212",
+      "label": "Montana",
+      "aliases": [
+        "Big Sky Country",
+        "Mont.",
+        "Montana, United States",
+        "MT",
+        "State of Montana",
+        "Treasure State",
+        "US-MT"
+      ],
+      "sitelinks": 216
+    },
+    {
+      "qid": "Q759",
+      "label": "New Hampshire",
+      "aliases": [
+        "Granite State",
+        "N.H.",
+        "New Hampshire, United States",
+        "NH",
+        "State of New Hampshire",
+        "The Granite State",
+        "US-NH"
+      ],
+      "sitelinks": 216
+    },
+    {
+      "qid": "Q1454",
+      "label": "North Carolina",
+      "aliases": [
+        "NC, United States",
+        "North Carolina (US)",
+        "North Carolina, United States",
+        "State of North Carolina",
+        "Tar Heel State",
+        "The Tar Heel State"
+      ],
+      "sitelinks": 216
+    },
+    {
+      "qid": "Q1371",
+      "label": "West Virginia",
+      "aliases": [
+        "Almost Heaven",
+        "State of West Virginia",
+        "The Mountain State",
+        "US-WV",
+        "W. Va.",
+        "W.Va.",
+        "West Virginia, United States",
+        "WV"
+      ],
+      "sitelinks": 215
+    },
+    {
+      "qid": "Q1387",
+      "label": "Rhode Island",
+      "aliases": [
+        "13th State",
+        "Little Rhodie",
+        "Little Rhody",
+        "Ocean State",
+        "Providence Plantations",
+        "Rhode Island (state)",
+        "Rhode Island (U.S. state)",
+        "Rhode Island and Providence Plantations",
+        "Rhode Island State",
+        "Rhode Island, United States",
+        "RI",
+        "Road Island",
+        "State of Rhode Island",
+        "State of Rhode Island and Providence Plantations",
+        "The Ocean State",
+        "The State of Rhode Island and Providence Plantations",
+        "US-RI"
+      ],
+      "sitelinks": 214
+    },
+    {
+      "qid": "Q1211",
+      "label": "South Dakota",
+      "aliases": [
+        "S. Dak.",
+        "S. Dakota",
+        "S.D.",
+        "SD",
+        "SoDak",
+        "South Dakota, United States",
+        "State of South Dakota",
+        "The Coyote State",
+        "The Mount Rushmore State",
+        "US-SD"
+      ],
+      "sitelinks": 213
+    },
+    {
+      "qid": "Q1207",
+      "label": "North Dakota",
+      "aliases": [
+        "Flickertail State",
+        "N. Dak.",
+        "N. Dakota",
+        "NoDak",
+        "North Dakota, United States",
+        "Peace Garden State",
+        "Roughrider State",
+        "State of North Dakota",
+        "US-ND"
+      ],
+      "sitelinks": 211
+    }
+  ]
+}

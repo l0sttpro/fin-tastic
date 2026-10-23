@@ -1,0 +1,375 @@
+{
+  "search": "Europe",
+  "fetchedAt": "2026-10-23T07:55:00.499Z",
+  "candidates": [
+    {
+      "qid": "Q5412157",
+      "label": "Europe PubMed Central",
+      "description": "database of biomedical research",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Europe PubMed Central"
+      }
+    },
+    {
+      "qid": "Q46",
+      "label": "Europe",
+      "description": "terrestrial continent located in north-western Eurasia",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Europe"
+      }
+    },
+    {
+      "qid": "Q185144",
+      "label": "Europe",
+      "description": "Swedish rock band",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Europe"
+      }
+    },
+    {
+      "qid": "Q458",
+      "label": "European Union",
+      "description": "political and economic union of 27 European states",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "European Union"
+      }
+    },
+    {
+      "qid": "Q612228",
+      "label": "Europe",
+      "description": "French magazine",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Europe"
+      }
+    },
+    {
+      "qid": "Q516521",
+      "label": "European Food Safety Authority",
+      "description": "agency of the European Union",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "European Food Safety Authority"
+      }
+    },
+    {
+      "qid": "Q198697",
+      "label": "Europe",
+      "description": "1983 debut studio album by Europe",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Europe"
+      }
+    },
+    {
+      "qid": "Q899591",
+      "label": "European Journal of Inorganic Chemistry",
+      "description": "peer-reviewed scientific journal",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "European Journal of Inorganic Chemistry"
+      }
+    },
+    {
+      "qid": "Q234110",
+      "label": "Europeana",
+      "description": "digital collection of European cultural heritage operated by the Europeana Foundation",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Europeana"
+      }
+    },
+    {
+      "qid": "Q899286",
+      "label": "European Journal of Organic Chemistry",
+      "description": "journal",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "European Journal of Organic Chemistry"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "Europe"
+    },
+    "search": [
+      {
+        "id": "Q5412157",
+        "title": "Q5412157",
+        "pageid": 5176431,
+        "concepturi": "http://www.wikidata.org/entity/Q5412157",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q5412157",
+        "display": {
+          "label": {
+            "value": "Europe PubMed Central",
+            "language": "en"
+          },
+          "description": {
+            "value": "database of biomedical research",
+            "language": "en"
+          }
+        },
+        "label": "Europe PubMed Central",
+        "description": "database of biomedical research",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Europe PubMed Central"
+        }
+      },
+      {
+        "id": "Q46",
+        "title": "Q46",
+        "pageid": 159,
+        "concepturi": "http://www.wikidata.org/entity/Q46",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q46",
+        "display": {
+          "label": {
+            "value": "Europe",
+            "language": "en"
+          },
+          "description": {
+            "value": "terrestrial continent located in north-western Eurasia",
+            "language": "en"
+          }
+        },
+        "label": "Europe",
+        "description": "terrestrial continent located in north-western Eurasia",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Europe"
+        }
+      },
+      {
+        "id": "Q185144",
+        "title": "Q185144",
+        "pageid": 184025,
+        "concepturi": "http://www.wikidata.org/entity/Q185144",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q185144",
+        "display": {
+          "label": {
+            "value": "Europe",
+            "language": "en"
+          },
+          "description": {
+            "value": "Swedish rock band",
+            "language": "en"
+          }
+        },
+        "label": "Europe",
+        "description": "Swedish rock band",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Europe"
+        }
+      },
+      {
+        "id": "Q458",
+        "title": "Q458",
+        "pageid": 691,
+        "concepturi": "http://www.wikidata.org/entity/Q458",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q458",
+        "display": {
+          "label": {
+            "value": "European Union",
+            "language": "en"
+          },
+          "description": {
+            "value": "political and economic union of 27 European states",
+            "language": "en"
+          }
+        },
+        "label": "European Union",
+        "description": "political and economic union of 27 European states",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "European Union"
+        }
+      },
+      {
+        "id": "Q612228",
+        "title": "Q612228",
+        "pageid": 576541,
+        "concepturi": "http://www.wikidata.org/entity/Q612228",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q612228",
+        "display": {
+          "label": {
+            "value": "Europe",
+            "language": "en"
+          },
+          "description": {
+            "value": "French magazine",
+            "language": "en"
+          }
+        },
+        "label": "Europe",
+        "description": "French magazine",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Europe"
+        }
+      },
+      {
+        "id": "Q516521",
+        "title": "Q516521",
+        "pageid": 485806,
+        "concepturi": "http://www.wikidata.org/entity/Q516521",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q516521",
+        "display": {
+          "label": {
+            "value": "European Food Safety Authority",
+            "language": "en"
+          },
+          "description": {
+            "value": "agency of the European Union",
+            "language": "en"
+          }
+        },
+        "label": "European Food Safety Authority",
+        "description": "agency of the European Union",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "European Food Safety Authority"
+        }
+      },
+      {
+        "id": "Q198697",
+        "title": "Q198697",
+        "pageid": 196022,
+        "concepturi": "http://www.wikidata.org/entity/Q198697",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q198697",
+        "display": {
+          "label": {
+            "value": "Europe",
+            "language": "en"
+          },
+          "description": {
+            "value": "1983 debut studio album by Europe",
+            "language": "en"
+          }
+        },
+        "label": "Europe",
+        "description": "1983 debut studio album by Europe",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Europe"
+        }
+      },
+      {
+        "id": "Q899591",
+        "title": "Q899591",
+        "pageid": 850408,
+        "concepturi": "http://www.wikidata.org/entity/Q899591",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q899591",
+        "display": {
+          "label": {
+            "value": "European Journal of Inorganic Chemistry",
+            "language": "en"
+          },
+          "description": {
+            "value": "peer-reviewed scientific journal",
+            "language": "en"
+          }
+        },
+        "label": "European Journal of Inorganic Chemistry",
+        "description": "peer-reviewed scientific journal",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "European Journal of Inorganic Chemistry"
+        }
+      },
+      {
+        "id": "Q234110",
+        "title": "Q234110",
+        "pageid": 227732,
+        "concepturi": "http://www.wikidata.org/entity/Q234110",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q234110",
+        "display": {
+          "label": {
+            "value": "Europeana",
+            "language": "en"
+          },
+          "description": {
+            "value": "digital collection of European cultural heritage operated by the Europeana Foundation",
+            "language": "en"
+          }
+        },
+        "label": "Europeana",
+        "description": "digital collection of European cultural heritage operated by the Europeana Foundation",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Europeana"
+        }
+      },
+      {
+        "id": "Q899286",
+        "title": "Q899286",
+        "pageid": 850106,
+        "concepturi": "http://www.wikidata.org/entity/Q899286",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q899286",
+        "display": {
+          "label": {
+            "value": "European Journal of Organic Chemistry",
+            "language": "en"
+          },
+          "description": {
+            "value": "journal",
+            "language": "en"
+          }
+        },
+        "label": "European Journal of Organic Chemistry",
+        "description": "journal",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "European Journal of Organic Chemistry"
+        }
+      }
+    ],
+    "search-continue": 10,
+    "success": 1
+  }
+}

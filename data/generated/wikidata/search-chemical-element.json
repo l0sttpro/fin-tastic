@@ -1,0 +1,395 @@
+{
+  "search": "chemical element",
+  "fetchedAt": "2026-10-23T07:54:23.070Z",
+  "candidates": [
+    {
+      "qid": "Q11344",
+      "label": "chemical element",
+      "description": "species of atoms having the same number of protons in the atomic nucleus and the same chemical properties, but not necessarily the same mass, or the same stability (or half-lifetime if they are unstable)",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "chemical element"
+      }
+    },
+    {
+      "qid": "Q102500",
+      "label": "chemical symbol",
+      "description": "abbreviations used in chemistry",
+      "aliases": [
+        "chemical element symbol"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "chemical element symbol"
+      }
+    },
+    {
+      "qid": "Q19549",
+      "label": "chemical series",
+      "description": "grouping of chemical elements",
+      "aliases": [
+        "chemical element series"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "chemical element series"
+      }
+    },
+    {
+      "qid": "Q428867",
+      "label": "abundance of the chemical elements",
+      "description": "any of several measures of the occurrence of different chemical elements",
+      "aliases": [
+        "chemical element abundance"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "chemical element abundance"
+      }
+    },
+    {
+      "qid": "Q5358842",
+      "label": "element collecting",
+      "description": "hobby of collecting samples of the chemical elements",
+      "aliases": [
+        "chemical element collecting"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "chemical element collecting"
+      }
+    },
+    {
+      "qid": "Q87283383",
+      "label": "Chemical Elements",
+      "description": "episode of In Our Time",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Chemical Elements"
+      }
+    },
+    {
+      "qid": "Q4391770",
+      "label": "Chemical elements in East Asian languages",
+      "description": "chemical element nomenclature in East Asia",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Chemical elements in East Asian languages"
+      }
+    },
+    {
+      "qid": "Q141210891",
+      "label": "Chemical Elemental Composition from Vineyard Soil to Wine in Hawke’s Bay and Marlborough, New Zealand",
+      "description": "2022 doctoral thesis by Alexandra Anderson Lowrey at University of Auckland",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Chemical Elemental Composition from Vineyard Soil to Wine in Hawke’s Bay and Marlborough, New Zealand"
+      }
+    },
+    {
+      "qid": "Q108433827",
+      "label": "Chemical Elements Inside of Other Elements",
+      "description": "article published in Word Ways magazine",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Chemical Elements Inside of Other Elements"
+      }
+    },
+    {
+      "qid": "Q58118083",
+      "label": "Chemical Elements in the Environment",
+      "description": "scholarly article published 1998",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Chemical Elements in the Environment"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "chemical element"
+    },
+    "search": [
+      {
+        "id": "Q11344",
+        "title": "Q11344",
+        "pageid": 12844,
+        "concepturi": "http://www.wikidata.org/entity/Q11344",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q11344",
+        "display": {
+          "label": {
+            "value": "chemical element",
+            "language": "en"
+          },
+          "description": {
+            "value": "species of atoms having the same number of protons in the atomic nucleus and the same chemical properties, but not necessarily the same mass, or the same stability (or half-lifetime if they are unstable)",
+            "language": "en"
+          }
+        },
+        "label": "chemical element",
+        "description": "species of atoms having the same number of protons in the atomic nucleus and the same chemical properties, but not necessarily the same mass, or the same stability (or half-lifetime if they are unstable)",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "chemical element"
+        }
+      },
+      {
+        "id": "Q102500",
+        "title": "Q102500",
+        "pageid": 105112,
+        "concepturi": "http://www.wikidata.org/entity/Q102500",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q102500",
+        "display": {
+          "label": {
+            "value": "chemical symbol",
+            "language": "en"
+          },
+          "description": {
+            "value": "abbreviations used in chemistry",
+            "language": "en"
+          }
+        },
+        "label": "chemical symbol",
+        "description": "abbreviations used in chemistry",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "chemical element symbol"
+        },
+        "aliases": [
+          "chemical element symbol"
+        ]
+      },
+      {
+        "id": "Q19549",
+        "title": "Q19549",
+        "pageid": 22677,
+        "concepturi": "http://www.wikidata.org/entity/Q19549",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q19549",
+        "display": {
+          "label": {
+            "value": "chemical series",
+            "language": "en"
+          },
+          "description": {
+            "value": "grouping of chemical elements",
+            "language": "en"
+          }
+        },
+        "label": "chemical series",
+        "description": "grouping of chemical elements",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "chemical element series"
+        },
+        "aliases": [
+          "chemical element series"
+        ]
+      },
+      {
+        "id": "Q428867",
+        "title": "Q428867",
+        "pageid": 404641,
+        "concepturi": "http://www.wikidata.org/entity/Q428867",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q428867",
+        "display": {
+          "label": {
+            "value": "abundance of the chemical elements",
+            "language": "en"
+          },
+          "description": {
+            "value": "any of several measures of the occurrence of different chemical elements",
+            "language": "en"
+          }
+        },
+        "label": "abundance of the chemical elements",
+        "description": "any of several measures of the occurrence of different chemical elements",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "chemical element abundance"
+        },
+        "aliases": [
+          "chemical element abundance"
+        ]
+      },
+      {
+        "id": "Q5358842",
+        "title": "Q5358842",
+        "pageid": 5125460,
+        "concepturi": "http://www.wikidata.org/entity/Q5358842",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q5358842",
+        "display": {
+          "label": {
+            "value": "element collecting",
+            "language": "en"
+          },
+          "description": {
+            "value": "hobby of collecting samples of the chemical elements",
+            "language": "en"
+          }
+        },
+        "label": "element collecting",
+        "description": "hobby of collecting samples of the chemical elements",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "chemical element collecting"
+        },
+        "aliases": [
+          "chemical element collecting"
+        ]
+      },
+      {
+        "id": "Q87283383",
+        "title": "Q87283383",
+        "pageid": 86518219,
+        "concepturi": "http://www.wikidata.org/entity/Q87283383",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q87283383",
+        "display": {
+          "label": {
+            "value": "Chemical Elements",
+            "language": "en"
+          },
+          "description": {
+            "value": "episode of In Our Time",
+            "language": "en"
+          }
+        },
+        "label": "Chemical Elements",
+        "description": "episode of In Our Time",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Chemical Elements"
+        }
+      },
+      {
+        "id": "Q4391770",
+        "title": "Q4391770",
+        "pageid": 4194964,
+        "concepturi": "http://www.wikidata.org/entity/Q4391770",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q4391770",
+        "display": {
+          "label": {
+            "value": "Chemical elements in East Asian languages",
+            "language": "en"
+          },
+          "description": {
+            "value": "chemical element nomenclature in East Asia",
+            "language": "en"
+          }
+        },
+        "label": "Chemical elements in East Asian languages",
+        "description": "chemical element nomenclature in East Asia",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Chemical elements in East Asian languages"
+        }
+      },
+      {
+        "id": "Q141210891",
+        "title": "Q141210891",
+        "pageid": 134665118,
+        "concepturi": "http://www.wikidata.org/entity/Q141210891",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q141210891",
+        "display": {
+          "label": {
+            "value": "Chemical Elemental Composition from Vineyard Soil to Wine in Hawke’s Bay and Marlborough, New Zealand",
+            "language": "en"
+          },
+          "description": {
+            "value": "2022 doctoral thesis by Alexandra Anderson Lowrey at University of Auckland",
+            "language": "en"
+          }
+        },
+        "label": "Chemical Elemental Composition from Vineyard Soil to Wine in Hawke’s Bay and Marlborough, New Zealand",
+        "description": "2022 doctoral thesis by Alexandra Anderson Lowrey at University of Auckland",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Chemical Elemental Composition from Vineyard Soil to Wine in Hawke’s Bay and Marlborough, New Zealand"
+        }
+      },
+      {
+        "id": "Q108433827",
+        "title": "Q108433827",
+        "pageid": 103694983,
+        "concepturi": "http://www.wikidata.org/entity/Q108433827",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q108433827",
+        "display": {
+          "label": {
+            "value": "Chemical Elements Inside of Other Elements",
+            "language": "en"
+          },
+          "description": {
+            "value": "article published in Word Ways magazine",
+            "language": "en"
+          }
+        },
+        "label": "Chemical Elements Inside of Other Elements",
+        "description": "article published in Word Ways magazine",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Chemical Elements Inside of Other Elements"
+        }
+      },
+      {
+        "id": "Q58118083",
+        "title": "Q58118083",
+        "pageid": 58032327,
+        "concepturi": "http://www.wikidata.org/entity/Q58118083",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q58118083",
+        "display": {
+          "label": {
+            "value": "Chemical Elements in the Environment",
+            "language": "en"
+          },
+          "description": {
+            "value": "scholarly article published 1998",
+            "language": "en"
+          }
+        },
+        "label": "Chemical Elements in the Environment",
+        "description": "scholarly article published 1998",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Chemical Elements in the Environment"
+        }
+      }
+    ],
+    "search-continue": 10,
+    "success": 1
+  }
+}

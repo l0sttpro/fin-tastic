@@ -1,0 +1,597 @@
+[
+  {
+    "answer": "gold",
+    "qid": "Q897",
+    "sitelinks": 277,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "iron",
+    "qid": "Q677",
+    "sitelinks": 254,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hydrogen",
+    "qid": "Q556",
+    "sitelinks": 238,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "silver",
+    "qid": "Q1090",
+    "sitelinks": 238,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "oxygen",
+    "qid": "Q629",
+    "sitelinks": 234,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "copper",
+    "qid": "Q753",
+    "sitelinks": 229,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "carbon",
+    "qid": "Q623",
+    "sitelinks": 219,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "aluminium",
+    "qid": "Q663",
+    "sitelinks": 210,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "helium",
+    "qid": "Q560",
+    "sitelinks": 208,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "nitrogen",
+    "qid": "Q627",
+    "sitelinks": 205,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "sulfur",
+    "qid": "Q682",
+    "sitelinks": 196,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "lithium",
+    "qid": "Q568",
+    "sitelinks": 194,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "lead",
+    "qid": "Q708",
+    "sitelinks": 192,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "tin",
+    "qid": "Q1096",
+    "sitelinks": 191,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "sodium",
+    "qid": "Q658",
+    "sitelinks": 188,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "mercury",
+    "qid": "Q925",
+    "sitelinks": 185,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "calcium",
+    "qid": "Q706",
+    "sitelinks": 183,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "beryllium",
+    "qid": "Q569",
+    "sitelinks": 182,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "neon",
+    "qid": "Q654",
+    "sitelinks": 180,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "zinc",
+    "qid": "Q758",
+    "sitelinks": 180,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "magnesium",
+    "qid": "Q660",
+    "sitelinks": 178,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "potassium",
+    "qid": "Q703",
+    "sitelinks": 177,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "silicon",
+    "qid": "Q670",
+    "sitelinks": 177,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "uranium",
+    "qid": "Q1098",
+    "sitelinks": 176,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "chlorine",
+    "qid": "Q688",
+    "sitelinks": 175,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "fluorine",
+    "qid": "Q650",
+    "sitelinks": 175,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "phosphorus",
+    "qid": "Q674",
+    "sitelinks": 175,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "boron",
+    "qid": "Q618",
+    "sitelinks": 173,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "argon",
+    "qid": "Q696",
+    "sitelinks": 168,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "titanium",
+    "qid": "Q716",
+    "sitelinks": 167,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "chromium",
+    "qid": "Q725",
+    "sitelinks": 164,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "arsenic",
+    "qid": "Q871",
+    "sitelinks": 163,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "cobalt",
+    "qid": "Q740",
+    "sitelinks": 163,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "iodine",
+    "qid": "Q1103",
+    "sitelinks": 163,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "manganese",
+    "qid": "Q731",
+    "sitelinks": 161,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "nickel",
+    "qid": "Q744",
+    "sitelinks": 161,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "platinum",
+    "qid": "Q880",
+    "sitelinks": 161,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "krypton",
+    "qid": "Q888",
+    "sitelinks": 159,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "barium",
+    "qid": "Q1112",
+    "sitelinks": 158,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "gallium",
+    "qid": "Q861",
+    "sitelinks": 158,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "vanadium",
+    "qid": "Q722",
+    "sitelinks": 158,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "bromine",
+    "qid": "Q879",
+    "sitelinks": 156,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "selenium",
+    "qid": "Q876",
+    "sitelinks": 155,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "cadmium",
+    "qid": "Q1091",
+    "sitelinks": 153,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "strontium",
+    "qid": "Q938",
+    "sitelinks": 153,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "antimony",
+    "qid": "Q1099",
+    "sitelinks": 152,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "cesium",
+    "qid": "Q1108",
+    "sitelinks": 152,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "germanium",
+    "qid": "Q867",
+    "sitelinks": 152,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "rubidium",
+    "qid": "Q895",
+    "sitelinks": 152,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "xenon",
+    "qid": "Q1106",
+    "sitelinks": 152,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "bismuth",
+    "qid": "Q942",
+    "sitelinks": 151,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "tungsten",
+    "qid": "Q743",
+    "sitelinks": 150,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "niobium",
+    "qid": "Q1046",
+    "sitelinks": 149,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "palladium",
+    "qid": "Q1089",
+    "sitelinks": 148,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "molybdenum",
+    "qid": "Q1053",
+    "sitelinks": 147,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "hafnium",
+    "qid": "Q1119",
+    "sitelinks": 146,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "tellurium",
+    "qid": "Q1100",
+    "sitelinks": 146,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "yttrium",
+    "qid": "Q941",
+    "sitelinks": 146,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "indium",
+    "qid": "Q1094",
+    "sitelinks": 144,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "rhodium",
+    "qid": "Q1087",
+    "sitelinks": 144,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "ruthenium",
+    "qid": "Q1086",
+    "sitelinks": 144,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "zirconium",
+    "qid": "Q1038",
+    "sitelinks": 144,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "lanthanum",
+    "qid": "Q1801",
+    "sitelinks": 142,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "rhenium",
+    "qid": "Q737",
+    "sitelinks": 142,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "hassium",
+    "qid": "Q1252",
+    "sitelinks": 139,
+    "currentTier": "fintastic",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "rutherfordium",
+    "qid": "Q1226",
+    "sitelinks": 139,
+    "currentTier": "fintastic",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "seaborgium",
+    "qid": "Q1234",
+    "sitelinks": 137,
+    "currentTier": "fintastic",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "californium",
+    "qid": "Q1888",
+    "sitelinks": 136,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "dubnium",
+    "qid": "Q1232",
+    "sitelinks": 136,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "protactinium",
+    "qid": "Q1109",
+    "sitelinks": 136,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "americium",
+    "qid": "Q1872",
+    "sitelinks": 135,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "bohrium",
+    "qid": "Q1249",
+    "sitelinks": 135,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "gadolinium",
+    "qid": "Q1832",
+    "sitelinks": 135,
+    "currentTier": "fin-omenal",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "meitnerium",
+    "qid": "Q1258",
+    "sitelinks": 135,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "oganesson",
+    "qid": "Q1307",
+    "sitelinks": 135,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "neodymium",
+    "qid": "Q1388",
+    "sitelinks": 134,
+    "currentTier": "fin-omenal",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "praseodymium",
+    "qid": "Q1386",
+    "sitelinks": 134,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "darmstadtium",
+    "qid": "Q1266",
+    "sitelinks": 133,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "roentgenium",
+    "qid": "Q1272",
+    "sitelinks": 132,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "copernicium",
+    "qid": "Q1278",
+    "sitelinks": 130,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "nihonium",
+    "qid": "Q1301",
+    "sitelinks": 130,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "moscovium",
+    "qid": "Q1303",
+    "sitelinks": 129,
+    "currentTier": "fintastic",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "livermorium",
+    "qid": "Q1304",
+    "sitelinks": 128,
+    "currentTier": "fintastic",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "flerovium",
+    "qid": "Q1302",
+    "sitelinks": 126,
+    "currentTier": "fintastic",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "tennessine",
+    "qid": "Q1306",
+    "sitelinks": 124,
+    "currentTier": "fintastic",
+    "proposedTier": "fintastic"
+  }
+]

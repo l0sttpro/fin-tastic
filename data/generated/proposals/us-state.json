@@ -1,0 +1,352 @@
+[
+  {
+    "answer": "california",
+    "qid": "Q99",
+    "sitelinks": 287,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hawaii",
+    "qid": "Q782",
+    "sitelinks": 269,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "alaska",
+    "qid": "Q797",
+    "sitelinks": 263,
+    "currentTier": "fintastic",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "florida",
+    "qid": "Q812",
+    "sitelinks": 260,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "texas",
+    "qid": "Q1439",
+    "sitelinks": 259,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "new york",
+    "qid": "Q1384",
+    "sitelinks": 247,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "arizona",
+    "qid": "Q816",
+    "sitelinks": 245,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "alabama",
+    "qid": "Q173",
+    "sitelinks": 241,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "illinois",
+    "qid": "Q1204",
+    "sitelinks": 238,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "ohio",
+    "qid": "Q1397",
+    "sitelinks": 235,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "pennsylvania",
+    "qid": "Q1400",
+    "sitelinks": 235,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "virginia",
+    "qid": "Q1370",
+    "sitelinks": 234,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "georgia",
+    "qid": "Q1428",
+    "sitelinks": 231,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "nevada",
+    "qid": "Q1227",
+    "sitelinks": 231,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "new jersey",
+    "qid": "Q1408",
+    "sitelinks": 231,
+    "currentTier": "fintastic",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "colorado",
+    "qid": "Q1261",
+    "sitelinks": 230,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "maryland",
+    "qid": "Q1391",
+    "sitelinks": 229,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "massachusetts",
+    "qid": "Q771",
+    "sitelinks": 229,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "utah",
+    "qid": "Q829",
+    "sitelinks": 227,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "oregon",
+    "qid": "Q824",
+    "sitelinks": 226,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "tennessee",
+    "qid": "Q1509",
+    "sitelinks": 226,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "indiana",
+    "qid": "Q1415",
+    "sitelinks": 225,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "kansas",
+    "qid": "Q1558",
+    "sitelinks": 225,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "michigan",
+    "qid": "Q1166",
+    "sitelinks": 225,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "wisconsin",
+    "qid": "Q1537",
+    "sitelinks": 225,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "iowa",
+    "qid": "Q1546",
+    "sitelinks": 224,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "louisiana",
+    "qid": "Q1588",
+    "sitelinks": 224,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "arkansas",
+    "qid": "Q1612",
+    "sitelinks": 223,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "minnesota",
+    "qid": "Q1527",
+    "sitelinks": 223,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "missouri",
+    "qid": "Q1581",
+    "sitelinks": 223,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "new mexico",
+    "qid": "Q1522",
+    "sitelinks": 223,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "washington",
+    "qid": "Q1223",
+    "sitelinks": 223,
+    "currentTier": "plankton",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "connecticut",
+    "qid": "Q779",
+    "sitelinks": 222,
+    "currentTier": "fintastic",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "idaho",
+    "qid": "Q1221",
+    "sitelinks": 222,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "oklahoma",
+    "qid": "Q1649",
+    "sitelinks": 222,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "kentucky",
+    "qid": "Q1603",
+    "sitelinks": 221,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "nebraska",
+    "qid": "Q1553",
+    "sitelinks": 221,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "delaware",
+    "qid": "Q1393",
+    "sitelinks": 220,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "mississippi",
+    "qid": "Q1494",
+    "sitelinks": 220,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "vermont",
+    "qid": "Q16551",
+    "sitelinks": 219,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "south carolina",
+    "qid": "Q1456",
+    "sitelinks": 217,
+    "currentTier": "reef-rookie",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "wyoming",
+    "qid": "Q1214",
+    "sitelinks": 217,
+    "currentTier": "fintastic",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "maine",
+    "qid": "Q724",
+    "sitelinks": 216,
+    "currentTier": "fin-omenal",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "montana",
+    "qid": "Q1212",
+    "sitelinks": 216,
+    "currentTier": "fin-omenal",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "new hampshire",
+    "qid": "Q759",
+    "sitelinks": 216,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "north carolina",
+    "qid": "Q1454",
+    "sitelinks": 216,
+    "currentTier": "plankton",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "west virginia",
+    "qid": "Q1371",
+    "sitelinks": 215,
+    "currentTier": "jawsome",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "rhode island",
+    "qid": "Q1387",
+    "sitelinks": 214,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "south dakota",
+    "qid": "Q1211",
+    "sitelinks": 213,
+    "currentTier": "fintastic",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "north dakota",
+    "qid": "Q1207",
+    "sitelinks": 211,
+    "currentTier": "fintastic",
+    "proposedTier": "fintastic"
+  }
+]

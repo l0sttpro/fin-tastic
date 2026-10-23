@@ -1,0 +1,399 @@
+{
+  "search": "natural satellite",
+  "fetchedAt": "2026-10-23T07:54:25.223Z",
+  "candidates": [
+    {
+      "qid": "Q2537",
+      "label": "natural satellite",
+      "description": "celestial body that orbits a planet or other smaller body in turn directly orbiting a star",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "natural satellite"
+      }
+    },
+    {
+      "qid": "Q2152",
+      "label": "moon of Uranus",
+      "description": "natural satellites of the planet Uranus",
+      "aliases": [
+        "natural satellite of Uranus"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "natural satellite of Uranus"
+      }
+    },
+    {
+      "qid": "Q61702557",
+      "label": "moon of Jupiter",
+      "description": "natural satellite orbiting Jupiter",
+      "aliases": [
+        "natural satellite of Jupiter"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "natural satellite of Jupiter"
+      }
+    },
+    {
+      "qid": "Q70317934",
+      "label": "natural satellite group",
+      "description": "group of natural satellites of a given planet",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "natural satellite group"
+      }
+    },
+    {
+      "qid": "Q109645860",
+      "label": "planetary moon",
+      "description": "natural satellite orbiting a planetary object",
+      "aliases": [
+        "natural satellite of a planet"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "natural satellite of a planet"
+      }
+    },
+    {
+      "qid": "Q109641594",
+      "label": "dwarf-planet moon",
+      "description": "astronomical object that orbits a dwarf planet",
+      "aliases": [
+        "natural satellite of a dwarf planet"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "natural satellite of a dwarf planet"
+      }
+    },
+    {
+      "qid": "Q108089262",
+      "label": "moon in a fiction work",
+      "description": "moon, real or imagined, appearing in works of fiction",
+      "aliases": [
+        "natural satellite in a fiction work"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "natural satellite in a fiction work"
+      }
+    },
+    {
+      "qid": "Q109645190",
+      "label": "classification of natural satellites",
+      "description": "type of scientific classification",
+      "aliases": [
+        "natural satellite classification"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "natural satellite classification"
+      }
+    },
+    {
+      "qid": "Q6980782",
+      "label": "natural satellite habitability",
+      "description": "measure of the potential of natural satellites to have environments hospitable to life",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "natural satellite habitability"
+      }
+    },
+    {
+      "qid": "Q64296344",
+      "label": "Natural satellites mutual phenomena observations: Achievements and future",
+      "description": "",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Natural satellites mutual phenomena observations: Achievements and future"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "natural satellite"
+    },
+    "search": [
+      {
+        "id": "Q2537",
+        "title": "Q2537",
+        "pageid": 3505,
+        "concepturi": "http://www.wikidata.org/entity/Q2537",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q2537",
+        "display": {
+          "label": {
+            "value": "natural satellite",
+            "language": "en"
+          },
+          "description": {
+            "value": "celestial body that orbits a planet or other smaller body in turn directly orbiting a star",
+            "language": "en"
+          }
+        },
+        "label": "natural satellite",
+        "description": "celestial body that orbits a planet or other smaller body in turn directly orbiting a star",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "natural satellite"
+        }
+      },
+      {
+        "id": "Q2152",
+        "title": "Q2152",
+        "pageid": 3073,
+        "concepturi": "http://www.wikidata.org/entity/Q2152",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q2152",
+        "display": {
+          "label": {
+            "value": "moon of Uranus",
+            "language": "en"
+          },
+          "description": {
+            "value": "natural satellites of the planet Uranus",
+            "language": "en"
+          }
+        },
+        "label": "moon of Uranus",
+        "description": "natural satellites of the planet Uranus",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "natural satellite of Uranus"
+        },
+        "aliases": [
+          "natural satellite of Uranus"
+        ]
+      },
+      {
+        "id": "Q61702557",
+        "title": "Q61702557",
+        "pageid": 61541108,
+        "concepturi": "http://www.wikidata.org/entity/Q61702557",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q61702557",
+        "display": {
+          "label": {
+            "value": "moon of Jupiter",
+            "language": "en"
+          },
+          "description": {
+            "value": "natural satellite orbiting Jupiter",
+            "language": "en"
+          }
+        },
+        "label": "moon of Jupiter",
+        "description": "natural satellite orbiting Jupiter",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "natural satellite of Jupiter"
+        },
+        "aliases": [
+          "natural satellite of Jupiter"
+        ]
+      },
+      {
+        "id": "Q70317934",
+        "title": "Q70317934",
+        "pageid": 69975722,
+        "concepturi": "http://www.wikidata.org/entity/Q70317934",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q70317934",
+        "display": {
+          "label": {
+            "value": "natural satellite group",
+            "language": "en"
+          },
+          "description": {
+            "value": "group of natural satellites of a given planet",
+            "language": "en"
+          }
+        },
+        "label": "natural satellite group",
+        "description": "group of natural satellites of a given planet",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "natural satellite group"
+        }
+      },
+      {
+        "id": "Q109645860",
+        "title": "Q109645860",
+        "pageid": 104761613,
+        "concepturi": "http://www.wikidata.org/entity/Q109645860",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q109645860",
+        "display": {
+          "label": {
+            "value": "planetary moon",
+            "language": "en"
+          },
+          "description": {
+            "value": "natural satellite orbiting a planetary object",
+            "language": "en"
+          }
+        },
+        "label": "planetary moon",
+        "description": "natural satellite orbiting a planetary object",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "natural satellite of a planet"
+        },
+        "aliases": [
+          "natural satellite of a planet"
+        ]
+      },
+      {
+        "id": "Q109641594",
+        "title": "Q109641594",
+        "pageid": 104760282,
+        "concepturi": "http://www.wikidata.org/entity/Q109641594",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q109641594",
+        "display": {
+          "label": {
+            "value": "dwarf-planet moon",
+            "language": "en"
+          },
+          "description": {
+            "value": "astronomical object that orbits a dwarf planet",
+            "language": "en"
+          }
+        },
+        "label": "dwarf-planet moon",
+        "description": "astronomical object that orbits a dwarf planet",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "natural satellite of a dwarf planet"
+        },
+        "aliases": [
+          "natural satellite of a dwarf planet"
+        ]
+      },
+      {
+        "id": "Q108089262",
+        "title": "Q108089262",
+        "pageid": 103361196,
+        "concepturi": "http://www.wikidata.org/entity/Q108089262",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q108089262",
+        "display": {
+          "label": {
+            "value": "moon in a fiction work",
+            "language": "en"
+          },
+          "description": {
+            "value": "moon, real or imagined, appearing in works of fiction",
+            "language": "en"
+          }
+        },
+        "label": "moon in a fiction work",
+        "description": "moon, real or imagined, appearing in works of fiction",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "natural satellite in a fiction work"
+        },
+        "aliases": [
+          "natural satellite in a fiction work"
+        ]
+      },
+      {
+        "id": "Q109645190",
+        "title": "Q109645190",
+        "pageid": 104761432,
+        "concepturi": "http://www.wikidata.org/entity/Q109645190",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q109645190",
+        "display": {
+          "label": {
+            "value": "classification of natural satellites",
+            "language": "en"
+          },
+          "description": {
+            "value": "type of scientific classification",
+            "language": "en"
+          }
+        },
+        "label": "classification of natural satellites",
+        "description": "type of scientific classification",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "natural satellite classification"
+        },
+        "aliases": [
+          "natural satellite classification"
+        ]
+      },
+      {
+        "id": "Q6980782",
+        "title": "Q6980782",
+        "pageid": 6852183,
+        "concepturi": "http://www.wikidata.org/entity/Q6980782",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q6980782",
+        "display": {
+          "label": {
+            "value": "natural satellite habitability",
+            "language": "en"
+          },
+          "description": {
+            "value": "measure of the potential of natural satellites to have environments hospitable to life",
+            "language": "en"
+          }
+        },
+        "label": "natural satellite habitability",
+        "description": "measure of the potential of natural satellites to have environments hospitable to life",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "natural satellite habitability"
+        }
+      },
+      {
+        "id": "Q64296344",
+        "title": "Q64296344",
+        "pageid": 63996314,
+        "concepturi": "http://www.wikidata.org/entity/Q64296344",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q64296344",
+        "display": {
+          "label": {
+            "value": "Natural satellites mutual phenomena observations: Achievements and future",
+            "language": "en"
+          }
+        },
+        "label": "Natural satellites mutual phenomena observations: Achievements and future",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Natural satellites mutual phenomena observations: Achievements and future"
+        }
+      }
+    ],
+    "success": 1
+  }
+}

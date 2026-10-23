@@ -11,7 +11,11 @@
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "validate": "node --experimental-strip-types scripts/validate-data.mjs",
-    "show": "node --experimental-strip-types scripts/show-prompt.mjs"
+    "show": "node --experimental-strip-types scripts/show-prompt.mjs",
+    "wikidata:search": "node scripts/wikidata/search.mjs",
+    "wikidata:fetch": "node scripts/wikidata/fetch.mjs",
+    "wikidata:audit": "node --experimental-strip-types scripts/wikidata/audit.mjs",
+    "wikidata:calibrate": "node --experimental-strip-types scripts/wikidata/calibrate.mjs"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

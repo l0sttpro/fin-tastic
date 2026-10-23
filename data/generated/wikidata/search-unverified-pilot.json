@@ -1,0 +1,908 @@
+{
+  "fetchedAt": "2026-10-23T08:02:02.746Z",
+  "prompts": {
+    "jupiter-moon": [
+      {
+        "term": "thoe",
+        "candidates": [
+          {
+            "qid": "Q18092124",
+            "label": "Thoe",
+            "description": "genus of crustaceans"
+          },
+          {
+            "qid": "Q37017636",
+            "label": "Thoe",
+            "description": "family name"
+          },
+          {
+            "qid": "Q59347379",
+            "label": "Thoe",
+            "description": "genus of ctenophores"
+          },
+          {
+            "qid": "Q61654261",
+            "label": "Thoe",
+            "description": "subgenus of cnidarians"
+          },
+          {
+            "qid": "Q2163700",
+            "label": "Thoe",
+            "description": "One of the Oceanids"
+          }
+        ]
+      },
+      {
+        "term": "praxithea",
+        "candidates": [
+          {
+            "qid": "Q3401462",
+            "label": "Praxithea",
+            "description": "genus of insects"
+          },
+          {
+            "qid": "Q2108224",
+            "label": "Praxithea",
+            "description": "daughter of Phrasimus or the river-god Cephissus, married to king Erechtheus of Athens"
+          },
+          {
+            "qid": "Q13058657",
+            "label": "Praxithea",
+            "description": "Naiad, spouse of Erichthonius of Athens"
+          },
+          {
+            "qid": "Q73507159",
+            "label": "Praxithea",
+            "description": "theatrical character in the play \"Trisevgeni\""
+          },
+          {
+            "qid": "Q20871147",
+            "label": "Praxithea",
+            "description": "list of people of Greek mythology"
+          }
+        ]
+      },
+      {
+        "term": "hippocamp",
+        "candidates": [
+          {
+            "qid": "Q74363",
+            "label": "Hippocampus",
+            "description": "genus of fishes"
+          },
+          {
+            "qid": "Q5768411",
+            "label": "Hippocampus",
+            "description": "scientific journal"
+          },
+          {
+            "qid": "Q7308967",
+            "label": "hippocampus proper",
+            "description": "part of the brain of mammals"
+          },
+          {
+            "qid": "Q816795",
+            "label": "hippocamp",
+            "description": "mythological creature in Phoenician and Greek mythology"
+          },
+          {
+            "qid": "Q2578911",
+            "label": "lined seahorse",
+            "description": "species of fish"
+          }
+        ]
+      },
+      {
+        "term": "eanthe",
+        "candidates": [
+          {
+            "qid": "Q5850148",
+            "label": "Oeantheia",
+            "description": "ancient town of the Ozolian Locrians"
+          }
+        ]
+      },
+      {
+        "term": "cori",
+        "candidates": [
+          {
+            "qid": "Q12652039",
+            "label": "Cori",
+            "description": "family name"
+          },
+          {
+            "qid": "Q41611",
+            "label": "Coriandrum sativum",
+            "description": "species of plant"
+          },
+          {
+            "qid": "Q16275238",
+            "label": "Corinne",
+            "description": "female given name"
+          },
+          {
+            "qid": "Q112922590",
+            "label": "Corinne Goy",
+            "description": "particle physicist"
+          },
+          {
+            "qid": "Q751549",
+            "label": "Corinna",
+            "description": "female given name"
+          }
+        ]
+      },
+      {
+        "term": "cimon",
+        "candidates": [
+          {
+            "qid": "Q63396032",
+            "label": "Cimon",
+            "description": "family name"
+          },
+          {
+            "qid": "Q218102",
+            "label": "Cimon",
+            "description": "Athenian statesman"
+          },
+          {
+            "qid": "Q30088081",
+            "label": "Cimon",
+            "description": "man who has been sentenced to death by starvation and is then breastfeeded by his daughter Pero, the story is known as Roman Charity"
+          },
+          {
+            "qid": "Q42979816",
+            "label": "Cymon",
+            "description": "fictional character in the Decameron, day 5, tale 1"
+          },
+          {
+            "qid": "Q55260719",
+            "label": "CIMON",
+            "description": "AI robot used on the International Space Station"
+          }
+        ]
+      },
+      {
+        "term": "caliban",
+        "candidates": [
+          {
+            "qid": "Q672543",
+            "label": "Caliban",
+            "description": "German musical group; metalcore band"
+          },
+          {
+            "qid": "Q18481",
+            "label": "Caliban",
+            "description": "moon of Uranus"
+          },
+          {
+            "qid": "Q533120",
+            "label": "Caliban",
+            "description": "character in Shakespeare's The Tempest"
+          },
+          {
+            "qid": "Q11957",
+            "label": "Enrique Santos Montejo",
+            "description": "Colombian journalist (1886-1971)"
+          },
+          {
+            "qid": "Q310074",
+            "label": "Calibanus",
+            "description": "genus of plants"
+          }
+        ]
+      },
+      {
+        "term": "mounisto",
+        "candidates": []
+      },
+      {
+        "term": "aegaeon",
+        "candidates": [
+          {
+            "qid": "Q17762",
+            "label": "Aegaeon",
+            "description": "moon of Saturn"
+          },
+          {
+            "qid": "Q15144788",
+            "label": "Aegaeon",
+            "description": "genus of crustaceans"
+          },
+          {
+            "qid": "Q404208",
+            "label": "Aegaeon",
+            "description": "deity or giant from Greek mythology"
+          },
+          {
+            "qid": "Q21547930",
+            "label": "Aegaeon",
+            "description": "mythical son of Lycaon of Arcadia"
+          },
+          {
+            "qid": "Q4467348",
+            "label": "Aegaeon rathbuni",
+            "description": "species of crustacean"
+          }
+        ]
+      },
+      {
+        "term": "steropes",
+        "candidates": [
+          {
+            "qid": "Q18595936",
+            "label": "Steropes",
+            "description": "genus of beetles"
+          },
+          {
+            "qid": "Q3553687",
+            "label": "Steropes",
+            "description": "cyclops in Greek mythology (\"lightning\")"
+          },
+          {
+            "qid": "Q103485727",
+            "label": "Steropes",
+            "description": "Martian canal"
+          },
+          {
+            "qid": "Q2949622",
+            "label": "Steropes obscurans",
+            "description": "species of insect"
+          },
+          {
+            "qid": "Q2530267",
+            "label": "Steropes popei",
+            "description": "species of insect"
+          }
+        ]
+      },
+      {
+        "term": "evadne",
+        "candidates": [
+          {
+            "qid": "Q4575907",
+            "label": "Evadne",
+            "description": "genus of crustaceans"
+          },
+          {
+            "qid": "Q3735154",
+            "label": "Evadne",
+            "description": "female given name"
+          },
+          {
+            "qid": "Q1142062",
+            "label": "Evadne",
+            "description": "wife of Capaneus"
+          },
+          {
+            "qid": "Q1259960",
+            "label": "Evadne",
+            "description": "daughter of Strymon"
+          },
+          {
+            "qid": "Q259886",
+            "label": "Evadne",
+            "description": "any of several women in Greek mythology"
+          }
+        ]
+      },
+      {
+        "term": "karpos",
+        "candidates": [
+          {
+            "qid": "Q1463246",
+            "label": "Karpoš Municipality",
+            "description": "municipality of North Macedonia"
+          },
+          {
+            "qid": "Q12282675",
+            "label": "Karpoš",
+            "description": "neighbourhood in Skopje Statistical Region, Karpoš municipality, North Macedonia"
+          },
+          {
+            "qid": "Q4452151",
+            "label": "Karpoš",
+            "description": "village in Northeastern, North Macedonia"
+          },
+          {
+            "qid": "Q2642812",
+            "label": "Karpos",
+            "description": "son of Zephyrus in Greek mythology"
+          },
+          {
+            "qid": "Q2386486",
+            "label": "Karposh",
+            "description": "Christian rebel against the Ottomans in 1689"
+          }
+        ]
+      },
+      {
+        "term": "hexlethe",
+        "candidates": []
+      },
+      {
+        "term": "euphrosyne",
+        "candidates": [
+          {
+            "qid": "Q29551454",
+            "label": "Euphrosyne",
+            "description": "female given name"
+          },
+          {
+            "qid": "Q5410715",
+            "label": "Euphrosyne",
+            "description": "genus of plants"
+          },
+          {
+            "qid": "Q15762753",
+            "label": "Evphrosyne",
+            "description": "academic journal"
+          },
+          {
+            "qid": "Q689422",
+            "label": "Euphrosyne",
+            "description": "deity, one of the Graces"
+          },
+          {
+            "qid": "Q2624015",
+            "label": "Eudoxia of Moscow",
+            "description": "Grand Duchess of Muscovy"
+          }
+        ]
+      },
+      {
+        "term": "jupiter lxxiv",
+        "candidates": []
+      },
+      {
+        "term": "jupiter lxxv",
+        "candidates": []
+      },
+      {
+        "term": "jupiter lxxvi",
+        "candidates": []
+      }
+    ],
+    "greek-god": [
+      {
+        "term": "euterpe",
+        "candidates": [
+          {
+            "qid": "Q132712",
+            "label": "Euterpe",
+            "description": "genus of plants"
+          },
+          {
+            "qid": "Q104012",
+            "label": "Euterpe",
+            "description": "muse of music in Greek mythology"
+          },
+          {
+            "qid": "Q3735067",
+            "label": "Euterpe",
+            "description": "female given name"
+          },
+          {
+            "qid": "Q21441399",
+            "label": "Euterpe",
+            "description": "genus of insects"
+          },
+          {
+            "qid": "Q11859111",
+            "label": "Euterpe",
+            "description": "art group and cultural magazine published in Finland (1900–1905)"
+          }
+        ]
+      },
+      {
+        "term": "polyhymnia",
+        "candidates": [
+          {
+            "qid": "Q104425",
+            "label": "Polyhymnia",
+            "description": "Muse of sacred-poetry, sacred hymn and eloquence as well as muse of agriculture, geometry rhetoric, and pantomime in Greek mythology"
+          },
+          {
+            "qid": "Q151273",
+            "label": "33 Polyhymnia",
+            "description": "main-belt asteroid"
+          },
+          {
+            "qid": "Q115780394",
+            "label": "Polyhymnia",
+            "description": "7th book of Herodotus' Histories"
+          },
+          {
+            "qid": "Q19925033",
+            "label": "Polyhymnia",
+            "description": "painting by Joseph Fagnani"
+          },
+          {
+            "qid": "Q29213493",
+            "label": "Polyhymnia",
+            "description": "tapestry and national heritage monument (PM75003621) in the Hôtel de Roquelaure, Paris, France"
+          }
+        ]
+      },
+      {
+        "term": "melpomene",
+        "candidates": [
+          {
+            "qid": "Q14302668",
+            "label": "Melpomene",
+            "description": "genus of plants"
+          },
+          {
+            "qid": "Q2834855",
+            "label": "Melpomene",
+            "description": "genus of arachnids"
+          },
+          {
+            "qid": "Q103992",
+            "label": "Melpomene",
+            "description": "Greek muse of tragedy"
+          },
+          {
+            "qid": "Q117550",
+            "label": "18 Melpomene",
+            "description": "main-belt asteroid"
+          },
+          {
+            "qid": "Q5226506",
+            "label": "Melpomene brevipes",
+            "description": "species of plant"
+          }
+        ]
+      },
+      {
+        "term": "terpsichore",
+        "candidates": [
+          {
+            "qid": "Q17188460",
+            "label": "Terpsichore",
+            "description": "genus of plants"
+          },
+          {
+            "qid": "Q104042",
+            "label": "Terpsichore",
+            "description": "muse of dance in Greek mythology"
+          },
+          {
+            "qid": "Q136678147",
+            "label": "Terpsichore",
+            "description": "work by Johann Gottfried Herder, collection of poems"
+          },
+          {
+            "qid": "Q109916",
+            "label": "81 Terpsichore",
+            "description": "main-belt asteroid"
+          },
+          {
+            "qid": "Q26273475",
+            "label": "Terpsichore",
+            "description": "character from Disney's Hercules"
+          }
+        ]
+      },
+      {
+        "term": "achilles",
+        "candidates": [
+          {
+            "qid": "Q41746",
+            "label": "Achilles",
+            "description": "Greek mythological hero of the Trojan War"
+          },
+          {
+            "qid": "Q18086783",
+            "label": "Achilles",
+            "description": "male given name"
+          },
+          {
+            "qid": "Q23885857",
+            "label": "Achilles",
+            "description": "family name"
+          },
+          {
+            "qid": "Q481870",
+            "label": "Achilles",
+            "description": "Hungarian noble, who served as Judge royal in 1201"
+          },
+          {
+            "qid": "Q28106533",
+            "label": "Achilles",
+            "description": "horse from Disney's The Hunchback of Notre Dame"
+          }
+        ]
+      },
+      {
+        "term": "odysseus",
+        "candidates": [
+          {
+            "qid": "Q27827499",
+            "label": "Odysseus",
+            "description": "male given name"
+          },
+          {
+            "qid": "Q47231",
+            "label": "Odysseus",
+            "description": "legendary Greek king of Ithaca"
+          },
+          {
+            "qid": "Q17126779",
+            "label": "Odysseus",
+            "description": "genus of annelids"
+          },
+          {
+            "qid": "Q123721152",
+            "label": "Odysseus",
+            "description": "statue in České Budějovice"
+          },
+          {
+            "qid": "Q29823447",
+            "label": "Chemokine (C-X-C motif), receptor 4b",
+            "description": "protein found in Danio rerio"
+          }
+        ]
+      },
+      {
+        "term": "bellerophon",
+        "candidates": [
+          {
+            "qid": "Q310262",
+            "label": "Bellerophon",
+            "description": "genus of molluscs (fossil)"
+          },
+          {
+            "qid": "Q4883812",
+            "label": "Bellerophon",
+            "description": "software for detecting chimeric sequences in multiple sequence datasets"
+          },
+          {
+            "qid": "Q189872",
+            "label": "Bellerophon",
+            "description": "Hero in Greek myth who rode Pegasus and killed the Chimera"
+          },
+          {
+            "qid": "Q144082",
+            "label": "1808 Bellerophon",
+            "description": "asteroid"
+          },
+          {
+            "qid": "Q17488419",
+            "label": "Bellerophon",
+            "description": "fictional planet from the Serenityverse"
+          }
+        ]
+      },
+      {
+        "term": "orpheus",
+        "candidates": [
+          {
+            "qid": "Q51883612",
+            "label": "Orpheus",
+            "description": "male given name"
+          },
+          {
+            "qid": "Q174353",
+            "label": "Orpheus",
+            "description": "legendary musician, poet, and prophet in ancient Greek religion and myth"
+          },
+          {
+            "qid": "Q4337225",
+            "label": "Orpheus",
+            "description": ""
+          },
+          {
+            "qid": "Q2613242",
+            "label": "Orpheus",
+            "description": "theater in Apeldoorn, Netherlands"
+          },
+          {
+            "qid": "Q724008",
+            "label": "L'Orfeo",
+            "description": "Opera: music by Claudio Monteverdi with libretto by Alessandro Striggio"
+          }
+        ]
+      },
+      {
+        "term": "euryale",
+        "candidates": [
+          {
+            "qid": "Q15111312",
+            "label": "Euryale",
+            "description": "genus of plants"
+          },
+          {
+            "qid": "Q21444553",
+            "label": "Euryale",
+            "description": "genus of echinoderms"
+          },
+          {
+            "qid": "Q836140",
+            "label": "Euryale",
+            "description": "mythical character; second eldest of the Gorgons"
+          },
+          {
+            "qid": "Q310795",
+            "label": "Euryale ferox",
+            "description": "species of plant"
+          },
+          {
+            "qid": "Q13057290",
+            "label": "Euryale",
+            "description": "set of mythological Greek characters"
+          }
+        ]
+      },
+      {
+        "term": "ganymede",
+        "candidates": [
+          {
+            "qid": "Q3169",
+            "label": "Ganymede",
+            "description": "Galilean moon of Jupiter"
+          },
+          {
+            "qid": "Q131588",
+            "label": "Ganymede",
+            "description": "son of Tros in Greek mythology"
+          },
+          {
+            "qid": "Q130297347",
+            "label": "Ganymede",
+            "description": "painting by Armando Menocal"
+          },
+          {
+            "qid": "Q28065076",
+            "label": "Ganymede",
+            "description": "painting by Jan Swart van Groningen"
+          },
+          {
+            "qid": "Q19369318",
+            "label": "Ganymede",
+            "description": "painting by Gustave Moreau"
+          }
+        ]
+      },
+      {
+        "term": "charites",
+        "candidates": [
+          {
+            "qid": "Q90568344",
+            "label": "Charites",
+            "description": "genus of plants"
+          },
+          {
+            "qid": "Q107289493",
+            "label": "Charites",
+            "description": "genus of molluscs"
+          },
+          {
+            "qid": "Q184353",
+            "label": "Charites",
+            "description": "Greek goddesses of grace and beauty"
+          },
+          {
+            "qid": "Q50965124",
+            "label": "Charites (Pauly-Wissowa)",
+            "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
+          },
+          {
+            "qid": "Q50965125",
+            "label": "Charitesia (Pauly-Wissowa)",
+            "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
+          }
+        ]
+      },
+      {
+        "term": "morphy",
+        "candidates": [
+          {
+            "qid": "Q56599541",
+            "label": "Morphy",
+            "description": "family name"
+          },
+          {
+            "qid": "Q109978191",
+            "label": "Morphy",
+            "description": ""
+          },
+          {
+            "qid": "Q104450670",
+            "label": "Morphy Defence",
+            "description": "chess opening"
+          },
+          {
+            "qid": "Q1425383",
+            "label": "Morphy versus the Duke of Brunswick and Count Isouard",
+            "description": "famous 1858 chess game played at an opera house in Paris"
+          },
+          {
+            "qid": "Q93414995",
+            "label": "Howard Morphy",
+            "description": "British anthropologist"
+          }
+        ]
+      },
+      {
+        "term": "mormo",
+        "candidates": [
+          {
+            "qid": "Q1366993",
+            "label": "Mormo",
+            "description": "genus of insects"
+          },
+          {
+            "qid": "Q747802",
+            "label": "Mormonism",
+            "description": "religious tradition and theology founded by Joseph Smith and centered on the Book of Mormon"
+          },
+          {
+            "qid": "Q829",
+            "label": "Utah",
+            "description": "state of the United States of America"
+          },
+          {
+            "qid": "Q2701214",
+            "label": "Mormon",
+            "description": "prophet and historian in the Book of Mormon"
+          },
+          {
+            "qid": "Q6912637",
+            "label": "Latter-day Saint Literature database",
+            "description": "online database"
+          }
+        ]
+      },
+      {
+        "term": "ercina",
+        "candidates": [
+          {
+            "qid": "Q105329986",
+            "label": "Ercinaminine",
+            "description": "group of stereoisomers with the chemical formula C₂₁H₂₄N₂O₃"
+          },
+          {
+            "qid": "Q58341",
+            "label": "La Ercina",
+            "description": "municipality of Spain"
+          },
+          {
+            "qid": "Q5197524",
+            "label": "Lake Ercina",
+            "description": "lake in Asturias, Spain"
+          },
+          {
+            "qid": "Q3731168",
+            "label": "Hercyna",
+            "description": "nymph from Boeotia"
+          }
+        ]
+      },
+      {
+        "term": "eidolon",
+        "candidates": [
+          {
+            "qid": "Q26347",
+            "label": "Eidolon",
+            "description": "genus of megabats"
+          },
+          {
+            "qid": "Q1302674",
+            "label": "Eidolon",
+            "description": "Canadian band"
+          },
+          {
+            "qid": "Q3049327",
+            "label": "Eidolon",
+            "description": "2008 album by Dark Fortress"
+          },
+          {
+            "qid": "Q28008419",
+            "label": "Eidolon",
+            "description": "video game by Ice Water Games"
+          },
+          {
+            "qid": "Q3720621",
+            "label": "Eidolon",
+            "description": "2001 studio album by Dawn of Dreams"
+          }
+        ]
+      },
+      {
+        "term": "thetis",
+        "candidates": [
+          {
+            "qid": "Q41220396",
+            "label": "Thetis",
+            "description": "genus of molluscs (fossil)"
+          },
+          {
+            "qid": "Q26761044",
+            "label": "Thetis",
+            "description": "reef in Indonesia"
+          },
+          {
+            "qid": "Q184437",
+            "label": "Thetis",
+            "description": "Nereid of Greek mythology"
+          },
+          {
+            "qid": "Q105108103",
+            "label": "Thétis",
+            "description": "family name"
+          },
+          {
+            "qid": "Q142553",
+            "label": "17 Thetis",
+            "description": "main-belt asteroid"
+          }
+        ]
+      },
+      {
+        "term": "atreus",
+        "candidates": [
+          {
+            "qid": "Q192469",
+            "label": "Atreus",
+            "description": "king of Mycenae, father of Agamemnon"
+          },
+          {
+            "qid": "Q139711",
+            "label": "14791 Atreus",
+            "description": "asteroid"
+          },
+          {
+            "qid": "Q54896805",
+            "label": "Atreus",
+            "description": "fictional character from the video game God of War"
+          },
+          {
+            "qid": "Q60840346",
+            "label": "Atreus",
+            "description": "tragedy by Lucius Accius"
+          },
+          {
+            "qid": "Q112757242",
+            "label": "Atreus",
+            "description": "encyclopedia article published in Meyers Konversations-Lexikon, 4th edition (1885–1890)"
+          }
+        ]
+      },
+      {
+        "term": "khalkes",
+        "candidates": []
+      },
+      {
+        "term": "priapus",
+        "candidates": [
+          {
+            "qid": "Q206878",
+            "label": "Priapus",
+            "description": "ancient Greek deity"
+          },
+          {
+            "qid": "Q106398256",
+            "label": "Priapus",
+            "description": "genus of cnidarians"
+          },
+          {
+            "qid": "Q140619991",
+            "label": "Priapus",
+            "description": "Fresco in the House of the Vettii, Pompeii"
+          },
+          {
+            "qid": "Q125824193",
+            "label": "Priapus",
+            "description": "statue in Centrale Montemartini, Rome, Italy"
+          },
+          {
+            "qid": "Q7242519",
+            "label": "Priapus",
+            "description": "Marvel Comics character"
+          }
+        ]
+      }
+    ]
+  }
+}

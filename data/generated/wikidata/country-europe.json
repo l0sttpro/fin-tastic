@@ -1,0 +1,581 @@
+{
+  "promptId": "country-europe",
+  "fetchedAt": "2026-10-23T07:56:56.690Z",
+  "query": "SELECT ?item ?itemLabel ?sitelinks\n       (GROUP_CONCAT(DISTINCT ?alias; separator=\"|\") AS ?aliases)\nWHERE {\n  ?item wdt:P31 wd:Q6256 .\n  ?item wdt:P30 wd:Q46 .\n  ?item rdfs:label ?itemLabel .\n  FILTER(LANG(?itemLabel) = \"en\")\n  ?item wikibase:sitelinks ?sitelinks .\n  OPTIONAL {\n    ?item skos:altLabel ?alias .\n    FILTER(LANG(?alias) = \"en\")\n  }\n}\nGROUP BY ?item ?itemLabel ?sitelinks\nORDER BY DESC(?sitelinks) ?item",
+  "items": [
+    {
+      "qid": "Q142",
+      "label": "France",
+      "aliases": [
+        "French Republic"
+      ],
+      "sitelinks": 428
+    },
+    {
+      "qid": "Q43",
+      "label": "Turkey",
+      "aliases": [
+        "Republic of Turkey",
+        "Republic of Türkiye"
+      ],
+      "sitelinks": 427
+    },
+    {
+      "qid": "Q159",
+      "label": "Russia",
+      "aliases": [
+        "Russian Federation"
+      ],
+      "sitelinks": 421
+    },
+    {
+      "qid": "Q38",
+      "label": "Italy",
+      "aliases": [
+        "Italian Republic",
+        "Republic of Italy"
+      ],
+      "sitelinks": 409
+    },
+    {
+      "qid": "Q183",
+      "label": "Germany",
+      "aliases": [
+        "BRD",
+        "DE",
+        "DEU",
+        "Federal Republic of Germany",
+        "FRG"
+      ],
+      "sitelinks": 405
+    },
+    {
+      "qid": "Q33",
+      "label": "Finland",
+      "aliases": [
+        "fi",
+        "Finnia",
+        "Land of Thousand Lakes",
+        "Republic of Finland",
+        "Republiken Finland",
+        "Suomen tasavalta"
+      ],
+      "sitelinks": 403
+    },
+    {
+      "qid": "Q29",
+      "label": "Spain",
+      "aliases": [
+        "Kingdom of Spain"
+      ],
+      "sitelinks": 396
+    },
+    {
+      "qid": "Q145",
+      "label": "United Kingdom",
+      "aliases": [
+        "G B",
+        "Great Britain",
+        "Great Britain and Northern Ireland",
+        "the UK",
+        "the United Kingdom",
+        "the United Kingdom of Great Britain and Northern Ireland",
+        "U K",
+        "United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "sitelinks": 396
+    },
+    {
+      "qid": "Q20",
+      "label": "Norway",
+      "aliases": [
+        "Kingdom of Norway"
+      ],
+      "sitelinks": 394
+    },
+    {
+      "qid": "Q36",
+      "label": "Poland",
+      "aliases": [
+        "Republic of Poland"
+      ],
+      "sitelinks": 391
+    },
+    {
+      "qid": "Q212",
+      "label": "Ukraine",
+      "aliases": [
+        "Ukr.",
+        "Ukraina",
+        "Ukraïna",
+        "Ukrainia"
+      ],
+      "sitelinks": 389
+    },
+    {
+      "qid": "Q222",
+      "label": "Albania",
+      "aliases": [
+        "People's Republic of Albania",
+        "People's Socialist Republic of Albania",
+        "Republic of Albania",
+        "Republika Popullore e Shqiperise",
+        "Republika Popullore Socialiste e Shqiperise",
+        "Shqipërisë"
+      ],
+      "sitelinks": 387
+    },
+    {
+      "qid": "Q39",
+      "label": "Switzerland",
+      "aliases": [
+        "Confoederatio Helvetica",
+        "Swiss",
+        "Swiss Confederation"
+      ],
+      "sitelinks": 387
+    },
+    {
+      "qid": "Q31",
+      "label": "Belgium",
+      "aliases": [
+        "Kingdom of Belgium"
+      ],
+      "sitelinks": 383
+    },
+    {
+      "qid": "Q41",
+      "label": "Greece",
+      "aliases": [
+        "el",
+        "Ellada",
+        "gr",
+        "Greek Republic",
+        "Hellas",
+        "Hellas, Greece",
+        "Hellenic Republic"
+      ],
+      "sitelinks": 378
+    },
+    {
+      "qid": "Q55",
+      "label": "Netherlands",
+      "aliases": [
+        "de Nederlanden",
+        "Holland",
+        "Nederland",
+        "Nederlanden",
+        "NL",
+        "NLD",
+        "the Netherlands"
+      ],
+      "sitelinks": 375
+    },
+    {
+      "qid": "Q40",
+      "label": "Austria",
+      "aliases": [
+        "Republic of Austria"
+      ],
+      "sitelinks": 372
+    },
+    {
+      "qid": "Q45",
+      "label": "Portugal",
+      "aliases": [
+        "POR",
+        "Portuguese Republic"
+      ],
+      "sitelinks": 371
+    },
+    {
+      "qid": "Q34",
+      "label": "Sweden",
+      "aliases": [
+        "Kingdom of Sweden",
+        "se",
+        "Swedish Kingdom"
+      ],
+      "sitelinks": 370
+    },
+    {
+      "qid": "Q35",
+      "label": "Denmark",
+      "aliases": [
+        "Danemark",
+        "Dania",
+        "Danmark",
+        "Denmark proper",
+        "dk",
+        "metropolitan Denmark",
+        "TAN"
+      ],
+      "sitelinks": 369
+    },
+    {
+      "qid": "Q219",
+      "label": "Bulgaria",
+      "aliases": [
+        "Bulgarian Republic",
+        "Republic of Bulgaria"
+      ],
+      "sitelinks": 361
+    },
+    {
+      "qid": "Q184",
+      "label": "Belarus",
+      "aliases": [
+        "Belorussia",
+        "Bielaruś",
+        "Bielorussia",
+        "by",
+        "Byeloruss",
+        "Byelorussia",
+        "Republic of Belarus",
+        "Respublika Belarus'",
+        "Respublika Bielaruś",
+        "White Russia",
+        "White Ruthenia"
+      ],
+      "sitelinks": 358
+    },
+    {
+      "qid": "Q28",
+      "label": "Hungary",
+      "aliases": [],
+      "sitelinks": 358
+    },
+    {
+      "qid": "Q224",
+      "label": "Croatia",
+      "aliases": [
+        "CRO",
+        "HR",
+        "HRV",
+        "Republic of Croatia",
+        "RH"
+      ],
+      "sitelinks": 356
+    },
+    {
+      "qid": "Q213",
+      "label": "Czech Republic",
+      "aliases": [
+        "Czechia",
+        "the Czech Republic"
+      ],
+      "sitelinks": 355
+    },
+    {
+      "qid": "Q189",
+      "label": "Iceland",
+      "aliases": [
+        "Icelandic republic",
+        "Isl.",
+        "Republic of Iceland",
+        "Ysland"
+      ],
+      "sitelinks": 355
+    },
+    {
+      "qid": "Q191",
+      "label": "Estonia",
+      "aliases": [
+        "ee",
+        "Eesti Vabariik",
+        "Estland",
+        "Republic of Estonia"
+      ],
+      "sitelinks": 354
+    },
+    {
+      "qid": "Q37",
+      "label": "Lithuania",
+      "aliases": [
+        "Republic of Lithuania"
+      ],
+      "sitelinks": 352
+    },
+    {
+      "qid": "Q403",
+      "label": "Serbia",
+      "aliases": [
+        "Republic of Serbia",
+        "RS"
+      ],
+      "sitelinks": 352
+    },
+    {
+      "qid": "Q232",
+      "label": "Kazakhstan",
+      "aliases": [
+        "kz",
+        "Qazaqstan",
+        "Republic of Kazakhstan",
+        "Republic of Qazaqstan"
+      ],
+      "sitelinks": 350
+    },
+    {
+      "qid": "Q230",
+      "label": "Georgia",
+      "aliases": [
+        "Georgia (country)",
+        "Georgia (Sakartvelo)",
+        "Republic of Georgia",
+        "Sakartvelo"
+      ],
+      "sitelinks": 348
+    },
+    {
+      "qid": "Q218",
+      "label": "Romania",
+      "aliases": [
+        "Roumania",
+        "Rumania"
+      ],
+      "sitelinks": 348
+    },
+    {
+      "qid": "Q237",
+      "label": "Vatican City",
+      "aliases": [
+        "Città del Vaticano",
+        "Holy See",
+        "Papal State",
+        "State of Vatican City",
+        "Stato della Città del Vaticano",
+        "Status Civitatis Vaticanae",
+        "The Vatican",
+        "Vatican",
+        "Vatican City State"
+      ],
+      "sitelinks": 343
+    },
+    {
+      "qid": "Q225",
+      "label": "Bosnia and Herzegovina",
+      "aliases": [
+        "B&H",
+        "ba",
+        "Bosnia & Herzegovina",
+        "Bosnia and Hercegovina",
+        "Bosnia-Herzegovina"
+      ],
+      "sitelinks": 342
+    },
+    {
+      "qid": "Q27",
+      "label": "Ireland",
+      "aliases": [
+        "Irish Republic",
+        "Republic of Ireland",
+        "Southern Ireland"
+      ],
+      "sitelinks": 342
+    },
+    {
+      "qid": "Q214",
+      "label": "Slovakia",
+      "aliases": [
+        "SK",
+        "Slovak Republic",
+        "SVK"
+      ],
+      "sitelinks": 341
+    },
+    {
+      "qid": "Q211",
+      "label": "Latvia",
+      "aliases": [
+        "Latveja",
+        "Latvejas Republika",
+        "Latvian Republic",
+        "Latvija",
+        "Latvijas Republika",
+        "Leţmо̄",
+        "Leţmо̄ Vabāmо̄",
+        "lv",
+        "Republic of Latvia"
+      ],
+      "sitelinks": 336
+    },
+    {
+      "qid": "Q32",
+      "label": "Luxembourg",
+      "aliases": [
+        "Grand Duchy of Luxembourg"
+      ],
+      "sitelinks": 335
+    },
+    {
+      "qid": "Q228",
+      "label": "Andorra",
+      "aliases": [
+        "Principality of Andorra",
+        "Principality of the Valleys of Andorra"
+      ],
+      "sitelinks": 333
+    },
+    {
+      "qid": "Q217",
+      "label": "Moldova",
+      "aliases": [
+        "Moldavia",
+        "Republic of Moldova",
+        "Republica Moldova"
+      ],
+      "sitelinks": 331
+    },
+    {
+      "qid": "Q215",
+      "label": "Slovenia",
+      "aliases": [
+        "Republic of Slovenia",
+        "si",
+        "slo",
+        "Slovenija",
+        "svn"
+      ],
+      "sitelinks": 331
+    },
+    {
+      "qid": "Q233",
+      "label": "Malta",
+      "aliases": [
+        "Republic of Malta"
+      ],
+      "sitelinks": 327
+    },
+    {
+      "qid": "Q221",
+      "label": "North Macedonia",
+      "aliases": [
+        "Former Yugoslav Republic of Macedonia",
+        "FYR Macedonia",
+        "Macedonia",
+        "Makedonia",
+        "MK",
+        "MKD",
+        "NM",
+        "Republic of Macedonia",
+        "Republic of North Macedonia"
+      ],
+      "sitelinks": 327
+    },
+    {
+      "qid": "Q229",
+      "label": "Cyprus",
+      "aliases": [
+        "Greek Administration of Southern Cyprus",
+        "Greek Cypriot State",
+        "Republic of Cyprus"
+      ],
+      "sitelinks": 326
+    },
+    {
+      "qid": "Q236",
+      "label": "Montenegro",
+      "aliases": [
+        "Republic of Montenegro"
+      ],
+      "sitelinks": 323
+    },
+    {
+      "qid": "Q235",
+      "label": "Monaco",
+      "aliases": [
+        "Fort-Hercule",
+        "mc",
+        "Mùnegu",
+        "Principality and Diocese of Monaco",
+        "Principality of Monaco",
+        "Principato di Monaco",
+        "Principatu de Mu̍negu",
+        "Prinçipatu de Mùnegu",
+        "Principauté de Monaco"
+      ],
+      "sitelinks": 321
+    },
+    {
+      "qid": "Q347",
+      "label": "Liechtenstein",
+      "aliases": [
+        "FL",
+        "li",
+        "Principality of Liechtenstein"
+      ],
+      "sitelinks": 316
+    },
+    {
+      "qid": "Q238",
+      "label": "San Marino",
+      "aliases": [
+        "Most Serene Republic of San Marino",
+        "sm"
+      ],
+      "sitelinks": 314
+    },
+    {
+      "qid": "Q1246",
+      "label": "Kosovo",
+      "aliases": [
+        "KOS",
+        "Kosova",
+        "KV",
+        "Republic of Kosovo",
+        "RKS",
+        "XK",
+        "XKX"
+      ],
+      "sitelinks": 283
+    },
+    {
+      "qid": "Q23681",
+      "label": "Northern Cyprus",
+      "aliases": [
+        "NCY",
+        "North Cyprus",
+        "North Cyprus Turkish Republic",
+        "Republic of Northern Cyprus",
+        "The Turkish Republic of Northern Cyprus",
+        "Turkish Cypriot constituent state",
+        "Turkish Cypriot state",
+        "Turkish Cyprus",
+        "Turkish Federative State of North Cyprus",
+        "Turkish occupied Cyprus",
+        "Turkish Republic of Cyprus",
+        "Turkish Republic of North Cyprus"
+      ],
+      "sitelinks": 183
+    },
+    {
+      "qid": "Q29999",
+      "label": "Kingdom of the Netherlands",
+      "aliases": [
+        "Kingdom of Netherlands",
+        "Nederlanden",
+        "Netherlands",
+        "the Netherlands"
+      ],
+      "sitelinks": 107
+    },
+    {
+      "qid": "Q756617",
+      "label": "Kingdom of Denmark",
+      "aliases": [
+        "Danish Commonwealth",
+        "Danish Realm",
+        "Danmarkar Ríki",
+        "Danmarkip Naalagaaffik",
+        "Danmarks Rige",
+        "Denmark",
+        "Kongeriget Danmark",
+        "Kongsríki Danmarkar",
+        "Kunngeqarfik Danmarki",
+        "Realm of Denmark"
+      ],
+      "sitelinks": 55
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+[
+  {
+    "answer": "france",
+    "qid": "Q142",
+    "sitelinks": 428,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "turkey",
+    "qid": "Q43",
+    "sitelinks": 427,
+    "currentTier": "fin-omenal",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "russia",
+    "qid": "Q159",
+    "sitelinks": 421,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "italy",
+    "qid": "Q38",
+    "sitelinks": 409,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "germany",
+    "qid": "Q183",
+    "sitelinks": 405,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "finland",
+    "qid": "Q33",
+    "sitelinks": 403,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "spain",
+    "qid": "Q29",
+    "sitelinks": 396,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "united kingdom",
+    "qid": "Q145",
+    "sitelinks": 396,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "norway",
+    "qid": "Q20",
+    "sitelinks": 394,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "poland",
+    "qid": "Q36",
+    "sitelinks": 391,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "ukraine",
+    "qid": "Q212",
+    "sitelinks": 389,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "albania",
+    "qid": "Q222",
+    "sitelinks": 387,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "switzerland",
+    "qid": "Q39",
+    "sitelinks": 387,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "belgium",
+    "qid": "Q31",
+    "sitelinks": 383,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "greece",
+    "qid": "Q41",
+    "sitelinks": 378,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "netherlands",
+    "qid": "Q55",
+    "sitelinks": 375,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "austria",
+    "qid": "Q40",
+    "sitelinks": 372,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "portugal",
+    "qid": "Q45",
+    "sitelinks": 371,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "sweden",
+    "qid": "Q34",
+    "sitelinks": 370,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "denmark",
+    "qid": "Q35",
+    "sitelinks": 369,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "bulgaria",
+    "qid": "Q219",
+    "sitelinks": 361,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "belarus",
+    "qid": "Q184",
+    "sitelinks": 358,
+    "currentTier": "jawsome",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "hungary",
+    "qid": "Q28",
+    "sitelinks": 358,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "croatia",
+    "qid": "Q224",
+    "sitelinks": 356,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "czech republic",
+    "qid": "Q213",
+    "sitelinks": 355,
+    "currentTier": "plankton",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "iceland",
+    "qid": "Q189",
+    "sitelinks": 355,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "estonia",
+    "qid": "Q191",
+    "sitelinks": 354,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "lithuania",
+    "qid": "Q37",
+    "sitelinks": 352,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "serbia",
+    "qid": "Q403",
+    "sitelinks": 352,
+    "currentTier": "reef-rookie",
+    "proposedTier": "plankton"
+  },
+  {
+    "answer": "kazakhstan",
+    "qid": "Q232",
+    "sitelinks": 350,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "georgia",
+    "qid": "Q230",
+    "sitelinks": 348,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "romania",
+    "qid": "Q218",
+    "sitelinks": 348,
+    "currentTier": "plankton",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "vatican city",
+    "qid": "Q237",
+    "sitelinks": 343,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "bosnia and herzegovina",
+    "qid": "Q225",
+    "sitelinks": 342,
+    "currentTier": "jawsome",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "ireland",
+    "qid": "Q27",
+    "sitelinks": 342,
+    "currentTier": "plankton",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "slovakia",
+    "qid": "Q214",
+    "sitelinks": 341,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "latvia",
+    "qid": "Q211",
+    "sitelinks": 336,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "luxembourg",
+    "qid": "Q32",
+    "sitelinks": 335,
+    "currentTier": "reef-rookie",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "andorra",
+    "qid": "Q228",
+    "sitelinks": 333,
+    "currentTier": "fin-omenal",
+    "proposedTier": "reef-rookie"
+  },
+  {
+    "answer": "moldova",
+    "qid": "Q217",
+    "sitelinks": 331,
+    "currentTier": "jawsome",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "slovenia",
+    "qid": "Q215",
+    "sitelinks": 331,
+    "currentTier": "reef-rookie",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "malta",
+    "qid": "Q233",
+    "sitelinks": 327,
+    "currentTier": "jawsome",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "north macedonia",
+    "qid": "Q221",
+    "sitelinks": 327,
+    "currentTier": "jawsome",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "cyprus",
+    "qid": "Q229",
+    "sitelinks": 326,
+    "currentTier": "jawsome",
+    "proposedTier": "jawsome"
+  },
+  {
+    "answer": "montenegro",
+    "qid": "Q236",
+    "sitelinks": 323,
+    "currentTier": "jawsome",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "monaco",
+    "qid": "Q235",
+    "sitelinks": 321,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "liechtenstein",
+    "qid": "Q347",
+    "sitelinks": 316,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "san marino",
+    "qid": "Q238",
+    "sitelinks": 314,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fin-omenal"
+  },
+  {
+    "answer": "kosovo",
+    "qid": "Q1246",
+    "sitelinks": 283,
+    "currentTier": "jawsome",
+    "proposedTier": "fintastic"
+  },
+  {
+    "answer": "northern cyprus",
+    "qid": "Q23681",
+    "sitelinks": 183,
+    "currentTier": "fin-omenal",
+    "proposedTier": "fintastic"
+  }
+]

@@ -1,0 +1,405 @@
+{
+  "search": "country",
+  "fetchedAt": "2026-10-23T07:54:29.317Z",
+  "candidates": [
+    {
+      "qid": "Q83440",
+      "label": "country music",
+      "description": "genre of American popular music",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "country music"
+      }
+    },
+    {
+      "qid": "Q6256",
+      "label": "country",
+      "description": "distinct territorial body or political entity",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "country"
+      }
+    },
+    {
+      "qid": "Q3624078",
+      "label": "sovereign state",
+      "description": "state that has the highest authority over a territory",
+      "aliases": [
+        "country"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "country"
+      }
+    },
+    {
+      "qid": "Q902",
+      "label": "Bangladesh",
+      "description": "country in South Asia",
+      "aliases": [
+        "Country of Bengal"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Country of Bengal"
+      }
+    },
+    {
+      "qid": "Q12629233",
+      "label": "Country",
+      "description": "1985 studio album by Plava trava zaborava",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Country"
+      }
+    },
+    {
+      "qid": "Q175185",
+      "label": "rural area",
+      "description": "geographic area that is located outside towns and cities",
+      "aliases": [
+        "countryside"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "countryside"
+      }
+    },
+    {
+      "qid": "Q19855165",
+      "label": "rural school",
+      "description": "any school in a rural area",
+      "aliases": [
+        "country school"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "country school"
+      }
+    },
+    {
+      "qid": "Q42032",
+      "label": "country code top-level domain",
+      "description": "internet top-level domain generally used or reserved for a country",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "country code top-level domain"
+      }
+    },
+    {
+      "qid": "Q46135307",
+      "label": "nation at sport competition",
+      "description": "participation of a nation at sports competition",
+      "aliases": [
+        "country at games"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "country at games"
+      }
+    },
+    {
+      "qid": "Q21203",
+      "label": "Aruba",
+      "description": "Caribbean island constituent country of the Kingdom of the Netherlands",
+      "aliases": [
+        "Country of Aruba"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Country of Aruba"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "country"
+    },
+    "search": [
+      {
+        "id": "Q83440",
+        "title": "Q83440",
+        "pageid": 85835,
+        "concepturi": "http://www.wikidata.org/entity/Q83440",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q83440",
+        "display": {
+          "label": {
+            "value": "country music",
+            "language": "en"
+          },
+          "description": {
+            "value": "genre of American popular music",
+            "language": "en"
+          }
+        },
+        "label": "country music",
+        "description": "genre of American popular music",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "country music"
+        }
+      },
+      {
+        "id": "Q6256",
+        "title": "Q6256",
+        "pageid": 7367,
+        "concepturi": "http://www.wikidata.org/entity/Q6256",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q6256",
+        "display": {
+          "label": {
+            "value": "country",
+            "language": "en"
+          },
+          "description": {
+            "value": "distinct territorial body or political entity",
+            "language": "en"
+          }
+        },
+        "label": "country",
+        "description": "distinct territorial body or political entity",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "country"
+        }
+      },
+      {
+        "id": "Q3624078",
+        "title": "Q3624078",
+        "pageid": 3451848,
+        "concepturi": "http://www.wikidata.org/entity/Q3624078",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q3624078",
+        "display": {
+          "label": {
+            "value": "sovereign state",
+            "language": "en"
+          },
+          "description": {
+            "value": "state that has the highest authority over a territory",
+            "language": "en"
+          }
+        },
+        "label": "sovereign state",
+        "description": "state that has the highest authority over a territory",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "country"
+        },
+        "aliases": [
+          "country"
+        ]
+      },
+      {
+        "id": "Q902",
+        "title": "Q902",
+        "pageid": 1225,
+        "concepturi": "http://www.wikidata.org/entity/Q902",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q902",
+        "display": {
+          "label": {
+            "value": "Bangladesh",
+            "language": "en"
+          },
+          "description": {
+            "value": "country in South Asia",
+            "language": "en"
+          }
+        },
+        "label": "Bangladesh",
+        "description": "country in South Asia",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "Country of Bengal"
+        },
+        "aliases": [
+          "Country of Bengal"
+        ]
+      },
+      {
+        "id": "Q12629233",
+        "title": "Q12629233",
+        "pageid": 13938593,
+        "concepturi": "http://www.wikidata.org/entity/Q12629233",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q12629233",
+        "display": {
+          "label": {
+            "value": "Country",
+            "language": "en"
+          },
+          "description": {
+            "value": "1985 studio album by Plava trava zaborava",
+            "language": "en"
+          }
+        },
+        "label": "Country",
+        "description": "1985 studio album by Plava trava zaborava",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Country"
+        }
+      },
+      {
+        "id": "Q175185",
+        "title": "Q175185",
+        "pageid": 175019,
+        "concepturi": "http://www.wikidata.org/entity/Q175185",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q175185",
+        "display": {
+          "label": {
+            "value": "rural area",
+            "language": "en"
+          },
+          "description": {
+            "value": "geographic area that is located outside towns and cities",
+            "language": "en"
+          }
+        },
+        "label": "rural area",
+        "description": "geographic area that is located outside towns and cities",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "countryside"
+        },
+        "aliases": [
+          "countryside"
+        ]
+      },
+      {
+        "id": "Q19855165",
+        "title": "Q19855165",
+        "pageid": 21456615,
+        "concepturi": "http://www.wikidata.org/entity/Q19855165",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q19855165",
+        "display": {
+          "label": {
+            "value": "rural school",
+            "language": "en"
+          },
+          "description": {
+            "value": "any school in a rural area",
+            "language": "en"
+          }
+        },
+        "label": "rural school",
+        "description": "any school in a rural area",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "country school"
+        },
+        "aliases": [
+          "country school"
+        ]
+      },
+      {
+        "id": "Q42032",
+        "title": "Q42032",
+        "pageid": 44287,
+        "concepturi": "http://www.wikidata.org/entity/Q42032",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q42032",
+        "display": {
+          "label": {
+            "value": "country code top-level domain",
+            "language": "en"
+          },
+          "description": {
+            "value": "internet top-level domain generally used or reserved for a country",
+            "language": "en"
+          }
+        },
+        "label": "country code top-level domain",
+        "description": "internet top-level domain generally used or reserved for a country",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "country code top-level domain"
+        }
+      },
+      {
+        "id": "Q46135307",
+        "title": "Q46135307",
+        "pageid": 47276714,
+        "concepturi": "http://www.wikidata.org/entity/Q46135307",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q46135307",
+        "display": {
+          "label": {
+            "value": "nation at sport competition",
+            "language": "en"
+          },
+          "description": {
+            "value": "participation of a nation at sports competition",
+            "language": "en"
+          }
+        },
+        "label": "nation at sport competition",
+        "description": "participation of a nation at sports competition",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "country at games"
+        },
+        "aliases": [
+          "country at games"
+        ]
+      },
+      {
+        "id": "Q21203",
+        "title": "Q21203",
+        "pageid": 24537,
+        "concepturi": "http://www.wikidata.org/entity/Q21203",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q21203",
+        "display": {
+          "label": {
+            "value": "Aruba",
+            "language": "en"
+          },
+          "description": {
+            "value": "Caribbean island constituent country of the Kingdom of the Netherlands",
+            "language": "en"
+          }
+        },
+        "label": "Aruba",
+        "description": "Caribbean island constituent country of the Kingdom of the Netherlands",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "Country of Aruba"
+        },
+        "aliases": [
+          "Country of Aruba"
+        ]
+      }
+    ],
+    "search-continue": 10,
+    "success": 1
+  }
+}

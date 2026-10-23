@@ -1,0 +1,50 @@
+{
+  "search": "Greek deity",
+  "fetchedAt": "2026-10-23T07:45:56.926Z",
+  "candidates": [
+    {
+      "qid": "Q22989102",
+      "label": "Greek deity",
+      "description": "type or kind of deity belonging to the Greek mythological universe",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Greek deity"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "Greek deity"
+    },
+    "search": [
+      {
+        "id": "Q22989102",
+        "title": "Q22989102",
+        "pageid": 25005637,
+        "concepturi": "http://www.wikidata.org/entity/Q22989102",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q22989102",
+        "display": {
+          "label": {
+            "value": "Greek deity",
+            "language": "en"
+          },
+          "description": {
+            "value": "type or kind of deity belonging to the Greek mythological universe",
+            "language": "en"
+          }
+        },
+        "label": "Greek deity",
+        "description": "type or kind of deity belonging to the Greek mythological universe",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Greek deity"
+        }
+      }
+    ],
+    "success": 1
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "search": "Erato",
+  "fetchedAt": "2026-10-23T07:55:15.869Z",
+  "candidates": [
+    {
+      "qid": "Q11843192",
+      "label": "Erato",
+      "description": "genus of molluscs",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Erato"
+      }
+    },
+    {
+      "qid": "Q5385040",
+      "label": "Erato",
+      "description": "genus of plants",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Erato"
+      }
+    },
+    {
+      "qid": "Q37491180",
+      "label": "Erato",
+      "description": "family name",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Erato"
+      }
+    },
+    {
+      "qid": "Q3055995",
+      "label": "Erato Records",
+      "description": "French record label",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Erato Records"
+      }
+    },
+    {
+      "qid": "Q104413",
+      "label": "Erato",
+      "description": "Greek muse of lyrical poetry",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Erato"
+      }
+    },
+    {
+      "qid": "Q10486861",
+      "label": "Eratoneura",
+      "description": "genus of insects",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Eratoneura"
+      }
+    },
+    {
+      "qid": "Q136534383",
+      "label": "Erato",
+      "description": "journal 1986-1988",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Erato"
+      }
+    },
+    {
+      "qid": "Q5385052",
+      "label": "Eratoidea",
+      "description": "genus of gastropods",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Eratoidea"
+      }
+    },
+    {
+      "qid": "Q155926",
+      "label": "62 Erato",
+      "description": "main-belt asteroid",
+      "aliases": [
+        "Erato"
+      ],
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Erato"
+      }
+    },
+    {
+      "qid": "Q91154967",
+      "label": "Erato",
+      "description": "female given name (Ερατώ)",
+      "aliases": [],
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Erato"
+      }
+    }
+  ],
+  "raw": {
+    "searchinfo": {
+      "search": "Erato"
+    },
+    "search": [
+      {
+        "id": "Q11843192",
+        "title": "Q11843192",
+        "pageid": 12977469,
+        "concepturi": "http://www.wikidata.org/entity/Q11843192",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q11843192",
+        "display": {
+          "label": {
+            "value": "Erato",
+            "language": "en"
+          },
+          "description": {
+            "value": "genus of molluscs",
+            "language": "en"
+          }
+        },
+        "label": "Erato",
+        "description": "genus of molluscs",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Erato"
+        }
+      },
+      {
+        "id": "Q5385040",
+        "title": "Q5385040",
+        "pageid": 5150445,
+        "concepturi": "http://www.wikidata.org/entity/Q5385040",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q5385040",
+        "display": {
+          "label": {
+            "value": "Erato",
+            "language": "en"
+          },
+          "description": {
+            "value": "genus of plants",
+            "language": "en"
+          }
+        },
+        "label": "Erato",
+        "description": "genus of plants",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Erato"
+        }
+      },
+      {
+        "id": "Q37491180",
+        "title": "Q37491180",
+        "pageid": 38865502,
+        "concepturi": "http://www.wikidata.org/entity/Q37491180",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q37491180",
+        "display": {
+          "label": {
+            "value": "Erato",
+            "language": "en"
+          },
+          "description": {
+            "value": "family name",
+            "language": "en"
+          }
+        },
+        "label": "Erato",
+        "description": "family name",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Erato"
+        }
+      },
+      {
+        "id": "Q3055995",
+        "title": "Q3055995",
+        "pageid": 2921113,
+        "concepturi": "http://www.wikidata.org/entity/Q3055995",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q3055995",
+        "display": {
+          "label": {
+            "value": "Erato Records",
+            "language": "en"
+          },
+          "description": {
+            "value": "French record label",
+            "language": "en"
+          }
+        },
+        "label": "Erato Records",
+        "description": "French record label",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Erato Records"
+        }
+      },
+      {
+        "id": "Q104413",
+        "title": "Q104413",
+        "pageid": 107071,
+        "concepturi": "http://www.wikidata.org/entity/Q104413",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q104413",
+        "display": {
+          "label": {
+            "value": "Erato",
+            "language": "en"
+          },
+          "description": {
+            "value": "Greek muse of lyrical poetry",
+            "language": "en"
+          }
+        },
+        "label": "Erato",
+        "description": "Greek muse of lyrical poetry",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Erato"
+        }
+      },
+      {
+        "id": "Q10486861",
+        "title": "Q10486861",
+        "pageid": 11781939,
+        "concepturi": "http://www.wikidata.org/entity/Q10486861",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q10486861",
+        "display": {
+          "label": {
+            "value": "Eratoneura",
+            "language": "en"
+          },
+          "description": {
+            "value": "genus of insects",
+            "language": "en"
+          }
+        },
+        "label": "Eratoneura",
+        "description": "genus of insects",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Eratoneura"
+        }
+      },
+      {
+        "id": "Q136534383",
+        "title": "Q136534383",
+        "pageid": 130236685,
+        "concepturi": "http://www.wikidata.org/entity/Q136534383",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q136534383",
+        "display": {
+          "label": {
+            "value": "Erato",
+            "language": "en"
+          },
+          "description": {
+            "value": "journal 1986-1988",
+            "language": "en"
+          }
+        },
+        "label": "Erato",
+        "description": "journal 1986-1988",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Erato"
+        }
+      },
+      {
+        "id": "Q5385052",
+        "title": "Q5385052",
+        "pageid": 5150454,
+        "concepturi": "http://www.wikidata.org/entity/Q5385052",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q5385052",
+        "display": {
+          "label": {
+            "value": "Eratoidea",
+            "language": "en"
+          },
+          "description": {
+            "value": "genus of gastropods",
+            "language": "en"
+          }
+        },
+        "label": "Eratoidea",
+        "description": "genus of gastropods",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Eratoidea"
+        }
+      },
+      {
+        "id": "Q155926",
+        "title": "Q155926",
+        "pageid": 157088,
+        "concepturi": "http://www.wikidata.org/entity/Q155926",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q155926",
+        "display": {
+          "label": {
+            "value": "62 Erato",
+            "language": "en"
+          },
+          "description": {
+            "value": "main-belt asteroid",
+            "language": "en"
+          }
+        },
+        "label": "62 Erato",
+        "description": "main-belt asteroid",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "Erato"
+        },
+        "aliases": [
+          "Erato"
+        ]
+      },
+      {
+        "id": "Q91154967",
+        "title": "Q91154967",
+        "pageid": 90345631,
+        "concepturi": "http://www.wikidata.org/entity/Q91154967",
+        "repository": "wikidata",
+        "url": "//www.wikidata.org/wiki/Q91154967",
+        "display": {
+          "label": {
+            "value": "Erato",
+            "language": "en"
+          },
+          "description": {
+            "value": "female given name (Ερατώ)",
+            "language": "en"
+          }
+        },
+        "label": "Erato",
+        "description": "female given name (Ερατώ)",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Erato"
+        }
+      }
+    ],
+    "search-continue": 10,
+    "success": 1
+  }
+}
