@@ -101,6 +101,10 @@ src/
     background.ts        the animated ocean canvas
     dom.ts               tiny element helper
   styles/                one stylesheet per screen
+public/
+  favicon.svg            scalable browser icon with PNG/ICO fallbacks
+  apple-touch-icon.png   iOS home-screen icon
+  site.webmanifest       install metadata and 192/512 app icons
 scripts/
   validate-data.mjs      the data validator
   show-prompt.mjs        prints one prompt, sanitised
