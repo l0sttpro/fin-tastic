@@ -1,6 +1,7 @@
 import type { Prompt, TierId } from '../game/types';
 import { EXPANDED_PROMPTS } from './expandedPrompts.ts';
-import { EXTRA_ANSWERS } from './extraAnswers.ts';
+import { EXPANDED_PROMPTS_2 } from './expandedPrompts2.ts';
+import { EXTRA_ANSWERS, EXTRA_ALIASES } from './extraAnswers.ts';
 
 /** Every tier id, in order. */
 export const TIER_IDS: TierId[] = [
@@ -453,7 +454,7 @@ const CORE_PROMPTS: Prompt[] = [
     'Prehistory',
     'An extinct reptile that lived in the Mesozoic',
     [
-      ['tyrannosaurus', 'velociraptor', 'stegosaurus', 'brachiosaurus', 'triceratops', 'spinosaurus', 'raptor', 'trex', 'brontosaurus', 'allosaurus', 'diplodocus', 'parasaurolophus', 'pterodactyl'],
+      ['tyrannosaurus', 'velociraptor', 'stegosaurus', 'brachiosaurus', 'triceratops', 'spinosaurus', 'raptor', 'brontosaurus', 'allosaurus', 'diplodocus', 'parasaurolophus', 'pterodactyl'],
       ['ankylosaurus', 'iguanodon', 'pteranodon', 'carnotaurus', 'compsognathus', 'gallimimus', 'coelophysis', 'baryonyx', 'oviraptor', 'protoceratops', 'styracosaurus', 'archaeopteryx', 'confuciusornis'],
       ['giganotosaurus', 'quetzalcoatlus', 'ambopteryx', 'plateosaurus', 'sinraptor', 'dromaeosaurus', 'troodon', 'carcharodontosaurus', 'deinocheirus', 'therizinosaurus', 'pachycephalosaurus', 'psittacosaurus', 'seismosaurus'],
       ['mamenchisaurus', 'utahraptor', 'camptosaurus', 'nodosaurus', 'talarurus', 'sauropelta', 'euoplocephalus', 'gorgosaurus', 'cryolophosaurus', 'acanthosaurus', 'edmontonia', 'maiasaura'],
@@ -2123,21 +2124,30 @@ const CORE_PROMPTS: Prompt[] = [
  */
 function addExtraAnswers(prompt: Prompt): Prompt {
   const extra = EXTRA_ANSWERS[prompt.id];
-  if (!extra) return prompt;
+  const extraAliases = EXTRA_ALIASES[prompt.id];
+  if (!extra && !extraAliases) return prompt;
 
   const answers = { ...prompt.answers };
   for (const tier of TIER_IDS) {
-    const additions = extra[tier];
+    const additions = extra?.[tier];
     if (additions && additions.length > 0) {
       answers[tier] = [...answers[tier], ...additions];
     }
   }
 
-  return { ...prompt, answers };
+  const aliases = extraAliases
+    ? { ...(prompt.aliases ?? {}), ...extraAliases }
+    : prompt.aliases;
+
+  return { ...prompt, answers, aliases };
 }
 
-/** The complete bank: the original curated set plus the expansion. */
-export const PROMPTS: Prompt[] = [...CORE_PROMPTS, ...EXPANDED_PROMPTS].map(addExtraAnswers);
+/** The complete bank: the original curated set plus the expansions. */
+export const PROMPTS: Prompt[] = [
+  ...CORE_PROMPTS,
+  ...EXPANDED_PROMPTS,
+  ...EXPANDED_PROMPTS_2,
+].map(addExtraAnswers);
 
 
 

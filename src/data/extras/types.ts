@@ -7,3 +7,9 @@ import type { TierId } from '../../game/types.ts';
  * already present in an earlier tier, the original (more common) tier wins.
  */
 export type ExtraAnswers = Partial<Record<TierId, readonly string[]>>;
+
+/**
+ * Additional alias spellings for one prompt. Keys are normalised player
+ * spellings; values are canonical accepted answers.
+ */
+export type ExtraAliases = Record<string, string>;
