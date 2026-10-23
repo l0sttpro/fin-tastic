@@ -7,6 +7,7 @@ import {
   TOTAL_ANSWERS,
 } from '../src/data/promptBank.ts';
 import { EXTRA_ANSWERS } from '../src/data/extraAnswers.ts';
+import { CALIBRATED_ANSWER_TIERS } from '../src/data/calibration.ts';
 import { TIER_ORDER } from '../src/game/tiers.ts';
 import { candidatesFor, gradeAnswer, normalise } from '../src/game/scoring.ts';
 
@@ -63,9 +64,14 @@ test('every prompt is populated and every answer is clean data', () => {
     const byTier = new Map<string, Set<string>>();
     let total = 0;
 
+    // Wikidata calibration can leave a genuinely tiny rare tail (two answers
+    // in the 3% band of a 50-answer category). Uncalibrated prompts keep the
+    // original hand-curated minimum.
+    const minimum = CALIBRATED_ANSWER_TIERS[prompt.id] ? 2 : 5;
+
     for (const tier of TIER_ORDER) {
       const bucket = prompt.answers[tier];
-      assert.ok(bucket.length >= 5, `${prompt.id}: ${tier} has too few answers`);
+      assert.ok(bucket.length >= minimum, `${prompt.id}: ${tier} has too few answers`);
       total += bucket.length;
 
       const seen = new Set<string>();
@@ -124,6 +130,22 @@ test('every accepted answer grades back to its own tier', () => {
           normalise(result.answer ?? ''),
           normalise(answer),
           `${prompt.id}: "${answer}" resolved to another answer`,
+        );
+      }
+    }
+  }
+});
+
+test('every reviewed calibration move lands in its target tier', () => {
+  for (const [promptId, calibrated] of Object.entries(CALIBRATED_ANSWER_TIERS)) {
+    const prompt = PROMPT_BY_ID.get(promptId);
+    assert.ok(prompt, `${promptId}: calibrated prompt is missing`);
+
+    for (const tier of TIER_ORDER) {
+      for (const answer of calibrated[tier] ?? []) {
+        assert.ok(
+          prompt.answers[tier].includes(answer),
+          `${promptId}: calibrated answer "${answer}" is not in ${tier}`,
         );
       }
     }

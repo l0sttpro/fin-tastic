@@ -2,6 +2,7 @@ import type { Prompt, TierId } from '../game/types';
 import { EXPANDED_PROMPTS } from './expandedPrompts.ts';
 import { EXPANDED_PROMPTS_2 } from './expandedPrompts2.ts';
 import { EXTRA_ANSWERS, EXTRA_ALIASES } from './extraAnswers.ts';
+import { CALIBRATED_ANSWER_TIERS } from './calibration.ts';
 
 /** Every tier id, in order. */
 export const TIER_IDS: TierId[] = [
@@ -2142,12 +2143,52 @@ function addExtraAnswers(prompt: Prompt): Prompt {
   return { ...prompt, answers, aliases };
 }
 
+/**
+ * Applies reviewed tier moves after extras have been appended.
+ *
+ * Calibrated answers are removed from every bucket before being added to
+ * their target tier. Without that, an unchanged copy in an earlier tier
+ * would win during sanitising and silently shadow the calibration.
+ */
+function applyCalibratedTiers(prompt: Prompt): Prompt {
+  const calibrated = CALIBRATED_ANSWER_TIERS[prompt.id];
+  if (!calibrated) return prompt;
+
+  const targetTier = new Map<string, TierId>();
+  for (const tier of TIER_IDS) {
+    for (const answer of calibrated[tier] ?? []) {
+      const key = answer.trim().toLowerCase();
+      if (targetTier.has(key)) {
+        throw new Error(`calibration for "${prompt.id}" lists "${key}" more than once`);
+      }
+      targetTier.set(key, tier);
+    }
+  }
+
+  const keyOf = (answer: string): string => answer.trim().toLowerCase();
+  const present = new Set(Object.values(prompt.answers).flat().map(keyOf));
+  const answers = {} as Prompt['answers'];
+
+  for (const tier of TIER_IDS) {
+    answers[tier] = prompt.answers[tier].filter((answer) => !targetTier.has(keyOf(answer)));
+  }
+
+  for (const [answer, tier] of targetTier) {
+    if (!present.has(answer)) {
+      throw new Error(`calibration for "${prompt.id}" references missing answer "${answer}"`);
+    }
+    answers[tier].push(answer);
+  }
+
+  return { ...prompt, answers };
+}
+
 /** The complete bank: the original curated set plus the expansions. */
 export const PROMPTS: Prompt[] = [
   ...CORE_PROMPTS,
   ...EXPANDED_PROMPTS,
   ...EXPANDED_PROMPTS_2,
-].map(addExtraAnswers);
+].map(addExtraAnswers).map(applyCalibratedTiers);
 
 
 

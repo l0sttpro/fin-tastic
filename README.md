@@ -162,8 +162,9 @@ Rules the data has to follow:
 - The six bands are **disjoint** — an answer belongs to exactly one band.
 - Extra answers are disjoint too: an answer may not be added to a tier that a
   lower tier already claims.
-- Every band of every prompt needs at least a handful of entries, otherwise a
-  tier is unreachable.
+- Every band of every prompt needs entries, otherwise a tier is unreachable.
+  Hand-curated prompts keep at least five per scoring tier; prompts calibrated
+  against Wikidata may have a genuinely tiny rare tail, down to two answers.
 - Aliases map a spelling to a canonical answer that must exist. An alias must
   not normalise to an answer that another tier already claims, or it shadows
   that answer.
@@ -235,7 +236,10 @@ Caches are committed, so an audit can be re-run without fetching again. The
 scripts use only Node built-ins, identify themselves with
 `fin-tastic-audit/1.0 (personal project)`, make at most one request per second,
 and retry 429/5xx responses. They never modify `src/data/`; proposals are for
-review. Optional hand-pinned tiers can be added to `data/overrides.json`:
+review. Reviewed tier moves are recorded in `src/data/calibration.ts` and
+applied after the extras merge, so they move an answer rather than adding a
+second copy at its old tier. Unverified answers stay at their current tier.
+Optional hand-pinned tiers can be added to `data/overrides.json`:
 
 ```json
 {
